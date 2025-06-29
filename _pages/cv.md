@@ -11,11 +11,13 @@ redirect_from:
 
 ## Education
 
-**Ph.D., Engineering Physics** | Tsinghua University, China | Oct. 2016  
+**Ph.D., Engineering Physics**  
+Tsinghua University, China | Oct. 2016  
 *Thesis: Probing wakefield structures in plasma-based accelerators using femtosecond relativistic electron bunches*  
 *John Dawson Thesis Prize 2017*
 
-**B.S., Engineering Physics** | Tsinghua University, China | Jun. 2010
+**B.S., Engineering Physics**  
+Tsinghua University, China | Jun. 2010
 
 ## Research Experience
 
