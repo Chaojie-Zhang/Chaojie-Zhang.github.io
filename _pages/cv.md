@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-[Download CV (PDF)](/files/chaojie_zhang_cv.pdf){: .btn .btn--primary}
-
 ## Education
 
 **Ph.D., Engineering Physics** | Tsinghua University, China | Oct. 2016  
