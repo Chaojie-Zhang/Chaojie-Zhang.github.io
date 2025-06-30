@@ -4,8 +4,6 @@ title: "AI for Science"
 author_profile: true
 ---
 
-# AI for Science
-
 *This page is under development*
 
 The intersection of artificial intelligence and experimental physics presents exciting opportunities for advancing our understanding of complex plasma phenomena and optimizing accelerator performance.
