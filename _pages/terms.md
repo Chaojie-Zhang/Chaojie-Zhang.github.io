@@ -1,39 +1,49 @@
 ---
 permalink: /terms/
 title: "Terms and Privacy Policy"
-modified: 2016-06-06
+modified: 2025-01-01
 ---
 
 {% include base_path %}
-{% include toc %}
 
 ## Privacy Policy
 
-The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
+The privacy of my visitors is important. This Privacy Policy outlines what information is collected and how it is used.
 
-First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
+### Information Collected
 
-### Log Files
+This website uses Google Analytics to understand how visitors interact with the site. The information collected includes:
 
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
-
+* Pages visited and time spent on each page
+* Geographic location (country/city level)  
+* Device and browser information
+* How you arrived at the site (search engines, direct links, etc.)
 * Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
+* Date and time of visits
 
-All of this information is not linked to anything that is personally identifiable.
+### How Information is Used
 
-### Cookies and Web Beacons
+This data helps improve the website content and user experience. **No personally identifiable information is collected or shared.**
 
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](http://disqus.com) the next time you leave a comment.
+### Google Analytics
 
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
+This site uses Google Analytics, a web analytics service provided by Google. Google Analytics uses cookies to help analyze how users use the site. 
 
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
+For more information about Google Analytics privacy practices, visit [Google's Privacy Policy](https://policies.google.com/privacy).
 
-#### Google Analytics
+### Opting Out
 
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+If you prefer not to be tracked, you can:
+* Use browser extensions that block analytics
+* Enable "Do Not Track" in your browser settings  
+* Install the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
+
+### Cookies
+
+This site may store small data files called cookies on your computer to improve your browsing experience. You can disable cookies through your web browser settings if you prefer.
+
+### Contact
+
+If you have questions about this privacy policy, please contact me via email.
+
+*Last updated: January 2025*
