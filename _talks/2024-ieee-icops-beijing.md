@@ -4,7 +4,7 @@ collection: talks
 type: "Invited Talk"
 permalink: /talks/2024-ieee-icops-beijing
 venue: "51st IEEE International Conference on Plasma Science (ICOPS)"
-date: 2024-06
+date: 2024-06-01
 location: "Beijing, China"
 ---
 
