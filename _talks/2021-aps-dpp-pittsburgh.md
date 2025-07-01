@@ -4,7 +4,7 @@ collection: talks
 type: "Invited Talk"
 permalink: /talks/2021-aps-dpp-pittsburgh
 venue: "63rd Annual Meeting of the APS Division of Plasma Physics"
-date: 2021-11
+date: 2021-11-01
 location: "Pittsburgh, PA, USA"
 ---
 
