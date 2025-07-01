@@ -4,7 +4,7 @@ collection: talks
 type: "Plenary Talk"
 permalink: /talks/2024-aac-naperville-plenary
 venue: "Advanced Accelerator Concepts Workshop (AAC24)"
-date: 2024-08
+date: 2024-08-01
 location: "Naperville, IL, USA"
 ---
 
