@@ -22,7 +22,7 @@ repository               : "Chaojie-Zhang/Chaojie-Zhang.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Chaojie Zhang"
   pronouns         : "he/him" 
   bio              : "Experimental Plasma Physicist at UCLA • Plasma Wakefield Acceleration • Ultrafast Phenomena"
