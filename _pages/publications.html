@@ -15,6 +15,16 @@ author_profile: true
   margin: 0 auto;
 }
 
+.year-divider {
+  border-top: 1px solid #52adc8;
+  margin: 40px 0 30px 0;
+  position: relative;
+}
+
+.year-divider:first-child {
+  margin-top: 20px;
+}
+
 .publication-entry {
   display: flex;
   margin-bottom: 25px;
@@ -24,7 +34,7 @@ author_profile: true
 .pub-number {
   min-width: 60px;
   font-weight: bold;
-  color: #666;
+  color: #52adc8;
   font-size: 0.9em;
   margin-right: 20px;
   margin-top: 2px;
@@ -40,7 +50,7 @@ author_profile: true
   text-align: right;
   font-size: 1.2em;
   font-weight: bold;
-  color: #666;
+  color: #52adc8;
   margin-top: 2px;
 }
 
@@ -65,15 +75,10 @@ author_profile: true
 
 .venue {
   font-style: italic;
-  color: #666;
+  color: #52adc8;
   margin-bottom: 8px;
   font-size: 0.95em;
-}
-
-.download-link {
-  color: #52adc8;
-  text-decoration: underline;
-  font-size: 0.9em;
+  opacity: 0.8;
 }
 
 .invited-tag {
@@ -87,8 +92,20 @@ author_profile: true
 <div class="publications-container">
 {% assign publications_by_year = site.publications | sort: 'date' | reverse %}
 {% assign total_pubs = site.publications | size %}
+{% assign current_year = '' %}
 
 {% for post in publications_by_year %}
+  {% assign post_year = post.date | date: '%Y' %}
+  {% if post_year != current_year %}
+    {% unless forloop.first %}
+      <!-- Add divider between years, but not before the first year -->
+    {% endunless %}
+    {% if forloop.first == false %}
+      <div class="year-divider"></div>
+    {% endif %}
+    {% assign current_year = post_year %}
+  {% endif %}
+  
   {% assign pub_number = total_pubs | minus: forloop.index0 %}
   
   <div class="publication-entry">
@@ -120,15 +137,9 @@ author_profile: true
       <div class="venue">
         {% if post.venue %}{{ post.venue }}{% endif %}
       </div>
-      
-      {% if post.paperurl %}
-        <div>
-          <a href="{{ post.paperurl }}" class="download-link">Download Paper</a>
-        </div>
-      {% endif %}
     </div>
     
-    <div class="pub-year">{{ post.date | date: '%Y' }}</div>
+    <div class="pub-year">{{ post_year }}</div>
   </div>
 {% endfor %}
 </div>
