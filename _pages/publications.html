@@ -119,7 +119,7 @@ author_profile: true
           {% if citation_parts.size > 0 %}
             {% assign authors_part = citation_parts[0] | strip %}
             {% assign authors_cleaned = authors_part | replace: ",", "" %}
-            {{ authors_cleaned | replace: "C. Zhang", "<u>C. Zhang</u>" | replace: "Chaojie Zhang", "<u>Chaojie Zhang</u>" | replace: "C Zhang", "<u>C Zhang</u>" }}
+            {{ authors_cleaned | replace: "C. Zhang", "<u>C. Zhang</u>" | replace: "C. J. Zhang", "<u>C. J. Zhang</u>" | replace: "Chaojie Zhang", "<u>Chaojie Zhang</u>" | replace: "C Zhang", "<u>C Zhang</u>" }}
           {% endif %}
         {% endif %}
       </div>
