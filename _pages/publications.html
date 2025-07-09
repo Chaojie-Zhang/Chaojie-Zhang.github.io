@@ -89,6 +89,14 @@ author_profile: true
   margin-left: 10px;
   font-size: 0.9em;
 }
+
+.impact-text {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #ff8c00;
+  font-style: italic;
+  line-height: 1.3;
+}
 </style>
 
 <div class="publications-container">
@@ -118,8 +126,7 @@ author_profile: true
           {% assign citation_parts = post.citation | split: '"' %}
           {% if citation_parts.size > 0 %}
             {% assign authors_part = citation_parts[0] | strip %}
-            {% assign authors_cleaned = authors_part | replace: ",", "" %}
-            {{ authors_cleaned | replace: "C. Zhang", "<u>C. Zhang</u>" | replace: "C. J. Zhang", "<u>C. J. Zhang</u>" | replace: "Chaojie Zhang", "<u>Chaojie Zhang</u>" | replace: "C Zhang", "<u>C Zhang</u>" }}
+            {{ authors_part | replace: "C. Zhang", "<u>C. Zhang</u>" | replace: "C. J. Zhang", "<u>C. J. Zhang</u>" | replace: "Chaojie Zhang", "<u>Chaojie Zhang</u>" | replace: "C Zhang", "<u>C Zhang</u>" }}
           {% endif %}
         {% endif %}
       </div>
@@ -138,6 +145,28 @@ author_profile: true
       <div class="venue">
         {% if post.venue %}{{ post.venue }}{% endif %}
       </div>
+      
+      {% assign impact_found = false %}
+      {% assign recognition_found = false %}
+      {% assign applications_found = false %}
+      
+      {% if post.content contains "**Impact:**" %}
+        {% assign impact_text = post.content | split: "**Impact:**" | last | split: "**" | first | strip %}
+        <div class="impact-text">Impact: {{ impact_text }}</div>
+        {% assign impact_found = true %}
+      {% endif %}
+      
+      {% if post.content contains "**Recognition:**" %}
+        {% assign recognition_text = post.content | split: "**Recognition:**" | last | split: "**" | first | strip %}
+        <div class="impact-text">Recognition: {{ recognition_text }}</div>
+        {% assign recognition_found = true %}
+      {% endif %}
+      
+      {% if post.content contains "**Applications:**" %}
+        {% assign applications_text = post.content | split: "**Applications:**" | last | split: "**" | first | strip %}
+        <div class="impact-text">Applications: {{ applications_text }}</div>
+        {% assign applications_found = true %}
+      {% endif %}
     </div>
     
     <div class="pub-year">{{ post_year }}</div>
