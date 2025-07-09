@@ -170,7 +170,8 @@ author_profile: true
       {% if content_stripped contains "**Impact:**" %}
         {% assign impact_split = content_stripped | split: "**Impact:**" %}
         {% if impact_split.size > 1 %}
-          {% assign impact_content = impact_split[1] | split: "**" | first | strip %}
+          {% assign impact_part = impact_split[1] %}
+          {% assign impact_content = impact_part | split: "**" | first | strip %}
           {% if impact_content != "" %}
             <div class="impact-text"><strong>Impact:</strong> {{ impact_content }}</div>
           {% endif %}
@@ -181,7 +182,8 @@ author_profile: true
       {% if content_stripped contains "**Recognition:**" %}
         {% assign recognition_split = content_stripped | split: "**Recognition:**" %}
         {% if recognition_split.size > 1 %}
-          {% assign recognition_content = recognition_split[1] | split: "**" | first | strip %}
+          {% assign recognition_part = recognition_split[1] %}
+          {% assign recognition_content = recognition_part | split: "**" | first | strip %}
           {% if recognition_content != "" %}
             <div class="impact-text"><strong>Recognition:</strong> {{ recognition_content }}</div>
           {% endif %}
@@ -192,7 +194,8 @@ author_profile: true
       {% if content_stripped contains "**Applications:**" %}
         {% assign applications_split = content_stripped | split: "**Applications:**" %}
         {% if applications_split.size > 1 %}
-          {% assign applications_content = applications_split[1] | split: "**" | first | strip %}
+          {% assign applications_part = applications_split[1] %}
+          {% assign applications_content = applications_part | split: "**" | first | strip %}
           {% if applications_content != "" %}
             <div class="impact-text"><strong>Applications:</strong> {{ applications_content }}</div>
           {% endif %}
