@@ -2,6 +2,7 @@
 title: "Self-organization of photoionized plasmas via kinetic instabilities"
 collection: publications
 category: manuscripts
+authorship: "first-corresponding" # or "corresponding-author", "first-author", "first-corresponding", "co-author"
 permalink: /publication/2023-review-modern-plasma-physics
 excerpt: 'Comprehensive review of self-organization in strong-field photoionized, non-equilibrium plasmas through kinetic instabilities.'
 date: 2023-11-01
