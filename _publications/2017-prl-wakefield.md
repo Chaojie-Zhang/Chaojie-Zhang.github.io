@@ -14,4 +14,4 @@ citation: 'Chaojie Zhang, Jianfei Hua, Yang Wan, Chi-Hao Pai, Bo Guo, Jie Zhang,
 
 **Recognition:** This paper was selected as an "Editors' Suggestion" and triggered extensive follow-up research at international institutes.
 
-**Historical Impact:** This work pioneered femtosecond relativistic electron probe *(first experimental demonstration)*, opening new avenues for plasma wakefield visualization.
+**Impact:** This work pioneered femtosecond relativistic electron probe *(first experimental demonstration)*, opening new avenues for plasma wakefield visualization.
