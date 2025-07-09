@@ -2,6 +2,7 @@
 title: "Temporal characterization of ultrashort linearly chirped electron bunches generated from a laser wakefield accelerator"
 collection: publications
 category: manuscripts
+authorship: "first-author" # or "corresponding-author", "first-author", "first-corresponding", "co-author"
 permalink: /publication/2016-temporal-characterization
 excerpt: 'Development of optical deflecting cavity for sub-femtosecond resolution measurement of ultrashort electron bunches.'
 date: 2016-06-01
