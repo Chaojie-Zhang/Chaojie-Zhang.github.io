@@ -2,7 +2,7 @@
 title: "Probing thermal Weibel instability in optical-field-ionized plasmas using relativistic electron bunches"
 collection: publications
 category: manuscripts
-authorship: "first-author"
+authorship: "first-corresponding"
 permalink: /publication/2020-ppcf-weibel-instability-probing
 excerpt: 'Proposes using ultrashort relativistic electron beams to probe the spatiotemporal evolution of self-generated magnetic fields in thermal Weibel instability, demonstrating how laser polarization controls magnetic field topology in optical-field-ionized plasmas.'
 date: 2020-01-01
