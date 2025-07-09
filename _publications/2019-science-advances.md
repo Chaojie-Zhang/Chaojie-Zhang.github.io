@@ -2,6 +2,7 @@
 title: "Ultrafast optical field-ionized gases- A laboratory platform for studying kinetic plasma instabilities"
 collection: publications
 category: manuscripts
+authorship: "first-corresponding" # or "corresponding-author", "first-author", "first-corresponding", "co-author"
 permalink: /publication/2019-science-advances
 excerpt: 'Establishment of a laboratory framework for studying kinetic plasma instabilities using ultrafast optical field-ionized gases.'
 date: 2019-06-01
