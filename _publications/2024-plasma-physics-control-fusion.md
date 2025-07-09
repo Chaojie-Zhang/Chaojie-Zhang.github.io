@@ -2,6 +2,7 @@
 title: "Generation of meter-scale hydrogen plasmas and efficient, pump-depletion-limited wakefield excitation using 10 GeV electron bunches"
 collection: publications
 category: manuscripts
+authorship: "first-corresponding" # or "corresponding-author", "first-author", "first-corresponding", "co-author"
 permalink: /publication/2024-plasma-physics-control-fusion
 excerpt: 'This paper demonstrates efficient wakefield excitation in meter-scale beam-ionized hydrogen plasmas at FACET-II.'
 date: 2024-01-01
