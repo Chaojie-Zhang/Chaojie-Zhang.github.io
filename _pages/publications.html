@@ -166,6 +166,18 @@ author_profile: true
       {% comment %} Parse content for Impact, Recognition, and Applications sections {% endcomment %}
       {% assign content_stripped = post.content | strip %}
       
+      {% comment %} Debug output for the 2017 PRL paper {% endcomment %}
+      {% if post.title contains "Femtosecond probing" %}
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0; font-family: monospace; font-size: 0.8em; white-space: pre-wrap;">
+DEBUG INFO:
+Title: {{ post.title }}
+Content length: {{ post.content | size }}
+Raw content: {{ post.content | escape }}
+Contains **Impact:**: {{ content_stripped contains "**Impact:**" }}
+Contains **Recognition:**: {{ content_stripped contains "**Recognition:**" }}
+        </div>
+      {% endif %}
+      
       {% comment %} Look for **Impact:** pattern {% endcomment %}
       {% if content_stripped contains "**Impact:**" %}
         {% assign impact_split = content_stripped | split: "**Impact:**" %}
