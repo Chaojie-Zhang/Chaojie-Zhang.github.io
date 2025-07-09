@@ -2,6 +2,7 @@
 title: "Femtosecond probing of plasma wakefields and observation of the plasma wake reversal using a relativistic electron bunch"
 collection: publications
 category: manuscripts
+authorship: "first-author" # or "corresponding-author", "first-author", "first-corresponding", "co-author"
 permalink: /publication/2017-prl-wakefield
 excerpt: 'First demonstration of femtosecond relativistic electron microscopy for visualizing plasma wakefields.'
 date: 2017-08-01
