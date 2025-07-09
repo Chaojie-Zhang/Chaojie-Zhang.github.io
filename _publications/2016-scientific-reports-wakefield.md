@@ -2,6 +2,7 @@
 title: "Capturing relativistic wakefield structures in plasmas using ultrashort high-energy electrons as a probe"
 collection: publications
 category: manuscripts
+authorship: "first-author" # or "corresponding-author", "first-author", "first-corresponding", "co-author"
 permalink: /publication/2016-scientific-reports-wakefield
 excerpt: 'Novel femtosecond electron probing method for visualizing relativistic plasma wakefields with unprecedented resolution.'
 date: 2016-07-01
