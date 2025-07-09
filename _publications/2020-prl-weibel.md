@@ -2,6 +2,7 @@
 title: "Measurements of the growth and saturation of electron Weibel instability in optical-field ionized plasmas"
 collection: publications
 category: manuscripts
+authorship: "first-corresponding" # or "corresponding-author", "first-author", "first-corresponding", "co-author"
 permalink: /publication/2020-prl-weibel
 excerpt: 'Direct measurements of electron Weibel instability growth and saturation using femtosecond relativistic electron probes.'
 date: 2020-12-01
