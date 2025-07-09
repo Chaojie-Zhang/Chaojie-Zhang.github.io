@@ -2,6 +2,7 @@
 title: "Evolution of plasma wakes in density up- and down-ramps"
 collection: publications
 category: manuscripts
+authorship: "first-author" # or "corresponding-author", "first-author", "first-corresponding", "co-author"
 permalink: /publication/2018-plasma-wake-evolution
 excerpt: 'Theoretical and simulation study of plasma wakefield evolution in non-uniform density profiles.'
 date: 2018-01-01
