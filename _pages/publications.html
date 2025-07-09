@@ -146,27 +146,21 @@ author_profile: true
         {% if post.venue %}{{ post.venue }}{% endif %}
       </div>
       
-      {% assign impact_found = false %}
-      {% assign recognition_found = false %}
-      {% assign applications_found = false %}
-      
-      {% if post.content contains "**Impact:**" %}
-        {% assign impact_text = post.content | split: "**Impact:**" | last | split: "**" | first | strip %}
-        <div class="impact-text">Impact: {{ impact_text }}</div>
-        {% assign impact_found = true %}
-      {% endif %}
-      
-      {% if post.content contains "**Recognition:**" %}
-        {% assign recognition_text = post.content | split: "**Recognition:**" | last | split: "**" | first | strip %}
-        <div class="impact-text">Recognition: {{ recognition_text }}</div>
-        {% assign recognition_found = true %}
-      {% endif %}
-      
-      {% if post.content contains "**Applications:**" %}
-        {% assign applications_text = post.content | split: "**Applications:**" | last | split: "**" | first | strip %}
-        <div class="impact-text">Applications: {{ applications_text }}</div>
-        {% assign applications_found = true %}
-      {% endif %}
+      {% assign content_lines = post.content | split: '**' %}
+      {% for line in content_lines %}
+        {% if line contains 'Impact:' %}
+          {% assign impact_text = line | replace: 'Impact:', '' | strip %}
+          <div class="impact-text">Impact: {{ impact_text }}</div>
+        {% endif %}
+        {% if line contains 'Recognition:' %}
+          {% assign recognition_text = line | replace: 'Recognition:', '' | strip %}
+          <div class="impact-text">Recognition: {{ recognition_text }}</div>
+        {% endif %}
+        {% if line contains 'Applications:' %}
+          {% assign applications_text = line | replace: 'Applications:', '' | strip %}
+          <div class="impact-text">Applications: {{ applications_text }}</div>
+        {% endif %}
+      {% endfor %}
     </div>
     
     <div class="pub-year">{{ post_year }}</div>
