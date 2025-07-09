@@ -2,6 +2,7 @@
 title: "Ionization induced plasma grating and its applications in strong-field ionization measurements"
 collection: publications
 category: manuscripts
+authorship: "first-corresponding" # or "corresponding-author", "first-author", "first-corresponding", "co-author"
 permalink: /publication/2021-plasma-grating
 excerpt: 'Novel technique using ionization-induced plasma gratings for absolute ionization degree measurements in strong-field physics.'
 date: 2021-09-01
