@@ -5,8 +5,72 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<style>
+.teaching-container {
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: 'Nunito', 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+.teaching-section {
+  margin-bottom: 40px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #52adc8;
+}
+
+.teaching-title {
+  color: #52adc8;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.teaching-meta {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 15px;
+  font-size: 0.95em;
+}
+
+.teaching-content {
+  line-height: 1.6;
+}
+
+.teaching-content h3 {
+  color: #52adc8;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.teaching-content ul {
+  margin-bottom: 15px;
+}
+
+.teaching-content li {
+  margin-bottom: 8px;
+}
+</style>
+
+<div class="teaching-container">
+  
+  {% assign teaching_posts = site.teaching | sort: 'date' | reverse %}
+  
+  {% for post in teaching_posts %}
+    <div class="teaching-section">
+      <div class="teaching-title">{{ post.title }}</div>
+      
+      <div class="teaching-meta">
+        {{ post.type }}{% if post.venue %} • {{ post.venue }}{% endif %}{% if post.date %} • {{ post.date | date: '%Y' }}{% endif %}
+        {% if post.location %}<br>{{ post.location }}{% endif %}
+      </div>
+      
+      <div class="teaching-content">
+        {{ post.content }}
+      </div>
+    </div>
+  {% endfor %}
+  
+</div>
