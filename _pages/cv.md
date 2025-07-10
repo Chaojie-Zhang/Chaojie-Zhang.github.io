@@ -70,11 +70,7 @@ Tsinghua University, China | Jun. 2010
 ### Peer Review Activities
 * Active reviewer for Physical Review Letters, Physical Review Research, Physical Review Accelerators and Beams, Plasma Physics and Controlled Fusion, and Physics of Plasmas
 
-## Publications
-
-**Summary:** Published over 40 refereed journal articles with over 1300 citations
-
-### Selected Publications:
+## Selected Publications
 1. **C. Zhang**, D. Storey, P. S. M. Claveria, "Generation of meter-scale hydrogen plasmas and efficient, pump-depletion-limited wakefield excitation using 10 GeV electron bunches," *Plasma Phys. Control. Fusion* **66**, 025013 (2024). [Invited]
 
 2. **C. Zhang**, C.-K. Huang, C. Joshi, "Self-organization of photoionized plasmas via kinetic instabilities," *Review of Modern Plasma Physics*, in press (2023). [Invited Review]
