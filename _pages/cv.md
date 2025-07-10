@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: cv-layout
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -59,22 +59,22 @@ Tsinghua University, China | Jun. 2010
 
 ## Professional Service
 
-**Committees & Workshops**
+### Committees & Workshops
 * Program Committee Member, Laser and Plasma Accelerator Workshop | 2023, 2025
 * Working Group Leader, 19th Advanced Accelerator Concepts Workshop | 2020
 
-**Editorial Duties**
+### Editorial Duties
 * Youth Editorial Board Member, Ultrafast Science (a Science Partner Journal) | 2022 – 2025
 * Review Editor, Fusion Plasma Physics of Frontiers in Physics | 2023 – 2025
 
-**Peer Review Activities**
+### Peer Review Activities
 * Active reviewer for Physical Review Letters, Physical Review Research, Physical Review Accelerators and Beams, Plasma Physics and Controlled Fusion, and Physics of Plasmas
 
 ## Publications
 
 **Summary:** Published over 40 refereed journal articles with over 1300 citations
 
-**Selected Publications:**
+### Selected Publications:
 1. **C. Zhang**, D. Storey, P. S. M. Claveria, "Generation of meter-scale hydrogen plasmas and efficient, pump-depletion-limited wakefield excitation using 10 GeV electron bunches," *Plasma Phys. Control. Fusion* **66**, 025013 (2024). [Invited]
 
 2. **C. Zhang**, C.-K. Huang, C. Joshi, "Self-organization of photoionized plasmas via kinetic instabilities," *Review of Modern Plasma Physics*, in press (2023). [Invited Review]
