@@ -52,20 +52,20 @@ Tsinghua University, China | Jun. 2010
 
 ## Awards and Honors
 
-* **Outstanding Dissertation Award**, OCPA (International Organization of Chinese Physicists and Astronomers) | 2019
-* **Outstanding Reviewer Award**, Institute of Physics (IOP) | 2018, 2019
-* **CAI Shidong Award for Plasma Physics** (Recognizing young scholars for outstanding contributions in plasma physics) | 2018
-* **John Dawson Thesis Prize** (Biennial international award recognizing exceptional PhD theses in plasma-based particle acceleration) | 2017
+* **Outstanding Dissertation Award**, International Organization of Chinese Physicists and Astronomers (2019)
+* **Outstanding Reviewer Award**, Institute of Physics (2018, 2019)
+* **CAI Shidong Award for Plasma Physics** (2018)
+* **John Dawson Thesis Prize** (2017)
 
 ## Professional Service
 
 ### Committees & Workshops
-* Program Committee Member, Laser and Plasma Accelerator Workshop | 2023, 2025
-* Working Group Leader, 19th Advanced Accelerator Concepts Workshop | 2020
+* Program Committee Member, Laser and Plasma Accelerator Workshop (2023, 2025)
+* Working Group Leader, 19th Advanced Accelerator Concepts Workshop (2020)
 
 ### Editorial Duties
-* Youth Editorial Board Member, Ultrafast Science (a Science Partner Journal) | 2022 – 2025
-* Review Editor, Fusion Plasma Physics of Frontiers in Physics | 2023 – 2025
+* Youth Editorial Board Member, Ultrafast Science (a Science Partner Journal) (2022 – 2025)
+* Review Editor, Fusion Plasma Physics of Frontiers in Physics (2023 – 2025)
 
 ### Peer Review Activities
 * Active reviewer for Physical Review Letters, Physical Review Research, Physical Review Accelerators and Beams, Plasma Physics and Controlled Fusion, and Physics of Plasmas
@@ -86,8 +86,6 @@ Tsinghua University, China | Jun. 2010
 5. **C. Zhang**, C.-K. Huang, K. A. Marsh, C. E. Clayton, W. B. Mori et al., "Ultrafast optical field-ionized gases- A laboratory platform for studying kinetic plasma instabilities," *Sci. Advances* eaax4545 (2019).
 
 6. **C. Zhang**, J. Hua, Y. Wan, C.-H. Pai, B. Guo et al., "Femtosecond probing of plasma wakefields and observation of the plasma wake reversal using a relativistic electron bunch" *Phys. Rev. Lett.* **119**, 064801 (2017).
-
-[View all publications on Google Scholar](https://scholar.google.com/citations?user=CBjsrOUAAAAJ&hl=en){: .btn .btn--inverse}
 
 ## Teaching Experience
 
