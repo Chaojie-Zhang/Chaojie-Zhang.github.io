@@ -1,4 +1,6 @@
 /* CV Layout Specific Styles */
+
+/* Existing header nav styles */
 .cv-header-nav {
   padding: 1rem 0;
   text-align: center;
@@ -11,7 +13,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: #2a7ae2;
+  background-color: #52adc8; /* Updated to theme color */
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -20,12 +22,14 @@
 }
 
 .cv-header-nav .home-button:hover {
-  background-color: #1756a9;
+  background-color: #3d8bb0; /* Darker shade of theme color */
 }
 
+/* Container styles */
 .cv-container {
   max-width: 1000px;
   margin: 0 auto;
+  font-family: 'Nunito', 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Download links styling */
@@ -38,4 +42,176 @@
 
 .cv-download-links a {
   margin: 0 0.5rem;
+}
+
+/* NEW STYLES - CV Content Improvements */
+
+/* Apply to CV layout body */
+.cv-layout {
+  font-family: 'Nunito', 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Section Headers - Remove boxes and use theme color */
+.cv-layout h2,
+.cv-layout .container h2 {
+  color: #52adc8 !important;
+  border-bottom: 2px solid #52adc8 !important;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-weight: 600;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Subsection Headers */
+.cv-layout h3,
+.cv-layout .container h3 {
+  color: #52adc8 !important;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  font-weight: 600;
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Remove boxes from all content */
+.cv-layout ul,
+.cv-layout li,
+.cv-layout .archive__item,
+.cv-layout .cv-item {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 8px 0;
+}
+
+/* Content spacing improvements */
+.cv-layout .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cv-layout p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.cv-layout ul {
+  margin-bottom: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.cv-layout li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  display: list-item !important;
+}
+
+/* Awards and honors - highlight organization names */
+.cv-layout ul li strong,
+.cv-layout strong {
+  color: #52adc8;
+  font-weight: 600;
+}
+
+/* Google Scholar Button Styling */
+.cv-layout .btn.btn--inverse,
+.cv-layout a.btn,
+.cv-download-links .btn {
+  background-color: #52adc8 !important;
+  color: white !important;
+  border: 2px solid #52adc8 !important;
+  padding: 10px 20px !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  margin: 15px 5px !important;
+}
+
+.cv-layout .btn.btn--inverse:hover,
+.cv-layout a.btn:hover,
+.cv-download-links .btn:hover {
+  background-color: transparent !important;
+  color: #52adc8 !important;
+  text-decoration: none !important;
+}
+
+/* Position and degree styling */
+.cv-layout em {
+  font-style: italic;
+  color: #666;
+}
+
+/* Publications list styling */
+.cv-layout ol {
+  padding-left: 20px;
+}
+
+.cv-layout ol li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* Remove any potential archive styling */
+.cv-layout .archive__item-title {
+  border: none !important;
+  background: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+  .cv-layout h2,
+  .cv-layout h3,
+  .cv-layout .container h2,
+  .cv-layout .container h3 {
+    color: #52adc8 !important;
+    border-color: #52adc8 !important;
+  }
+  
+  .cv-layout em {
+    color: #aaa;
+  }
+  
+  .cv-layout ul li strong,
+  .cv-layout strong {
+    color: #52adc8;
+  }
+  
+  .cv-header-nav {
+    border-bottom-color: #444;
+  }
+  
+  .cv-download-links {
+    border-top-color: #444;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .cv-layout .container {
+    padding: 15px;
+  }
+  
+  .cv-layout h2 {
+    font-size: 1.5em;
+  }
+  
+  .cv-layout .btn.btn--inverse,
+  .cv-layout a.btn {
+    padding: 8px 16px !important;
+    font-size: 0.9em;
+    margin: 10px 2px !important;
+  }
+  
+  .cv-header-nav .home-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9em;
+  }
 }
