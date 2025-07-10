@@ -9,14 +9,14 @@ location: "Los Angeles, CA; Beijing, China"
 
 **Research Mentoring and Training (2010 - Present)**
 * **Current**: Co-mentoring 2 graduate students at UCLA in experimental plasma physics
-* **2017-2022**: Co-mentored 1 graduate students during postdoctoral research
+* **2017-2022**: Co-mentored 1 graduate student during postdoctoral research
 * **2010-2016**: Guided multiple graduate and undergraduate students at Tsinghua University
 
 **Training Areas:**
 * Experimental design and execution
-* Advanced plasma diagnostics techniques
-* Data analysis and scientific computing
-* Scientific writing and presentation skills
+* Advanced plasma diagnostics
+* Data analysis
+* Scientific writing and presentation
 
 **Educational Leadership:**
 * Organized specialized seminars on plasma physics topics
@@ -26,4 +26,3 @@ location: "Los Angeles, CA; Beijing, China"
 **Outcomes:**
 * Multiple mentees successfully completed PhD programs
 * Co-authored publications with students
-* Established foundation for junior researchers in experimental plasma physics
