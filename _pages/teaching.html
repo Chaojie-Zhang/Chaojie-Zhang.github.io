@@ -14,10 +14,10 @@ author_profile: true
 
 .teaching-section {
   margin-bottom: 40px;
-  padding: 25px;
-  background: #f8f9fa;
-  border-radius: 10px;
-  border-left: 4px solid #52adc8;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  border-left: none;
 }
 
 .teaching-title {
@@ -28,7 +28,7 @@ author_profile: true
 }
 
 .teaching-meta {
-  color: #666;
+  color: var(--text-color, #666);
   font-style: italic;
   margin-bottom: 15px;
   font-size: 0.95em;
@@ -36,9 +36,10 @@ author_profile: true
 
 .teaching-content {
   line-height: 1.6;
+  color: var(--text-color, inherit);
 }
 
-.teaching-content h3 {
+.teaching-content h3, .teaching-content h4 {
   color: #52adc8;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -51,6 +52,34 @@ author_profile: true
 
 .teaching-content li {
   margin-bottom: 8px;
+}
+
+.teaching-content p {
+  color: var(--text-color, inherit);
+}
+
+.teaching-content strong {
+  color: var(--text-color, inherit);
+  font-weight: 600;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .teaching-meta {
+    color: #aaa;
+  }
+  
+  .teaching-content {
+    color: inherit;
+  }
+  
+  .teaching-content p {
+    color: inherit;
+  }
+  
+  .teaching-content strong {
+    color: inherit;
+  }
 }
 </style>
 
