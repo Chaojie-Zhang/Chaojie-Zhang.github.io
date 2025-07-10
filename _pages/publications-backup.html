@@ -6,31 +6,204 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap" style="margin-bottom: 30px;">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
+<style>
+.publications-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+.year-divider {
+  border-top: 1px solid #52adc8;
+  margin: 40px 0 30px 0;
+  position: relative;
+}
+
+.first-year-divider {
+  border-top: 1px solid #52adc8;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+
+.publication-entry {
+  display: flex;
+  margin-bottom: 25px;
+  align-items: flex-start;
+}
+
+.pub-number {
+  min-width: 60px;
+  font-weight: bold;
+  color: #52adc8;
+  font-size: 0.9em;
+  margin-right: 20px;
+  margin-top: 2px;
+}
+
+.pub-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.pub-year {
+  min-width: 80px;
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #52adc8;
+  margin-top: 2px;
+}
+
+.authors {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
+.title a {
+  color: #52adc8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.title a:hover {
+  text-decoration: underline;
+}
+
+.venue {
+  font-style: italic;
+  color: #52adc8;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+  opacity: 0.8;
+}
+
+.excerpt {
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  color: #52adc8;
+  line-height: 1.3;
+  font-style: italic;
+}
+
+.invited-tag {
+  color: #ff8c00;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+
+.impact-text {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #ff8c00;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+.impact-text strong {
+  font-weight: bold;
+  color: #ff8c00;
+}
+</style>
+
+<div class="publications-container">
+{% assign publications_by_year = site.publications | sort: 'date' | reverse %}
+{% assign total_pubs = site.publications | size %}
+{% assign current_year = '' %}
+
+{% for post in publications_by_year %}
+  {% assign post_year = post.date | date: '%Y' %}
+  {% if post_year != current_year %}
+    {% if forloop.first %}
+      <div class="first-year-divider"></div>
+    {% else %}
+      <div class="year-divider"></div>
+    {% endif %}
+    {% assign current_year = post_year %}
+  {% endif %}
+  
+  {% assign pub_number = total_pubs | minus: forloop.index0 %}
+  
+  <div class="publication-entry">
+    <div class="pub-number">[{{ pub_number }}]</div>
+    
+    <div class="pub-content">
+      <div class="authors">
+        {% if post.citation %}
+          {% assign citation_parts = post.citation | split: '"' %}
+          {% if citation_parts.size > 0 %}
+            {% assign authors_part = citation_parts[0] | strip %}
+            {{ authors_part | replace: "C. Zhang", "<u>C. Zhang</u>" | replace: "C. J. Zhang", "<u>C. J. Zhang</u>" | replace: "Chaojie Zhang", "<u>Chaojie Zhang</u>" | replace: "C Zhang", "<u>C Zhang</u>" }}
+          {% endif %}
+        {% endif %}
+      </div>
+      
+      <div class="title">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}">{{ post.title }}</a>
+        {% else %}
+          {{ post.title }}
+        {% endif %}
+        {% if post.content contains "invited paper" or post.content contains "Invited paper" %}
+          <span class="invited-tag">(Invited)</span>
+        {% endif %}
+      </div>
+      
+      <div class="venue">
+        {% if post.venue %}{{ post.venue }}{% endif %}
+      </div>
+      
+      {% if post.excerpt %}
+        <div class="excerpt"><strong>Summary:</strong> {{ post.excerpt }}</div>
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+      
+      {% comment %} Parse content for Impact, Recognition, and Applications sections {% endcomment %}
+      {% assign content_stripped = post.content | strip %}
+      
+      {% comment %} Look for <strong>Impact:</strong> pattern in HTML {% endcomment %}
+      {% if content_stripped contains "<strong>Impact:</strong>" %}
+        {% assign impact_split = content_stripped | split: "<strong>Impact:</strong>" %}
+        {% if impact_split.size > 1 %}
+          {% assign impact_part = impact_split[1] %}
+          {% assign impact_content = impact_part | split: "</p>" | first | strip %}
+          {% if impact_content != "" %}
+            <div class="impact-text"><strong>Impact:</strong> {{ impact_content }}</div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+      
+      {% comment %} Look for <strong>Recognition:</strong> pattern in HTML {% endcomment %}
+      {% if content_stripped contains "<strong>Recognition:</strong>" %}
+        {% assign recognition_split = content_stripped | split: "<strong>Recognition:</strong>" %}
+        {% if recognition_split.size > 1 %}
+          {% assign recognition_part = recognition_split[1] %}
+          {% assign recognition_content = recognition_part | split: "</p>" | first | strip %}
+          {% if recognition_content != "" %}
+            <div class="impact-text"><strong>Recognition:</strong> {{ recognition_content }}</div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+      
+      {% comment %} Look for <strong>Applications:</strong> pattern in HTML {% endcomment %}
+      {% if content_stripped contains "<strong>Applications:</strong>" %}
+        {% assign applications_split = content_stripped | split: "<strong>Applications:</strong>" %}
+        {% if applications_split.size > 1 %}
+          {% assign applications_part = applications_split[1] %}
+          {% assign applications_content = applications_part | split: "</p>" | first | strip %}
+          {% if applications_content != "" %}
+            <div class="impact-text"><strong>Applications:</strong> {{ applications_content }}</div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    </div>
+    
+    <div class="pub-year">{{ post_year }}</div>
+  </div>
+{% endfor %}
+</div>
