@@ -1,98 +1,14 @@
-/* CV Layout CSS - Fixed Selectors */
-
-/* Remove the red background test */
-body {
-  background-color: inherit !important;
-}
-
-/* Target h2 elements - these are your main sections like "Education", "Research Experience" */
-.archive .page__inner-wrap h2,
-.page .page__inner-wrap h2,
-.page__content h2,
-article h2,
-main h2 {
+/* Nuclear option - override everything */
+* h2 {
   color: #52adc8 !important;
   border-bottom: 2px solid #52adc8 !important;
   padding-bottom: 8px !important;
-  margin-bottom: 20px !important;
-  margin-top: 30px !important;
-  font-weight: 600 !important;
 }
 
-/* Target h3 elements - these are your subsections like "Committees & Workshops" */
-.archive .page__inner-wrap h3,
-.page .page__inner-wrap h3,
-.page__content h3,
-article h3,
-main h3 {
+* h3 {
   color: #52adc8 !important;
-  margin-bottom: 15px !important;
-  margin-top: 25px !important;
-  font-weight: 600 !important;
 }
 
-/* Awards and organization names - the **bolded** items */
-.archive .page__inner-wrap ul li strong,
-.page .page__inner-wrap ul li strong,
-.page__content ul li strong,
-article ul li strong,
-main ul li strong {
+* strong {
   color: #52adc8 !important;
-  font-weight: 600 !important;
-}
-
-/* Target all strong elements in the content area */
-.archive .page__inner-wrap strong,
-.page .page__inner-wrap strong,
-.page__content strong,
-article strong,
-main strong {
-  color: #52adc8 !important;
-  font-weight: 600 !important;
-}
-
-/* Google Scholar button if you add one */
-.btn.btn--inverse,
-.page__content .btn.btn--inverse,
-a.btn.btn--inverse {
-  background-color: #52adc8 !important;
-  color: white !important;
-  border: 2px solid #52adc8 !important;
-  padding: 10px 20px !important;
-  border-radius: 6px !important;
-  text-decoration: none !important;
-  font-weight: 500 !important;
-  display: inline-block !important;
-  transition: all 0.3s ease !important;
-  margin: 15px 5px !important;
-}
-
-.btn.btn--inverse:hover,
-.page__content .btn.btn--inverse:hover,
-a.btn.btn--inverse:hover {
-  background-color: transparent !important;
-  color: #52adc8 !important;
-  text-decoration: none !important;
-}
-
-/* Dark mode compatibility */
-@media (prefers-color-scheme: dark) {
-  .archive .page__inner-wrap h2,
-  .page .page__inner-wrap h2,
-  .page__content h2,
-  .archive .page__inner-wrap h3,
-  .page .page__inner-wrap h3,
-  .page__content h3 {
-    color: #52adc8 !important;
-    border-color: #52adc8 !important;
-  }
-  
-  .archive .page__inner-wrap ul li strong,
-  .page .page__inner-wrap ul li strong,
-  .page__content ul li strong,
-  .archive .page__inner-wrap strong,
-  .page .page__inner-wrap strong,
-  .page__content strong {
-    color: #52adc8 !important;
-  }
 }
