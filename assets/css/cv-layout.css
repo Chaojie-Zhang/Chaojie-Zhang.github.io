@@ -1,7 +1,9 @@
-/* Middle Ground CV CSS - Keep what worked, fix what didn't */
+/* Targeted CV CSS - Only affect main content area */
 
-/* Section headers - bring back the nuclear approach that worked */
-* h2 {
+/* Main section headers - only in the main content */
+.page__content h2,
+.page__inner-wrap h2,
+article h2 {
   color: #52adc8 !important;
   border-bottom: 2px solid #52adc8 !important;
   padding-bottom: 8px !important;
@@ -10,9 +12,11 @@
   font-weight: 600 !important;
 }
 
-/* Subsection headers */
-* h3 {
-  color: #52adc8 !important;
+/* Subsection headers - only in main content, exclude h3 that are subsections */
+.page__content h3:not(.archive__subtitle),
+.page__inner-wrap h3:not(.archive__subtitle),
+article h3:not(.archive__subtitle) {
+  color: #333 !important; /* Keep original color for subsections */
   margin-bottom: 15px !important;
   margin-top: 25px !important;
   font-weight: 600 !important;
@@ -26,10 +30,15 @@ article strong {
   font-weight: 600 !important;
 }
 
-/* Exclude sidebar strong elements */
+/* Explicitly exclude sidebar elements */
 .sidebar strong,
+.sidebar h2,
+.sidebar h3,
 .author__bio strong,
-.author__name strong {
+.author__name,
+.author__name strong,
+.author__bio h2,
+.author__bio h3 {
   color: inherit !important;
 }
 
@@ -55,9 +64,16 @@ article strong {
 
 /* Dark mode compatibility */
 @media (prefers-color-scheme: dark) {
-  * h2,
-  * h3 {
+  .page__content h2,
+  .page__inner-wrap h2,
+  article h2 {
     color: #52adc8 !important;
     border-color: #52adc8 !important;
+  }
+  
+  .page__content h3:not(.archive__subtitle),
+  .page__inner-wrap h3:not(.archive__subtitle),
+  article h3:not(.archive__subtitle) {
+    color: #e0e0e0 !important; /* Light color for dark mode */
   }
 }
