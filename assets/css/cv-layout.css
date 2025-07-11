@@ -1,5 +1,10 @@
 /* CV Layout CSS - Simple Direct Targeting */
 
+/* TEST - This should make the page background red if CSS is loading */
+body {
+  background-color: red !important;
+}
+
 /* Section Headers */
 .page__content h2 {
   color: #52adc8 !important;
