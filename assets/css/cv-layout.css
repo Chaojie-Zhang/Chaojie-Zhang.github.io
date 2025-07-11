@@ -1,9 +1,7 @@
-/* Refined CV CSS - Only affect main content area */
+/* Middle Ground CV CSS - Keep what worked, fix what didn't */
 
-/* Section headers */
-.page__content h2,
-.page__inner-wrap h2,
-article h2 {
+/* Section headers - bring back the nuclear approach that worked */
+* h2 {
   color: #52adc8 !important;
   border-bottom: 2px solid #52adc8 !important;
   padding-bottom: 8px !important;
@@ -13,32 +11,30 @@ article h2 {
 }
 
 /* Subsection headers */
-.page__content h3,
-.page__inner-wrap h3,
-article h3 {
+* h3 {
   color: #52adc8 !important;
   margin-bottom: 15px !important;
   margin-top: 25px !important;
   font-weight: 600 !important;
 }
 
-/* Only target strong elements in specific contexts - NOT in sidebar or publications */
-.page__content ul li strong:not([class]),
-.page__inner-wrap ul li strong:not([class]) {
+/* Strong elements - but EXCLUDE sidebar and specific areas */
+.page__content strong,
+.page__inner-wrap strong,
+article strong {
   color: #52adc8 !important;
   font-weight: 600 !important;
 }
 
-/* Target specific award/job title patterns (more selective) */
-.page__content p strong:first-child,
-.page__inner-wrap p strong:first-child {
-  color: #52adc8 !important;
-  font-weight: 600 !important;
+/* Exclude sidebar strong elements */
+.sidebar strong,
+.author__bio strong,
+.author__name strong {
+  color: inherit !important;
 }
 
 /* Google Scholar button */
-.btn.btn--inverse,
-.page__content .btn.btn--inverse {
+.btn.btn--inverse {
   background-color: #52adc8 !important;
   color: white !important;
   border: 2px solid #52adc8 !important;
@@ -51,8 +47,7 @@ article h3 {
   margin: 15px 5px !important;
 }
 
-.btn.btn--inverse:hover,
-.page__content .btn.btn--inverse:hover {
+.btn.btn--inverse:hover {
   background-color: transparent !important;
   color: #52adc8 !important;
   text-decoration: none !important;
@@ -60,10 +55,8 @@ article h3 {
 
 /* Dark mode compatibility */
 @media (prefers-color-scheme: dark) {
-  .page__content h2,
-  .page__inner-wrap h2,
-  .page__content h3,
-  .page__inner-wrap h3 {
+  * h2,
+  * h3 {
     color: #52adc8 !important;
     border-color: #52adc8 !important;
   }
