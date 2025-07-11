@@ -1,9 +1,7 @@
-/* Targeted CV CSS - Only affect main content area */
+/* Targeted CV CSS - Restore main styling but protect sidebar */
 
-/* Main section headers - only in the main content */
-.page__content h2,
-.page__inner-wrap h2,
-article h2 {
+/* Main section headers - use broader selector but exclude sidebar */
+h2:not(.sidebar h2):not(.author__bio h2) {
   color: #52adc8 !important;
   border-bottom: 2px solid #52adc8 !important;
   padding-bottom: 8px !important;
@@ -12,11 +10,9 @@ article h2 {
   font-weight: 600 !important;
 }
 
-/* Subsection headers - only in main content, exclude h3 that are subsections */
-.page__content h3:not(.archive__subtitle),
-.page__inner-wrap h3:not(.archive__subtitle),
-article h3:not(.archive__subtitle) {
-  color: #333 !important; /* Keep original color for subsections */
+/* Subsection headers - keep normal color for h3 elements */
+h3 {
+  color: inherit !important;
   margin-bottom: 15px !important;
   margin-top: 25px !important;
   font-weight: 600 !important;
@@ -30,16 +26,16 @@ article strong {
   font-weight: 600 !important;
 }
 
-/* Explicitly exclude sidebar elements */
-.sidebar strong,
+/* Explicitly exclude sidebar elements from h2 styling */
 .sidebar h2,
-.sidebar h3,
-.author__bio strong,
-.author__name,
-.author__name strong,
 .author__bio h2,
-.author__bio h3 {
+.author__name {
   color: inherit !important;
+  border-bottom: none !important;
+  padding-bottom: inherit !important;
+  margin-bottom: inherit !important;
+  margin-top: inherit !important;
+  font-weight: inherit !important;
 }
 
 /* Google Scholar button */
@@ -64,16 +60,8 @@ article strong {
 
 /* Dark mode compatibility */
 @media (prefers-color-scheme: dark) {
-  .page__content h2,
-  .page__inner-wrap h2,
-  article h2 {
+  h2:not(.sidebar h2):not(.author__bio h2) {
     color: #52adc8 !important;
     border-color: #52adc8 !important;
-  }
-  
-  .page__content h3:not(.archive__subtitle),
-  .page__inner-wrap h3:not(.archive__subtitle),
-  article h3:not(.archive__subtitle) {
-    color: #e0e0e0 !important; /* Light color for dark mode */
   }
 }
