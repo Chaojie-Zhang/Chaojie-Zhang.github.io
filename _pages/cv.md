@@ -157,10 +157,10 @@ Tsinghua University, China | Sep. 2010 – Oct. 2016
 
 ## Awards and Honors
 
-* Outstanding Dissertation Award, International Organization of Chinese Physicists and Astronomers (2019)
-* Outstanding Reviewer Award, Institute of Physics (2018, 2019)
-* CAI Shidong Award for Plasma Physics (2018)
-* John Dawson Thesis Prize (2017)
+* **Outstanding Dissertation Award**, International Organization of Chinese Physicists and Astronomers (2019)
+* **Outstanding Reviewer Award**, Institute of Physics (2018, 2019)
+* **CAI Shidong Award for Plasma Physics** (2018)
+* **John Dawson Thesis Prize** (2017)
 
 ## Professional Service
 
@@ -176,17 +176,17 @@ Tsinghua University, China | Sep. 2010 – Oct. 2016
 * Active reviewer for Physical Review Letters, Physical Review Research, Physical Review Accelerators and Beams, Plasma Physics and Controlled Fusion, and Physics of Plasmas
 
 ## Selected Publications
-1. C. Zhang, D. Storey, P. S. M. Claveria, "Generation of meter-scale hydrogen plasmas and efficient, pump-depletion-limited wakefield excitation using 10 GeV electron bunches," *Plasma Phys. Control. Fusion* **66**, 025013 (2024). [Invited]
+1. **C. Zhang**, D. Storey, P. S. M. Claveria, "Generation of meter-scale hydrogen plasmas and efficient, pump-depletion-limited wakefield excitation using 10 GeV electron bunches," *Plasma Phys. Control. Fusion* **66**, 025013 (2024). [Invited]
 
-2. C. Zhang, C.-K. Huang, C. Joshi, "Self-organization of photoionized plasmas via kinetic instabilities," *Review of Modern Plasma Physics*, in press (2023). [Invited Review]
+2. **C. Zhang**, C.-K. Huang, C. Joshi, "Self-organization of photoionized plasmas via kinetic instabilities," *Review of Modern Plasma Physics*, in press (2023). [Invited Review]
 
-3. C. Zhang, Y. Wu, M. Sinclair, A. Farrell et al, "Mapping the self-generated magnetic fields due to thermal Weibel instability," *PNAS* **119**(50), e2211713119 (2022).
+3. **C. Zhang**, Y. Wu, M. Sinclair, A. Farrell et al, "Mapping the self-generated magnetic fields due to thermal Weibel instability," *PNAS* **119**(50), e2211713119 (2022).
 
-4. C. Zhang, J. Hua, Y. Wu, Y. Fang, Y. Ma et al, "Measurements of the growth and saturation of electron Weibel instability in optical-field ionized plasmas," *Phys. Rev. Lett.* **125**(25), 255001 (2020).
+4. **C. Zhang**, J. Hua, Y. Wu, Y. Fang, Y. Ma et al, "Measurements of the growth and saturation of electron Weibel instability in optical-field ionized plasmas," *Phys. Rev. Lett.* **125**(25), 255001 (2020).
 
-5. C. Zhang, C.-K. Huang, K. A. Marsh, C. E. Clayton, W. B. Mori et al., "Ultrafast optical field-ionized gases- A laboratory platform for studying kinetic plasma instabilities," *Sci. Advances* eaax4545 (2019).
+5. **C. Zhang**, C.-K. Huang, K. A. Marsh, C. E. Clayton, W. B. Mori et al., "Ultrafast optical field-ionized gases- A laboratory platform for studying kinetic plasma instabilities," *Sci. Advances* eaax4545 (2019).
 
-6. C. Zhang, J. Hua, Y. Wan, C.-H. Pai, B. Guo et al., "Femtosecond probing of plasma wakefields and observation of the plasma wake reversal using a relativistic electron bunch" *Phys. Rev. Lett.* **119**, 064801 (2017).
+6. **C. Zhang**, J. Hua, Y. Wan, C.-H. Pai, B. Guo et al., "Femtosecond probing of plasma wakefields and observation of the plasma wake reversal using a relativistic electron bunch" *Phys. Rev. Lett.* **119**, 064801 (2017).
 
 ## Teaching Experience
 
