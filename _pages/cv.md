@@ -8,7 +8,6 @@ redirect_from:
 ---
 
 {% include base_path %}
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/cv-layout.css">
 
 ## Education
 
