@@ -1,10 +1,7 @@
-/* Targeted CV CSS - Restore main styling but protect sidebar */
+/* CV Layout CSS - Universal selectors with sidebar protection */
 
-/* Main section headers - target only main content area */
-main h2,
-.page__content h2,
-.page__inner-wrap h2,
-article h2 {
+/* Main section headers - use universal but exclude sidebar */
+h2 {
   color: #52adc8 !important;
   border-bottom: 2px solid #52adc8 !important;
   padding-bottom: 8px !important;
@@ -13,24 +10,43 @@ article h2 {
   font-weight: 600 !important;
 }
 
-/* Subsection headers - target only main content area */
-main h3,
-.page__content h3,
-.page__inner-wrap h3,
-article h3 {
-  color: inherit !important;
+/* Subsection headers - keep normal styling */
+h3 {
   margin-bottom: 15px !important;
   margin-top: 25px !important;
   font-weight: 600 !important;
 }
 
-/* Strong elements - only in main content area */
-main strong,
-.page__content strong,
-.page__inner-wrap strong,
-article strong {
+/* Strong elements in content */
+strong {
   color: #52adc8 !important;
   font-weight: 600 !important;
+}
+
+/* SIDEBAR PROTECTION - Override all styling for sidebar elements */
+.sidebar *,
+.sidebar h2,
+.sidebar h3,
+.sidebar strong,
+.author__bio *,
+.author__bio h2,
+.author__bio h3,
+.author__bio strong,
+.author__name,
+.author__name strong,
+.author__urls *,
+.author__urls strong {
+  color: inherit !important;
+  border-bottom: none !important;
+  padding-bottom: inherit !important;
+  margin-bottom: inherit !important;
+  margin-top: inherit !important;
+  font-weight: inherit !important;
+}
+
+/* Restore proper author name styling */
+.author__name {
+  font-weight: bold !important;
 }
 
 /* Google Scholar button */
@@ -55,11 +71,15 @@ article strong {
 
 /* Dark mode compatibility */
 @media (prefers-color-scheme: dark) {
-  main h2,
-  .page__content h2,
-  .page__inner-wrap h2,
-  article h2 {
+  h2 {
     color: #52adc8 !important;
     border-color: #52adc8 !important;
+  }
+  
+  /* Sidebar protection in dark mode */
+  .sidebar h2,
+  .author__bio h2 {
+    color: inherit !important;
+    border-bottom: none !important;
   }
 }
