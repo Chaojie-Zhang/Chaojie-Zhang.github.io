@@ -10,8 +10,8 @@ redirect_from:
 {% include base_path %}
 
 <style>
-/* CV-specific styling - only affects this page */
-.page__content h2 {
+/* CV-specific styling - stronger selectors */
+h2 {
   color: #52adc8 !important;
   border-bottom: 2px solid #52adc8 !important;
   padding-bottom: 8px !important;
@@ -20,20 +20,39 @@ redirect_from:
   font-weight: 600 !important;
 }
 
-.page__content .position {
+.position {
   color: #52adc8 !important;
   font-weight: 600 !important;
   margin-bottom: 5px !important;
+  display: block !important;
 }
 
-.page__content .author-name {
+.author-name {
   color: #52adc8 !important;
   font-weight: 600 !important;
 }
 
-.page__content .award-name {
+.award-name {
   color: #52adc8 !important;
   font-weight: 600 !important;
+}
+
+/* Backup selectors in case the above don't work */
+article h2,
+main h2,
+.page h2,
+.archive h2 {
+  color: #52adc8 !important;
+  border-bottom: 2px solid #52adc8 !important;
+  padding-bottom: 8px !important;
+  margin-bottom: 20px !important;
+  margin-top: 30px !important;
+  font-weight: 600 !important;
+}
+
+/* Test selector to see if CSS is loading at all */
+body {
+  background-color: #fafafa !important;
 }
 </style>
 
