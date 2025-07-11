@@ -1,35 +1,60 @@
-/* CV Layout CSS - Simple Direct Targeting */
+/* CV Layout CSS - Fixed Selectors */
 
-/* TEST - This should make the page background red if CSS is loading */
+/* Remove the red background test */
 body {
-  background-color: red !important;
+  background-color: inherit !important;
 }
 
-/* Section Headers */
-.page__content h2 {
+/* Target h2 elements - these are your main sections like "Education", "Research Experience" */
+.archive .page__inner-wrap h2,
+.page .page__inner-wrap h2,
+.page__content h2,
+article h2,
+main h2 {
   color: #52adc8 !important;
-  border-bottom: 2px solid #52adc8;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  font-weight: 600;
+  border-bottom: 2px solid #52adc8 !important;
+  padding-bottom: 8px !important;
+  margin-bottom: 20px !important;
+  margin-top: 30px !important;
+  font-weight: 600 !important;
 }
 
-.page__content h3 {
+/* Target h3 elements - these are your subsections like "Committees & Workshops" */
+.archive .page__inner-wrap h3,
+.page .page__inner-wrap h3,
+.page__content h3,
+article h3,
+main h3 {
   color: #52adc8 !important;
-  margin-bottom: 15px;
-  margin-top: 25px;
-  font-weight: 600;
+  margin-bottom: 15px !important;
+  margin-top: 25px !important;
+  font-weight: 600 !important;
 }
 
-/* Awards and organization names */
-.page__content ul li strong {
-  color: #52adc8;
-  font-weight: 600;
+/* Awards and organization names - the **bolded** items */
+.archive .page__inner-wrap ul li strong,
+.page .page__inner-wrap ul li strong,
+.page__content ul li strong,
+article ul li strong,
+main ul li strong {
+  color: #52adc8 !important;
+  font-weight: 600 !important;
 }
 
-/* Google Scholar button */
-.page__content .btn.btn--inverse {
+/* Target all strong elements in the content area */
+.archive .page__inner-wrap strong,
+.page .page__inner-wrap strong,
+.page__content strong,
+article strong,
+main strong {
+  color: #52adc8 !important;
+  font-weight: 600 !important;
+}
+
+/* Google Scholar button if you add one */
+.btn.btn--inverse,
+.page__content .btn.btn--inverse,
+a.btn.btn--inverse {
   background-color: #52adc8 !important;
   color: white !important;
   border: 2px solid #52adc8 !important;
@@ -42,7 +67,9 @@ body {
   margin: 15px 5px !important;
 }
 
-.page__content .btn.btn--inverse:hover {
+.btn.btn--inverse:hover,
+.page__content .btn.btn--inverse:hover,
+a.btn.btn--inverse:hover {
   background-color: transparent !important;
   color: #52adc8 !important;
   text-decoration: none !important;
@@ -50,13 +77,22 @@ body {
 
 /* Dark mode compatibility */
 @media (prefers-color-scheme: dark) {
+  .archive .page__inner-wrap h2,
+  .page .page__inner-wrap h2,
   .page__content h2,
+  .archive .page__inner-wrap h3,
+  .page .page__inner-wrap h3,
   .page__content h3 {
     color: #52adc8 !important;
     border-color: #52adc8 !important;
   }
   
-  .page__content ul li strong {
-    color: #52adc8;
+  .archive .page__inner-wrap ul li strong,
+  .page .page__inner-wrap ul li strong,
+  .page__content ul li strong,
+  .archive .page__inner-wrap strong,
+  .page .page__inner-wrap strong,
+  .page__content strong {
+    color: #52adc8 !important;
   }
 }
