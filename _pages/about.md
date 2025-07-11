@@ -25,6 +25,6 @@ I lead experiments at some of the world's most advanced facilities, including FA
 
 ## Research Philosophy
 
-I focus on the experimental side of physics, building setups that explore the behavior of light, matter, and extreme fields. Through projects across multiple national labs and universities, I work on understanding how researchers can collaborate effectively to address challenges in plasma physics and accelerator science.
+I focus on the experimental side of physics, building setups that explore the behavior of light, matter, and extreme fields. Through projects across multiple national labs and universities, I work on understanding how researchers can collaborate effectively to address challenges in plasma and accelerator physics.
 
-Thanks for stopping by! Whether you're interested in plasma physics, accelerator science, or just curious about life in experimental research, feel free to reach out.
+Thanks for stopping by! Whether you're interested in plasma physics, accelerator physics, or just curious about life in experimental research, feel free to reach out.
