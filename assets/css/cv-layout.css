@@ -1,14 +1,70 @@
-/* Nuclear option - override everything */
-* h2 {
+/* Refined CV CSS - Only affect main content area */
+
+/* Section headers */
+.page__content h2,
+.page__inner-wrap h2,
+article h2 {
   color: #52adc8 !important;
   border-bottom: 2px solid #52adc8 !important;
   padding-bottom: 8px !important;
+  margin-bottom: 20px !important;
+  margin-top: 30px !important;
+  font-weight: 600 !important;
 }
 
-* h3 {
+/* Subsection headers */
+.page__content h3,
+.page__inner-wrap h3,
+article h3 {
   color: #52adc8 !important;
+  margin-bottom: 15px !important;
+  margin-top: 25px !important;
+  font-weight: 600 !important;
 }
 
-* strong {
+/* Only target strong elements in specific contexts - NOT in sidebar or publications */
+.page__content ul li strong:not([class]),
+.page__inner-wrap ul li strong:not([class]) {
   color: #52adc8 !important;
+  font-weight: 600 !important;
+}
+
+/* Target specific award/job title patterns (more selective) */
+.page__content p strong:first-child,
+.page__inner-wrap p strong:first-child {
+  color: #52adc8 !important;
+  font-weight: 600 !important;
+}
+
+/* Google Scholar button */
+.btn.btn--inverse,
+.page__content .btn.btn--inverse {
+  background-color: #52adc8 !important;
+  color: white !important;
+  border: 2px solid #52adc8 !important;
+  padding: 10px 20px !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  margin: 15px 5px !important;
+}
+
+.btn.btn--inverse:hover,
+.page__content .btn.btn--inverse:hover {
+  background-color: transparent !important;
+  color: #52adc8 !important;
+  text-decoration: none !important;
+}
+
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+  .page__content h2,
+  .page__inner-wrap h2,
+  .page__content h3,
+  .page__inner-wrap h3 {
+    color: #52adc8 !important;
+    border-color: #52adc8 !important;
+  }
 }
