@@ -50,9 +50,64 @@ main h2,
   font-weight: 600 !important;
 }
 
-/* Test selector to see if CSS is loading at all */
-body {
-  background-color: #fafafa !important;
+/* Dark mode specific overrides - much stronger selectors */
+@media (prefers-color-scheme: dark) {
+  body h2,
+  html h2,
+  .masthead h2,
+  .page h2,
+  .archive h2,
+  article h2,
+  main h2,
+  div h2,
+  section h2 {
+    color: #52adc8 !important;
+    border-bottom: 2px solid #52adc8 !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 20px !important;
+    margin-top: 30px !important;
+    font-weight: 600 !important;
+  }
+  
+  body .position,
+  html .position,
+  .masthead .position,
+  .page .position,
+  .archive .position,
+  article .position,
+  main .position,
+  div .position {
+    color: #52adc8 !important;
+    font-weight: 600 !important;
+    margin-bottom: 5px !important;
+    display: block !important;
+  }
+  
+  body .author-name,
+  html .author-name,
+  .masthead .author-name,
+  .page .author-name,
+  .archive .author-name,
+  article .author-name,
+  main .author-name,
+  div .author-name,
+  span.author-name {
+    color: #52adc8 !important;
+    font-weight: 600 !important;
+  }
+  
+  body .award-name,
+  html .award-name,
+  .masthead .award-name,
+  .page .award-name,
+  .archive .award-name,
+  article .award-name,
+  main .award-name,
+  div .award-name,
+  span.award-name {
+    color: #52adc8 !important;
+    font-weight: 600 !important;
+  }
 }
 </style>
 
