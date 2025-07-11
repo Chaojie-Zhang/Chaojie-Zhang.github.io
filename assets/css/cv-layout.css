@@ -1,6 +1,7 @@
-/* CV Page Specific Styles - Only applies to /cv/ URL */
-body[data-url*="/cv/"] .page__content h2,
-.page[title="CV"] .page__content h2 {
+/* CV Layout CSS - Simple Direct Targeting */
+
+/* Section Headers */
+.page__content h2 {
   color: #52adc8 !important;
   border-bottom: 2px solid #52adc8;
   padding-bottom: 8px;
@@ -9,8 +10,7 @@ body[data-url*="/cv/"] .page__content h2,
   font-weight: 600;
 }
 
-body[data-url*="/cv/"] .page__content h3,
-.page[title="CV"] .page__content h3 {
+.page__content h3 {
   color: #52adc8 !important;
   margin-bottom: 15px;
   margin-top: 25px;
@@ -18,14 +18,40 @@ body[data-url*="/cv/"] .page__content h3,
 }
 
 /* Awards and organization names */
-body[data-url*="/cv/"] .page__content ul li strong {
+.page__content ul li strong {
   color: #52adc8;
   font-weight: 600;
 }
 
 /* Google Scholar button */
-body[data-url*="/cv/"] .page__content .btn.btn--inverse {
+.page__content .btn.btn--inverse {
   background-color: #52adc8 !important;
   color: white !important;
-  /* ...rest of button styling... */
+  border: 2px solid #52adc8 !important;
+  padding: 10px 20px !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  margin: 15px 5px !important;
+}
+
+.page__content .btn.btn--inverse:hover {
+  background-color: transparent !important;
+  color: #52adc8 !important;
+  text-decoration: none !important;
+}
+
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+  .page__content h2,
+  .page__content h3 {
+    color: #52adc8 !important;
+    border-color: #52adc8 !important;
+  }
+  
+  .page__content ul li strong {
+    color: #52adc8;
+  }
 }
