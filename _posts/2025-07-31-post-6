@@ -1,0 +1,48 @@
+---
+title: 'Reconstructing Electron Bunch Current Profiles with Conditional Diffusion Models'
+date: 2025-07-31
+permalink: /posts/2025/07/blog-post-pwfa-diffusion/
+excerpt: 'This work proposes using a conditional diffusion model to solve the ill-posed inverse problem of reconstructing electron bunch current profiles from downstream diagnostics in plasma wakefield accelerators.'
+tags:
+  - Plasma Wakefield Accelerator
+  - Machine Learning
+  - Inverse Problem
+  - Diffusion Model
+  - Diagnostics
+---
+
+### Introduction: The Diagnostic Challenge in Plasma Wakefield Accelerators
+
+The accurate characterization of the longitudinal current profile of electron bunches within Plasma Wakefield Accelerators (PWFAs) is critical for optimizing performance. Downstream diagnostics, such as spectrometers, provide integrated information about the bunch after it has exited the plasma. Reconstructing the initial in-plasma current profile ($dQ/d\xi$) from these final measurements constitutes a challenging, ill-posed inverse problem.
+
+---
+### The Inverse Problem and Its Ambiguity
+
+Two primary diagnostics are commonly used:
+1.  **Electron Energy Spectrometer:** Measures the final energy distribution ($dQ/dE$). This observable is the result of the complex, non-linear wakefield loading integrated over the full acceleration distance. Different initial current profiles can lead to similar final energy spectra, creating significant ambiguity.
+2.  **COTR Spectrometer:** Measures the spectrum of Coherent Optical Transition Radiation, which is proportional to the squared amplitude of the bunch form factor ($|b(k)|^2$). While directly related to the bunch's Fourier transform, this measurement lacks the phase information necessary for unique profile reconstruction.
+
+Each diagnostic alone is insufficient to uniquely solve the inverse problem. Our work proposes a method to fuse the information from both diagnostics using a conditional generative model to overcome these limitations.
+
+---
+### Methodology: A Conditional Diffusion Model
+
+We propose using a conditional denoising diffusion probabilistic model (DDPM) to solve this inverse problem. Diffusion models are a class of generative models that learn to reverse a fixed Markovian process that gradually adds Gaussian noise to data.
+
+The reverse process is where the learning occurs. A neural network, typically a **U-Net**, is trained to denoise the data at each step `t` by predicting the noise that was added. The key to solving inverse problems is that this denoising process can be **conditioned** on external data `y`—in our case, the measured energy and COTR spectra. The network learns to approximate the score of the conditional distribution, $\nabla_{x_t} \log p(x_t|y)$, guiding the generation process from random noise toward a high-fidelity solution that is consistent with the specific experimental measurements.
+
+---
+### Advantages Over Feed-Forward MLP Networks
+
+While a simple Multi-Layer Perceptron (MLP) can be trained to directly map spectra to a current profile, it is fundamentally ill-suited for this type of ill-posed problem.
+
+* **Handling the One-to-Many Mapping:** An MLP is, by definition, a single-valued function. When trained with a standard loss function like Mean Squared Error (MSE) on an ambiguous (one-to-many) dataset, the network minimizes its average error by learning to predict the **conditional mean** of all possible solutions. This often results in an "averaged," overly smoothed output that may not represent any single physically plausible solution.
+
+* **Sampling from the Posterior Distribution:** A diffusion model, in contrast, is a generative process. Given a conditioning signal `y`, it learns to draw samples from the true posterior distribution `p(x|y)`. By initializing the reverse denoising process with different random noise seeds, we can generate multiple distinct, high-fidelity samples, each representing a valid solution consistent with the measured spectra.
+
+* **Intrinsic Uncertainty Quantification:** This sampling capability is the diffusion model's most significant scientific advantage. The generated ensemble of profiles provides a direct estimate of the posterior distribution. The mean of the ensemble can be interpreted as the expected solution, while the variance across the ensemble serves as a robust, pixel-wise **uncertainty quantification**. This allows us to determine precisely which features of the reconstructed profile are well-constrained by the diagnostics and which remain ambiguous—a capability a standard MLP completely lacks.
+
+---
+### Implementation and Outlook
+
+To ensure the model learns the underlying physics rather than experimental biases, the training data will be generated using Latin Hypercube Sampling (LHS) to create an unbiased distribution of simulated current profiles and their corresponding diagnostic signals. This work represents a novel approach to accelerator diagnostics, offering not only a path to high-fidelity profile reconstruction but also a principled framework for quantifying the inherent uncertainties of the solution.
