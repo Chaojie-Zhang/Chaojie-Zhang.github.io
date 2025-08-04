@@ -107,6 +107,19 @@ author_profile: true
   font-size: 0.9em;
 }
 
+.award-highlight {
+  background: linear-gradient(135deg, #ffd700 0%, #ffcc00 100%);
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+  border: 1px solid #e6c200;
+}
+  
 .impact-text {
   margin-top: 8px;
   font-size: 0.9em;
@@ -144,6 +157,11 @@ author_profile: true
     <div class="pub-number">[{{ pub_number }}]</div>
     
     <div class="pub-content">
+      {% comment %} Display award if present {% endcomment %}
+      {% if post.award %}
+        <div class="award-highlight">{{ post.award }}</div>
+      {% endif %}
+      
       <div class="authors">
         {% if post.citation %}
           {% assign citation_parts = post.citation | split: '"' %}
