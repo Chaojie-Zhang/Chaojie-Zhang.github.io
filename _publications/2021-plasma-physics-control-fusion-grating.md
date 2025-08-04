@@ -8,6 +8,7 @@ excerpt: 'Novel technique using ionization-induced plasma gratings for absolute 
 date: 2021-09-01
 venue: 'Plasma Physics and Controlled Fusion'
 paperurl: 'https://doi.org/10.1088/1361-6587/ac1751'
+award: '🏆 PPCF Outstanding Paper Prize 2025 - Highly Commended'
 citation: 'Chaojie Zhang, Zan Nie, Yipeng Wu, Mitchell Sinclair, Chen-Kang Huang, Ken A Marsh, Chan Joshi, "Ionization induced plasma grating and its applications in strong-field ionization measurements," <i>Plasma Phys. Control. Fusion</i> 63, 095011 (2021).'
 ---
 
