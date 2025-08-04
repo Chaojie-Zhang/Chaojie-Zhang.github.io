@@ -108,7 +108,7 @@ author_profile: true
 }
 
 .award-highlight {
-  background: linear-gradient(135deg, #ffd700 0%, #ffcc00 100%);
+  background: #ffd700; /* Flat golden color instead of gradient */
   color: #333;
   padding: 8px 12px;
   border-radius: 6px;
@@ -116,8 +116,15 @@ author_profile: true
   font-weight: 600;
   margin-bottom: 10px;
   display: inline-block;
-  box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
-  border: 1px solid #e6c200;
+  /* Removed box-shadow and border for flat design */
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .award-highlight {
+    background: #b8860b; /* Darker gold for dark mode */
+    color: #fff; /* White text for better contrast in dark mode */
+  }
 }
   
 .impact-text {
