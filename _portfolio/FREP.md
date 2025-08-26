@@ -1,9 +1,7 @@
 ---
-# This top section controls the summary on your MAIN portfolio page
 title: "FREP: Femtosecond Relativistic Electron Probe"
-excerpt: "An innovative diagnostic to probe the microscopic and transient plasma wakefields with micrometer and femtosecond spatialtemporal resolution. <br/><img src='/images/FREP_concept_visualization.png'>"
+excerpt: "An innovative diagnostic to probe the microscopic and transient plasma wakefields with micrometer and femtosecond spatialtemporal resolution. <br/><img src='/images/FREP_concept_visualization.png' height='200px'>"
 collection: portfolio
-image: /assets/images/FREP_concept_visualization.png
 ---
 
 ### The Challenge: Seeing a Wave That Moves at Light Speed
