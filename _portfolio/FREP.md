@@ -15,7 +15,7 @@ This incredible promise, however, was hindered by a fundamental problem: the ver
 To solve this problem, we conceived and developed an innovative diagnostic technique: the **Femtosecond Relativistic Electron Probe (FREP)**. The concept is to use the unique properties of high-energy electrons to measure the wake itself. FREP functions like a probe head on an oscilloscope, but for the relativistic world.
 
 <p align="center">
-  <img src="/images/FREP_concept_visualization.png" alt="FREP Concept" style="width:80%;">
+  <img src="/images/FREP_concept_visualization.png" alt="FREP Concept" style="width:50%;">
   <br/>
   <em>Fig. 1: Conceptualization of the FREP diagnostic. A drive beam creates the plasma wake, and a perpendicular probe beam maps its structure.</em>
 </p>
@@ -27,7 +27,7 @@ The method uses two synchronized electron bunches. A powerful "drive" beam first
 We performed the first experimental demonstration of the FREP technique at the SLAC National Accelerator Laboratory. The results provided an immediate, unambiguous view of the wakefield's structure. By adjusting the time delay between the two bunches, we could capture a series of these snapshots to create a time-resolved "movie" of the wake's evolution.
 
 <p align="center">
-  <img src="/images/FREP_wake_snapshots.png" alt="Snapshots of the wakefield" style="width:80%;">
+  <img src="/images/FREP_wake_snapshots.png" alt="Snapshots of the wakefield" style="width:50%;">
   <br/>
   <em>Fig. 2: A snapshot capturing the plasma wakefield with femtosecond resolution.</em>
 </p>
@@ -35,7 +35,7 @@ We performed the first experimental demonstration of the FREP technique at the S
 The "movie" we created with these first snapshots revealed a fundamental phenomenon that had been predicted by theory but never before seen directly: **plasma wake reversal**. We observed that the intense forces at the front of our drive beam "loaded" the plasma wave so heavily that it caused the wave to flip its polarity. The regions that were once focusing and accelerating for particles became defocusing and decelerating, and vice-versa.
 
 <p align="center">
-  <img src="/images/FREP_wake_reversal.png" alt="Wake reversal in a density upramp" style="width:80%;">
+  <img src="/images/FREP_wake_reversal.png" alt="Wake reversal in a density upramp" style="width:50%;">
   <br/>
   <em>Fig. 3: Direct observation of plasma wake reversal, a discovery enabled by the FREP technique.</em>
 </p>
