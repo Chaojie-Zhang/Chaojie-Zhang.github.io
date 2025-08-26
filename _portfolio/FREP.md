@@ -26,15 +26,15 @@ We performed the first experimental demonstration of the FREP technique at the S
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; text-align: center;">
   <div style="flex: 1; min-width: 200px; padding: 5px;">
-    <img src="/assets/images/frep-concept.png" alt="FREP Concept">
+    <img src="/images/FREP_concept_visualization.png" alt="FREP Concept">
     <p><em>Conceptualization</em></p>
   </div>
   <div style="flex: 1; min-width: 200px; padding: 5px;">
-    <img src="/assets/images/frep-setup.png" alt="FREP Experimental Setup">
+    <img src="/images/FREP_wake_snapshots.png" alt="Snapshots of the wakefield">
     <p><em>Experimental Setup</em></p>
   </div>
   <div style="flex: 1; min-width: 200px; padding: 5px;">
-    <img src="/assets/images/frep-result.png" alt="FREP Wake Reversal Result">
+    <img src="/images/FREP_wake_reversal.png" alt="Wake reversal in a density upramp">
     <p><em>Discovery: Wake Reversal</em></p>
   </div>
 </div>
