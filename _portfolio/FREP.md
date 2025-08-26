@@ -1,6 +1,6 @@
 ---
 title: "FREP: Femtosecond Relativistic Electron Probe"
-excerpt: "An innovative diagnostic to probe the microscopic and transient plasma wakefields with micrometer and femtosecond spatialtemporal resolution. <br/><img src='/images/FREP_concept_visualization.png' height='200px'>"
+excerpt: "An innovative diagnostic to probe the microscopic and transient plasma wakefields with micrometer and femtosecond spatialtemporal resolution. <br/><img src='/images/FREP_concept_visualization.png' style='height: 200px; width: auto;'>"
 collection: portfolio
 ---
 
