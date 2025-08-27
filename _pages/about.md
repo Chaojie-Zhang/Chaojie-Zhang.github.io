@@ -7,24 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I'm Chaojie Zhang, an experimental plasma physicist at UCLA leading cutting-edge research in plasma-based particle acceleration and ultrafast plasma phenomena.
+Hi there! My name is Chaojie Zhang, an experimental plasma physicist at UCLA. My research is dedicated to advancing **plasma accelerator technology** for the next generation of scientific tools, from compact **X-ray free-electron lasers (FELs)** to energy-frontier **particle colliders**. My work spans the full research cycle—from theory and simulation to the design and execution of experiments at national facilities like SLAC's FACET-II.
 
-I lead experiments at some of the world's most advanced facilities, including FACET-II at SLAC and ATF-BNL, pushing the boundaries of plasma wakefield acceleration toward next-generation particle accelerators and X-ray free electron lasers.
+To achieve these ambitious goals, my work focuses on developing the innovative techniques and the deep physical understanding needed to control and optimize these complex systems. This includes designing novel tools like the **femtosecond relativistic electron probe (FREP)** to directly visualize the microscopic structures that drive acceleration. I also develop advanced platforms to investigate fundamental plasma phenomena, such as conducting the first time-resolved measurements of the **thermal Weibel instability**—a process relevant to laboratory astrophysics and the origin of cosmic magnetic fields. To overcome measurement challenges, I apply **machine learning** to create "virtual diagnostics" for extreme beams, providing critical insights that help improve the performance of plasma accelerators.
 
-## Research Highlights
+My current research at FACET-II targets key milestones for future accelerators:
+* **Plasma Wakefield Transformer (E304):** Demonstrating the use of a plasma wakefield as a "transformer" to simultaneously boost beam energy and brightness, a technique for creating the high-quality beams required for future compact light sources and colliders.
+* **Plasma Accelerator Module for Colliders (E300):** Working on a plasma accelerator module that can double the energy of a 10 GeV beam while preserving its quality—a critical step toward building the multi-stage plasma accelerators required for future energy-frontier colliders.
 
-* Developed femtosecond relativistic electron probe (FREP) for visualizing plasma wakefields
-* Demonstrated >20 GeV electron acceleration with ultrahigh brightness
-* Conducted direct measurements of thermal Weibel instability in laboratory plasmas
-
-## Current Projects
-
-**E304 at FACET-II (SLAC)**: Investigating plasma wakefield acceleration for future coherent light sources
-
-**E300**: Working on energy doubling demonstrations in plasma accelerators for next-generation colliders
-
-## Research Philosophy
-
-I focus on the experimental side of physics, building setups that explore the behavior of light, matter, and extreme fields. Through projects across multiple national labs and universities, I work on understanding how researchers can collaborate effectively to address challenges in plasma and accelerator physics.
-
-Thanks for stopping by! Whether you're interested in plasma physics, accelerator physics, or just curious about life in experimental research, feel free to reach out.
+I welcome opportunities to connect with others in academia or industry who are interested in addressing the grand challenges at the frontier of accelerator, light source, and plasma science.
