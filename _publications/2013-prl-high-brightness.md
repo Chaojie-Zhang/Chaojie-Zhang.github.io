@@ -2,7 +2,7 @@
 title: "Generating High-Brightness Electron Beams via Ionization Injection by Transverse Colliding Lasers in a Plasma Wakefield Accelerator"
 collection: publications
 category: manuscripts
-authorship: "co-author" # or "corresponding-author", "first-author", "first-corresponding"
+authorship: "co-author"
 permalink: /publication/2013-prl-ionization-injection
 excerpt: 'Novel ionization injection scheme using transverse colliding lasers produces ultra-bright electron beams with unprecedented low emittance in plasma wakefield accelerators.'
 date: 2013-07-02
