@@ -7,12 +7,28 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! My name is **Chaojie Zhang**, an experimental plasma physicist at UCLA. My research is dedicated to advancing **plasma accelerator technology** for the next generation of scientific tools, from compact **free-electron lasers (FELs)** to energy-frontier **particle colliders**. My work spans the full research cycle—from theory and simulation to the design and execution of experiments at national facilities like SLAC's FACET-II.
+## About Me
 
-To achieve these ambitious goals, my work focuses on developing the innovative techniques and the deep physical understanding needed to control and optimize these complex systems. This includes designing novel tools like the **femtosecond relativistic electron probe (FREP)** to directly visualize the microscopic structures that drive acceleration. I also develop advanced platforms to investigate fundamental plasma phenomena, such as conducting the first time-resolved measurements of the **thermal Weibel instability**—a process relevant to laboratory astrophysics and the origin of cosmic magnetic fields. To overcome measurement challenges, I apply **machine learning** to create "virtual diagnostics" for extreme beams, providing critical insights that help improve the performance of plasma accelerators.
+I'm Chaojie Zhang, an experimental plasma physicist at UCLA. I design and build the next generation of **plasma accelerators**—the technology that will power future scientific tools, from compact **free-electron lasers (FELs)** to energy-frontier **particle colliders**. My work spans the full research cycle, from theory and simulation to leading experiments at national facilities like SLAC’s FACET-II.
 
-My current research at FACET-II targets key milestones for future accelerators:
-* **Plasma Wakefield Transformer (E304):** Demonstrating the use of a plasma wakefield as a "transformer" to simultaneously boost beam energy and brightness, a technique for creating the high-quality beams required for future compact light sources and colliders.
-* **Plasma Accelerator Module for Colliders (E300):** Working on a plasma accelerator module that can double the energy of a 10 GeV beam while preserving its quality—a critical step toward building the multi-stage plasma accelerators required for future energy-frontier colliders.
+---
+## My Approach
 
-I welcome opportunities to connect with others in academia or industry who are interested in addressing the grand challenges at the frontier of accelerator, light source, and plasma science.
+Solving challenges at the frontier of plasma acceleration requires a comprehensive strategy. My work is built on a tight integration of three core pillars, allowing me to bridge the gap from fundamental concepts to real-world demonstrations:
+
+* **Hands-on Experimentation:** I design, lead, and execute experiments at world-class facilities like SLAC’s FACET-II. These projects push the boundaries of accelerator technology, aiming to demonstrate the critical milestones—like doubling a beam's energy in a single stage—needed for future colliders and compact light sources.
+* **High-Fidelity Simulation:** I use large-scale particle-in-cell (PIC) simulations as an essential tool to design and optimize experiments, interpret physical results, and explore the complex beam-plasma dynamics that cannot be measured directly.
+* **Theory and Machine Learning:** Beyond the hardware and code, I focus on developing a deep physical intuition for these systems. I also apply machine learning to create "virtual diagnostics," which extract crucial insights from complex experimental data and provide the feedback necessary to improve accelerator performance.
+
+---
+## Current Projects
+
+My current research at FACET-II is focused on demonstrating the core technologies needed for future accelerators:
+
+* **Plasma Wakefield Transformer (E304):** We are using a plasma wakefield as a "transformer" to simultaneously boost beam energy and brightness. This is a crucial technique for creating the high-quality beams needed for future compact light sources.
+* **Plasma Accelerator Module for Colliders (E300):** I am working on a plasma module designed to double the energy of a 10 GeV beam while preserving its quality—a critical step toward building the multi-stage plasma accelerators required for an energy-frontier collider.
+
+---
+## Let's Connect
+
+I'm always open to collaboration with colleagues in academia and industry. If you are interested in tackling grand challenges at the frontier of accelerator, light source, and plasma science, please get in touch.
