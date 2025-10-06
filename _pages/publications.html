@@ -160,16 +160,6 @@ author_profile: true
         <div class="award-highlight">{{ post.award }}</div>
       {% endif %}
       
-      <div class="authors">
-        {% if post.citation %}
-          {% assign citation_parts = post.citation | split: '"' %}
-          {% if citation_parts.size > 0 %}
-            {% assign authors_part = citation_parts[0] | strip %}
-            {{ authors_part | replace: "C. Zhang", "<u>C. Zhang</u>" | replace: "C. J. Zhang", "<u>C. J. Zhang</u>" | replace: "Chaojie Zhang", "<u>Chaojie Zhang</u>" | replace: "C Zhang", "<u>C Zhang</u>" }}
-          {% endif %}
-        {% endif %}
-      </div>
-      
       <div class="title">
         {% if post.paperurl %}
           <a href="{{ post.paperurl }}">{{ post.title }}</a>
@@ -183,6 +173,16 @@ author_profile: true
       
       <div class="venue">
         {% if post.venue %}{{ post.venue }}{% endif %}
+      </div>
+      
+      <div class="authors">
+        {% if post.citation %}
+          {% assign citation_parts = post.citation | split: '"' %}
+          {% if citation_parts.size > 0 %}
+            {% assign authors_part = citation_parts[0] | strip %}
+            {{ authors_part | replace: "C. Zhang", "<u>C. Zhang</u>" | replace: "C. J. Zhang", "<u>C. J. Zhang</u>" | replace: "Chaojie Zhang", "<u>Chaojie Zhang</u>" | replace: "C Zhang", "<u>C Zhang</u>" }}
+          {% endif %}
+        {% endif %}
       </div>
       
       {% if post.excerpt %}
