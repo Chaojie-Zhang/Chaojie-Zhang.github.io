@@ -11,7 +11,6 @@ redirect_from:
 
 I'm Chaojie Zhang, an experimental plasma physicist at UCLA. I design and build the next generation of **plasma accelerators**—the technology that will power future scientific tools, from compact **free-electron lasers (FELs)** to energy-frontier **particle colliders**. My work spans the full research cycle, from theory and simulation to leading experiments at national facilities like SLAC’s FACET-II.
 
----
 ## My Approach
 
 Solving challenges at the frontier of plasma acceleration requires a comprehensive strategy. My work is built on a tight integration of three core pillars, allowing me to bridge the gap from fundamental concepts to real-world demonstrations:
@@ -20,7 +19,6 @@ Solving challenges at the frontier of plasma acceleration requires a comprehensi
 * **High-Fidelity Simulation:** I use large-scale particle-in-cell (PIC) simulations as an essential tool to design and optimize experiments, interpret physical results, and explore the complex beam-plasma dynamics that cannot be measured directly.
 * **Theory and Machine Learning:** Beyond the hardware and code, I focus on developing a deep physical intuition for these systems. I also apply machine learning to create "virtual diagnostics," which extract crucial insights from complex experimental data and provide the feedback necessary to improve accelerator performance.
 
----
 ## Current Projects
 
 My current research at FACET-II is focused on demonstrating the core technologies needed for future accelerators:
@@ -28,7 +26,6 @@ My current research at FACET-II is focused on demonstrating the core technologie
 * **Plasma Wakefield Transformer (E304):** We are using a plasma wakefield as a "transformer" to simultaneously boost beam energy and brightness. This is a crucial technique for creating the high-quality beams needed for future compact light sources.
 * **Plasma Accelerator Module for Colliders (E300):** I am working on a plasma module designed to double the energy of a 10 GeV beam while preserving its quality—a critical step toward building the multi-stage plasma accelerators required for an energy-frontier collider.
 
----
 ## Let's Connect
 
 I'm always open to collaboration with colleagues in academia and industry. If you are interested in tackling grand challenges at the frontier of accelerator, light source, and plasma science, please get in touch.
