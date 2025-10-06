@@ -7,6 +7,7 @@ redirect_from:
   - /about.html
 ---
 
+
 I'm Chaojie Zhang, an experimental plasma physicist at UCLA. I design and build the next generation of **plasma accelerators**—the technology that will power future scientific tools, from compact **free-electron lasers (FELs)** to energy-frontier **particle colliders**.
 
 ## My Approach
