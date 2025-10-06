@@ -175,16 +175,6 @@ author_profile: true
         {% if post.venue %}{{ post.venue }}{% endif %}
       </div>
       
-      <div class="authors">
-        {% if post.citation %}
-          {% assign citation_parts = post.citation | split: '"' %}
-          {% if citation_parts.size > 0 %}
-            {% assign authors_part = citation_parts[0] | strip %}
-            {{ authors_part | replace: "C. Zhang", "<u>C. Zhang</u>" | replace: "C. J. Zhang", "<u>C. J. Zhang</u>" | replace: "Chaojie Zhang", "<u>Chaojie Zhang</u>" | replace: "C Zhang", "<u>C Zhang</u>" }}
-          {% endif %}
-        {% endif %}
-      </div>
-      
       {% if post.excerpt %}
         <div class="excerpt"><strong>Summary:</strong> {{ post.excerpt }}</div>
       {% endif %}
@@ -228,6 +218,16 @@ author_profile: true
         {% endif %}
       {% endif %}
     </div>
+
+      <div class="authors">
+        {% if post.citation %}
+          {% assign citation_parts = post.citation | split: '"' %}
+          {% if citation_parts.size > 0 %}
+            {% assign authors_part = citation_parts[0] | strip %}
+            {{ authors_part | replace: "C. Zhang", "<u>C. Zhang</u>" | replace: "C. J. Zhang", "<u>C. J. Zhang</u>" | replace: "Chaojie Zhang", "<u>Chaojie Zhang</u>" | replace: "C Zhang", "<u>C Zhang</u>" }}
+          {% endif %}
+        {% endif %}
+      </div>
     
     <div class="pub-year">{{ post_year }}</div>
   </div>
