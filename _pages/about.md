@@ -13,8 +13,6 @@ I was born and grew up in Xinzheng (新郑), the legendary birthplace of Huangdi
 
 Check out my research CV and a list of my publications!
 
----
-
 ## Research Highlights
 
 <style>
@@ -114,8 +112,6 @@ Check out my research CV and a list of my publications!
 </div>
 </div>
 </div>
-
----
 
 ## Let's Connect
 
