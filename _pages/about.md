@@ -31,7 +31,7 @@ As Principal Investigator of the E304 experiment, I demonstrated a plasma transf
 
 ---
 
-### 🌌 Accelerator-Driven Plasma Physics (AE98/AE134 at BNL)
+### Accelerator-Driven Plasma Physics (AE98/AE134 at BNL)
 
 <img src="/images/AAPS-CO2-weibel-results.png" alt="Weibel instability" style="width: 100%; max-width: 600px; margin: 15px 0;">
 
@@ -57,20 +57,6 @@ I developed a physics-informed "virtual diagnostic" that uses machine learning t
 
 ---
 
-## Leadership and Recognition
-
-- **Associate Project Scientist**, UCLA (2024-Present)
-- **Co-Principal Investigator**, DOE Grant DE-SC0010064 (2024-Present)  
-- **Principal Investigator**, E304 Experiment at SLAC FACET-II (2019-Present)
-- **Principal Investigator**, AE98 Experiment at BNL ATF (2019-2022)
-- **50+ peer-reviewed publications** including 10 in *Physical Review Letters*, papers in *PNAS*, *Nature Communications*, *Science Advances*, *Nature Photonics*
-- **1,400+ citations** (h-index: 21)
-- **John Dawson Thesis Prize** (2017), **Outstanding Dissertation Award** OCPA (2019)
-
----
-
 ## Let's Connect
 
 I'm always eager to collaborate with colleagues pushing the boundaries of accelerator science, plasma physics, and advanced diagnostics. Whether you're interested in experimental collaborations, theoretical insights, or applications of these technologies, please don't hesitate to reach out at [chaojiez@ucla.edu](mailto:chaojiez@ucla.edu).
-
-**Current opportunities:** I'm happy to discuss potential collaborations, host visiting researchers, and mentor students interested in experimental plasma physics and accelerator science.
