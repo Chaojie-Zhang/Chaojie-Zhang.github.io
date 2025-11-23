@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm Chaojie Zhang (张超杰), an experimental plasma physicist at UCLA whose research program accelerates the realization of plasma-based energy-frontier colliders by resolving key physics bottlenecks through an integration of high-impact experiments, large-scale simulations, and AI/ML-driven modeling. My work aims to transform plasma wakefield acceleration from proof-of-principle demonstrations into the robust, reliable technology needed for next-generation particle colliders and compact light sources.
+I'm Chaojie Zhang (张超杰), an accelerator physicist at UCLA whose research program accelerates the realization of plasma-based energy-frontier colliders by resolving key physics bottlenecks through an integration of high-impact experiments, large-scale simulations, and AI/ML-driven modeling. My work aims to transform plasma wakefield acceleration from proof-of-principle demonstrations into the robust, reliable technology needed for next-generation particle colliders and compact light sources.
 
 I was born and grew up in Xinzheng (新郑), the legendary birthplace of Huangdi, the Yellow Emperor and mythical ancestor of Chinese civilization. Growing up in a place steeped in such profound historical and cultural significance instilled in me a deep appreciation for humanity's endless quest for understanding—a spirit that led me to pursue science and technology. I pursued my undergraduate and doctoral studies in Engineering Physics at Tsinghua University, where I pioneered femtosecond relativistic electron probing (FREP), producing the first direct images of plasma wakefields and earning the John Dawson Thesis Prize. After completing my Ph.D. in 2016, I joined UCLA as a postdoctoral researcher and have since led multiple landmark experiments at world-class facilities including SLAC's FACET-II and Brookhaven's Accelerator Test Facility.
 
@@ -92,7 +92,7 @@ Check out my research CV and a list of my publications!
 <div class="research-box">
 <div class="research-content">
 <div class="research-image">
-<img src="/images/e304_preview.png" alt="E304">
+<img src="/images/e304_plasma_dual_transformer.png" alt="E304">
 </div>
 <div class="research-text">
 <h3>Plasma Wakefield Transformer (E304)</h3>
@@ -105,7 +105,7 @@ Check out my research CV and a list of my publications!
 <div class="research-box">
 <div class="research-content">
 <div class="research-image">
-<img src="/images/ml_diagnostics_preview.png" alt="ML Diagnostics">
+<img src="/images/e304_ML_virtual_diagnostic.png" alt="ML Diagnostics">
 </div>
 <div class="research-text">
 <h3>AI/ML-Driven Virtual Diagnostics</h3>
