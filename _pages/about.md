@@ -25,21 +25,18 @@ Check out my research CV and a list of my publications!
     overflow: hidden;
 }
 .research-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    position: relative;
 }
 .research-image {
-    flex: 0 0 250px;
-    min-width: 250px;
+    float: left;
+    width: 380px;
+    margin-right: 25px;
+    margin-bottom: 15px;
 }
 .research-image img {
     width: 100%;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.research-text {
-    flex: 1;
 }
 .research-text h3 {
     margin-top: 0;
@@ -54,12 +51,11 @@ Check out my research CV and a list of my publications!
     margin-bottom: 15px;
 }
 @media (max-width: 768px) {
-    .research-content {
-        flex-direction: column;
-    }
     .research-image {
-        flex: 1;
+        float: none;
         width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 }
 </style>
