@@ -31,21 +31,9 @@ As Principal Investigator of the E304 experiment, I demonstrated a plasma transf
 
 ---
 
-### ⚡ Efficient Energy Transfer and Staging (E300 at FACET-II)
-
-<img src="/images/e300_preview.png" alt="E300 experiment" style="width: 100%; max-width: 600px; margin: 15px 0;">
-
-**Demonstrating the building blocks for multi-stage TeV colliders**
-
-As a key collaborator on the E300 experiment, we achieved up to 6 GeV energy gain in a 10 GeV electron bunch while preserving its sub-percent energy spread—a critical milestone toward efficient staging. The experiment demonstrated pump-to-witness energy transfer efficiency exceeding expectations and validated the physics needed to build the multi-stage systems required for future energy-frontier machines.
-
-**Impact:** Published in *Plasma Physics and Controlled Fusion* (2024). Validates physics for staged acceleration toward TeV energies.
-
----
-
 ### 🌌 Accelerator-Driven Plasma Physics (AE98/AE134 at BNL)
 
-<img src="/images/ae98_preview.png" alt="Weibel instability" style="width: 100%; max-width: 600px; margin: 15px 0;">
+<img src="/images/AAPS-CO2-weibel-results.png" alt="Weibel instability" style="width: 100%; max-width: 600px; margin: 15px 0;">
 
 **First direct laboratory measurement of fundamental astrophysical plasma instabilities**
 
