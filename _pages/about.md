@@ -11,52 +11,112 @@ I'm Chaojie Zhang (张超杰), an experimental plasma physicist at UCLA whose re
 
 I was born and grew up in Xinzheng (新郑), the legendary birthplace of Huangdi, the Yellow Emperor and mythical ancestor of Chinese civilization. Growing up in a place steeped in such profound historical and cultural significance instilled in me a deep appreciation for humanity's endless quest for understanding—a spirit that led me to pursue science and technology. I pursued my undergraduate and doctoral studies in Engineering Physics at Tsinghua University, where I pioneered femtosecond relativistic electron probing (FREP), producing the first direct images of plasma wakefields and earning the John Dawson Thesis Prize. After completing my Ph.D. in 2016, I joined UCLA as a postdoctoral researcher and have since led multiple landmark experiments at world-class facilities including SLAC's FACET-II and Brookhaven's Accelerator Test Facility.
 
-My approach integrates three core pillars: hands-on experimentation at DOE user facilities, high-fidelity particle-in-cell simulations on supercomputers, and AI/ML-driven diagnostics that extract insights from complex data. This comprehensive strategy allows me to address the critical challenges preventing plasma accelerators from reaching their full potential—from efficient staging architectures and positron acceleration to achieving the extreme beam brightness required for colliders.
+Check out my research CV and a list of my publications!
 
 ---
 
 ## Research Highlights
 
-<div style="margin-top: 30px;">
+<style>
+.research-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    background: #f9f9f9;
+    overflow: hidden;
+}
+.research-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.research-image {
+    flex: 0 0 250px;
+    min-width: 250px;
+}
+.research-image img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.research-text {
+    flex: 1;
+}
+.research-text h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+.research-teaser {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+    .research-content {
+        flex-direction: column;
+    }
+    .research-image {
+        flex: 1;
+        width: 100%;
+    }
+}
+</style>
 
-### 🔬 High-Brightness Beam Generation (E304 at FACET-II)
+<div class="research-box">
+<div class="research-content">
+<div class="research-image">
+<img src="/images/FREP_concept_visualization.png" alt="FREP">
+</div>
+<div class="research-text">
+<h3>Femtosecond Relativistic Electron Probing (FREP)</h3>
+<p class="research-teaser">First direct visualization of plasma wakefields at femtosecond resolution</p>
+<p>I invented FREP during my Ph.D., using ultrashort relativistic electron bunches to probe plasma wakefields—capturing the first-ever snapshots of these transient, near-light-speed structures. The technique works by passing a probe beam perpendicular through the wakefield; deflections encode the field structure, creating direct 2D images. This breakthrough enabled the discovery of plasma wake reversal and earned the John Dawson Thesis Prize. FREP has since become an essential diagnostic for understanding beam-plasma dynamics at the frontier of plasma acceleration.</p>
+</div>
+</div>
+</div>
 
-<img src="/images/e304_preview.png" alt="E304 experiment" style="width: 100%; max-width: 600px; margin: 15px 0;">
+<div class="research-box">
+<div class="research-content">
+<div class="research-image">
+<img src="/images/AAPS-CO2-weibel-cover.png" alt="Weibel Instability">
+</div>
+<div class="research-text">
+<h3>Probing the Hierarchy of Kinetic Instabilities</h3>
+<p class="research-teaser">First direct laboratory measurement of astrophysical plasma instabilities</p>
+<p>As PI of the AE98 experiment at BNL, I led the first direct measurement of the thermal Weibel instability—a fundamental kinetic instability predicted decades ago but only observed in astrophysical contexts. Using FREP with ultrafast electron probes, we mapped the self-generated magnetic fields in laser-ionized plasmas, revealing the growth and saturation of this instability. This work bridges laboratory and astrophysical plasma physics, validating theoretical predictions about processes occurring in gamma-ray bursts and cosmic magnetic field generation. Published in <em>PNAS</em> (2022, highlighted by DOE) and <em>PRL</em> (2020).</p>
+</div>
+</div>
+</div>
 
-**Plasma "dual transformer" for next-generation accelerators and light sources**
+<div class="research-box">
+<div class="research-content">
+<div class="research-image">
+<img src="/images/e304_preview.png" alt="E304">
+</div>
+<div class="research-text">
+<h3>Plasma Wakefield Transformer (E304)</h3>
+<p class="research-teaser">Simultaneous energy boosting and brightness enhancement for next-generation accelerators</p>
+<p>As PI of the E304 experiment at FACET-II, I demonstrated a plasma "dual transformer" that decouples energy gain from quality preservation—converting a low-quality drive beam into a new, ultra-bright beam with 2× higher energy (>20 GeV) and 10× higher brightness. This approach achieves sub-0.5% energy spread while maintaining the extreme brightness needed for X-ray free-electron lasers, and enables novel staging architectures that could bypass the quality-preservation challenge plaguing conventional multi-stage designs. This work establishes a viable pathway toward compact plasma-driven light sources and TeV-scale colliders. Accepted in principle by <em>Nature Communications</em> (2025).</p>
+</div>
+</div>
+</div>
 
-As Principal Investigator of the E304 experiment, I demonstrated a plasma transformer that converts a low-quality drive beam into a new beam with 2× higher energy (>20 GeV) and 10× higher brightness. This approach decouples energy boosting from quality preservation, achieving electron bunches with energy spread below 0.5% and ultrahigh brightness—meeting the stringent requirements for next-generation X-ray free-electron lasers and enabling novel staging architectures for plasma-based colliders.
-
-**Impact:** Accepted in principle by *Nature Communications* (2025). Establishes pathway for compact plasma-driven XFELs and addresses the staging challenge for TeV-scale colliders.
-
----
-
-### Accelerator-Driven Plasma Physics (AE98/AE134 at BNL)
-
-<img src="/images/AAPS-CO2-weibel-results.png" alt="Weibel instability" style="width: 100%; max-width: 600px; margin: 15px 0;">
-
-**First direct laboratory measurement of fundamental astrophysical plasma instabilities**
-
-As Principal Investigator of the AE98 experiment at BNL's Accelerator Test Facility, I led the first direct laboratory measurement of the thermal Weibel instability—a fundamental process predicted decades ago and observed in astrophysical contexts but never directly measured in controlled conditions. Using ultrashort electron bunches as probes, we mapped the self-generated magnetic fields in laser-ionized plasmas, providing experimental validation of a process crucial to phenomena ranging from gamma-ray bursts to cosmic magnetic field generation.
-
-**Impact:** Published in *PNAS* (2022, highlighted by DOE) and *PRL* (2020). Bridges laboratory and astrophysical plasma physics with implications for understanding extreme astrophysical environments.
-
----
-
-### 🤖 AI/ML-Driven Virtual Diagnostics
-
-<img src="/images/ml_diagnostics_preview.png" alt="Virtual diagnostics" style="width: 100%; max-width: 600px; margin: 15px 0;">
-
-**Physics-informed machine learning for femtosecond beam characterization**
-
-I developed a physics-informed "virtual diagnostic" that uses machine learning to reconstruct the longitudinal phase space of femtosecond electron bunches—information that is otherwise inaccessible through direct measurement. This technique combines neural networks with physical constraints from beam dynamics, enabling complete phase space reconstruction from limited diagnostic data. This AI/ML-driven approach was critical to our recent *Nature Communications* publication and is now being adopted by collaborators across multiple experiments for advanced data analysis.
-
-**Impact:** Enables discoveries that would otherwise be impossible. Becoming a new standard for beam diagnostics at next-generation facilities, with applications to optimizing and controlling ultra-bright beam generation.
-
+<div class="research-box">
+<div class="research-content">
+<div class="research-image">
+<img src="/images/ml_diagnostics_preview.png" alt="ML Diagnostics">
+</div>
+<div class="research-text">
+<h3>AI/ML-Driven Virtual Diagnostics</h3>
+<p class="research-teaser">Physics-informed machine learning to access the inaccessible</p>
+<p>I developed physics-informed "virtual diagnostics" that use machine learning to reconstruct the longitudinal phase space of femtosecond electron bunches—information impossible to measure directly. By combining neural networks with physical constraints from beam dynamics, this approach extracts complete phase space information from limited diagnostic data. This AI/ML-driven technique was critical to analyzing E304 results and is now being adopted by collaborators across multiple experiments. Beyond diagnostics, this approach opens the door to ML-enabled optimization and autonomous control of plasma accelerators, enabling the generation of beams with designed phase space properties.</p>
+</div>
+</div>
 </div>
 
 ---
 
 ## Let's Connect
 
-I'm always eager to collaborate with colleagues pushing the boundaries of accelerator science, plasma physics, and advanced diagnostics. Whether you're interested in experimental collaborations, theoretical insights, or applications of these technologies, please don't hesitate to reach out at [chaojiez@ucla.edu](mailto:chaojiez@ucla.edu).
+I'm always interested in collaborating with researchers who have creative ideas at the intersection of accelerator physics, plasma science, and advanced diagnostics. If you'd like to discuss potential collaborations or research opportunities, please reach out at [chaojiez@ucla.edu](mailto:chaojiez@ucla.edu).
