@@ -21,7 +21,7 @@ Check out my research CV and a list of my publications!
     border-radius: 8px;
     padding: 20px;
     margin: 30px 0;
-    background: #f9f9f9;
+    background: #f9f9f9 !important;
     overflow: hidden;
 }
 .research-content {
@@ -43,11 +43,14 @@ Check out my research CV and a list of my publications!
 }
 .research-text h3 {
     margin-top: 0;
-    color: #2c3e50;
+    color: #2c3e50 !important;
+}
+.research-text p {
+    color: #333 !important;
 }
 .research-teaser {
     font-style: italic;
-    color: #555;
+    color: #555 !important;
     margin-bottom: 15px;
 }
 @media (max-width: 768px) {
