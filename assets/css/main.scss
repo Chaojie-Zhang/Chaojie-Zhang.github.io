@@ -1,26 +1,20 @@
 ---
 ---
-
 /*
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
-
 @import
     "vendor/breakpoint/breakpoint",
-
     "themes",
     "theme/default",
     "theme/dark",
-
     "include/mixins",
     "vendor/susy/susy",
-
     "layout/reset",
     "layout/base",
-
     "include/utilities",
     "layout/tables",
     "layout/buttons",
@@ -29,15 +23,95 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
-
     "layout/forms",
-
     "layout/page",
     "layout/archive",
     "layout/sidebar",
-
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+/* ==========================================================================
+   Custom Styles - Centered Layout & Larger Navigation
+   ========================================================================== */
+
+/* Center the main content and limit width */
+.page__content,
+.archive {
+    max-width: 900px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Center navigation and make tabs larger */
+.greedy-nav {
+    text-align: center;
+}
+
+.greedy-nav .visible-links {
+    display: inline-flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.greedy-nav a {
+    font-size: 18px !important;
+    padding: 0.8rem 1.5rem !important;
+    font-weight: 500;
+}
+
+/* Center the site title/name */
+.masthead__inner-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site__title {
+    margin-right: 2rem;
+}
+
+/* Adjust sidebar to work with centered content */
+.sidebar {
+    max-width: 300px;
+}
+
+/* Center author profile in sidebar */
+.author__avatar {
+    display: flex;
+    justify-content: center;
+}
+
+/* Better spacing for centered layout */
+.page {
+    width: 100%;
+}
+
+@media (min-width: 80em) {
+    .page {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .page__inner-wrap {
+        display: flex;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+/* Make navigation stand out more */
+.greedy-nav {
+    background: #fff;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    .greedy-nav {
+        background: #1a1a1a;
+        border-bottom: 2px solid #333;
+    }
+}
