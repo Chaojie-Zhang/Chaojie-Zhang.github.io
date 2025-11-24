@@ -1,0 +1,19 @@
+/* custom.css */
+
+/* Center the entire website body */
+body {
+    max-width: 1280px;       /* Constrains the width on large screens */
+    margin-left: auto;       /* Pushes content from the left */
+    margin-right: auto;      /* Pushes content from the right */
+    padding-left: 1rem;      /* Adds small gap on mobile screens */
+    padding-right: 1rem;
+    background-color: #fff;  /* Ensures background remains white */
+}
+
+/* Ensure the sticky sidebar behaves correctly within the centered body */
+.sidebar {
+    /* If the sidebar feels 'stuck' or misaligned, this often helps reset it */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+}
