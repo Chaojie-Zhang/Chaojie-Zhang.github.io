@@ -34,8 +34,7 @@
 ;
 
 /* ==========================================================================
-   Custom Styles - Centered Layout & Larger Navigation
-   Added carefully to not break existing layout
+   Custom Styles - Center ENTIRE Page (sidebar + content together)
    ========================================================================== */
 
 /* Make navigation tabs larger */
@@ -44,50 +43,19 @@
     padding: 0.5rem 1rem;
 }
 
-/* Center the main content area with sidebar */
-.page {
+/* Center the ENTIRE main container (sidebar + content) */
+#main {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-/* Center the main content */
-.page__content {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Center page titles */
-.page__title {
-    text-align: left;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Center archive/list pages */
-.archive {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Make sure the layout works on all screen sizes */
-@media (max-width: 1024px) {
-    .page {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-}
-
-/* On mobile, stack sidebar and content nicely */
+/* On smaller screens, add more padding */
 @media (max-width: 768px) {
-    .page__content,
-    .page__title,
-    .archive {
-        max-width: 100%;
-        padding-left: 1em;
-        padding-right: 1em;
+    #main {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
 }
