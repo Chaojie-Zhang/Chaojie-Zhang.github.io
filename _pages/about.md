@@ -66,9 +66,9 @@ Check out my CV and publications to learn more about my work!
 <img src="/images/e304_plasma_dual_transformer.png" alt="E304">
 </div>
 <div class="research-text">
-<h3>Plasma Wakefield Transformer (E304)</h3>
+<h3>Plasma Wakefield Transformer</h3>
 <p class="research-teaser">Simultaneous energy boosting and brightness enhancement for next-generation accelerators</p>
-<p>As PI of the E304 experiment at FACET-II, I demonstrated a plasma "dual transformer" that decouples energy gain from quality preservation—converting a low-quality drive beam into a new, ultra-bright beam with 2× higher energy (>20 GeV) and 10× higher brightness. This approach achieves sub-0.5% energy spread while maintaining the extreme brightness needed for X-ray free-electron lasers, and enables novel staging architectures that could bypass the quality-preservation challenge plaguing conventional multi-stage designs. This work establishes a viable pathway toward compact plasma-driven light sources and TeV-scale colliders. Accepted in principle by <em>Nature Communications</em> (2025).</p>
+<p>As PI of the E304 experiment at FACET-II, I demonstrated a plasma "dual transformer" that decouples energy gain from quality preservation—converting a low-quality drive beam into a new, ultra-bright beam with 2× higher energy (>20 GeV) and 10× higher brightness. This approach achieves sub-0.5% energy spread while maintaining the extreme brightness needed for X-ray free-electron lasers, and enables novel staging architectures that could bypass the quality-preservation challenge plaguing conventional multi-stage designs. This work establishes a viable pathway toward compact plasma-driven light sources and TeV-scale colliders. Published in <em>Nature Communications</em> (2025).</p>
 </div>
 </div>
 </div>
@@ -81,7 +81,7 @@ Check out my CV and publications to learn more about my work!
 <div class="research-text">
 <h3>AI/ML-Driven Virtual Diagnostics</h3>
 <p class="research-teaser">Physics-informed machine learning to access the inaccessible</p>
-<p>I developed physics-informed "virtual diagnostics" that use machine learning to reconstruct the longitudinal phase space of femtosecond electron bunches—information impossible to measure directly. By combining neural networks with physical constraints from beam dynamics, this approach extracts complete phase space information from limited diagnostic data. This AI/ML-driven technique was critical to analyzing E304 results and is now being adopted by collaborators across multiple experiments. Beyond diagnostics, this approach opens the door to ML-enabled optimization and autonomous control of plasma accelerators, enabling the generation of beams with designed phase space properties.</p>
+<p>I developed physics-informed "virtual diagnostics" that use machine learning to reconstruct the longitudinal phase space of femtosecond electron bunches from plasma wakefield accelerators—information impossible to measure directly. By combining physical constraints from nonlinear plasma wakefield theory and efficient optimization, this approach extracts complete longitudinal phase space information from limited diagnostic data (e.g., energy spectrum). This ML-driven technique was critical to analyzing E304 results and is now being adopted by collaborators in other PWFA experiments. Beyond diagnostics, this approach opens the door to ML-enabled optimization and autonomous control of plasma accelerators, enabling the generation of beams with designed properties. Published in <em>Nature Communications</em> (2025).</p>
 </div>
 </div>
 </div>
@@ -94,7 +94,7 @@ Check out my CV and publications to learn more about my work!
 <div class="research-text">
 <h3>Femtosecond Relativistic Electron Probing (FREP)</h3>
 <p class="research-teaser">First direct visualization of plasma wakefields at femtosecond resolution</p>
-<p>I invented FREP during my Ph.D., using ultrashort relativistic electron bunches to probe plasma wakefields—capturing the first-ever snapshots of these transient, near-light-speed structures. The technique works by passing a probe beam perpendicular through the wakefield; deflections encode the field structure, creating direct 2D images. This breakthrough enabled the discovery of plasma wake reversal and earned the John Dawson Thesis Prize. FREP has since become an essential diagnostic for understanding beam-plasma dynamics at the frontier of plasma acceleration.</p>
+<p>I invented FREP during my Ph.D., using ultrashort relativistic electron bunches from a laser wakefield accelerator to probe plasma wakefields—capturing the first-ever snapshots of these microscopic, transient, near-light-speed structures. The technique works by passing a femtosecond probe beam perpendicular through the wakefield; deflections encode the field structure, creating direct 2D images. This breakthrough enabled the discovery of plasma wake reversal and earned the John Dawson Thesis Prize. FREP has since become an essential diagnostic for understanding beam-plasma dynamics at the frontier of plasma acceleration. Published in <em>PRL</em> (2017, Editors' Suggestions).</p>
 </div>
 </div>
 </div>
@@ -107,11 +107,11 @@ Check out my CV and publications to learn more about my work!
 <div class="research-text">
 <h3>Probing the Hierarchy of Kinetic Instabilities</h3>
 <p class="research-teaser">First direct laboratory measurement of astrophysical plasma instabilities</p>
-<p>As PI of the AE98 experiment at BNL, I led the first direct measurement of the thermal Weibel instability—a fundamental kinetic instability predicted decades ago but only observed in astrophysical contexts. Using FREP with ultrafast electron probes, we mapped the self-generated magnetic fields in laser-ionized plasmas, revealing the growth and saturation of this instability. This work bridges laboratory and astrophysical plasma physics, validating theoretical predictions about processes occurring in gamma-ray bursts and cosmic magnetic field generation. Published in <em>PNAS</em> (2022, highlighted by DOE) and <em>PRL</em> (2020).</p>
+<p>As PI of the AE98 experiment at BNL, I led the first direct measurement of the thermal Weibel instability—a fundamental kinetic instability predicted decades ago but with no conclusive experimental validations in laboraotries. Extending the FREP concept but using picosecond-long electron probes from linear accelerators, we mapped the self-generated magnetic fields in laser-ionized plasmas, revealing the growth and saturation of this instability. This work bridges laboratory and astrophysical plasma physics, validating theoretical predictions about processes occurring in cosmic magnetic field generation and gamma-ray bursts. Published in <em>PNAS</em> (2022, highlighted by DOE) and <em>PRL</em> (2020).</p>
 </div>
 </div>
 </div>
 
 ## Let's Connect
 
-I'm always interested in collaborating with researchers who have creative ideas at the intersection of accelerator physics, plasma science, and advanced diagnostics. If you'd like to discuss potential collaborations or research opportunities, please reach out at [chaojiez@ucla.edu](mailto:chaojiez@ucla.edu).
+I'm always interested in collaborating with researchers who have creative ideas at the intersection of accelerator physics, plasma science, and advanced diagnostics. If you'd like to discuss potential collaborations or research opportunities, please reach out at chaojiez@ucla.edu.
