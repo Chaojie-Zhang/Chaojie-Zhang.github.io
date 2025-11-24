@@ -44,8 +44,23 @@
     padding: 0.5rem 1rem;
 }
 
-/* Center the main content area */
+/* Center the main content area with sidebar */
+.page {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center the main content */
 .page__content {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center page titles */
+.page__title {
+    text-align: left;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -56,4 +71,23 @@
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Make sure the layout works on all screen sizes */
+@media (max-width: 1024px) {
+    .page {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+/* On mobile, stack sidebar and content nicely */
+@media (max-width: 768px) {
+    .page__content,
+    .page__title,
+    .archive {
+        max-width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 }
