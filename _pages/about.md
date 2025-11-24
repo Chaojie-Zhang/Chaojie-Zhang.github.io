@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm Chaojie Zhang (张超杰), a plasma accelerator physicist at UCLA. My research aims to transform plasma wakefield acceleration from proof-of-principle demonstrations into robust, reliable technology for next-generation particle colliders and compact light sources. I achieve this by integrating high-impact experiments, large-scale simulations, and AI/ML-driven modeling to resolve key physics bottlenecks.
+I'm Chaojie Zhang (张超杰), a plasma/accelerator physicist at UCLA. My research aims to transform plasma wakefield acceleration from proof-of-principle demonstrations into robust, reliable technology for next-generation particle colliders and compact light sources. I achieve this by integrating high-impact experiments, large-scale simulations, and AI/ML-driven modeling to resolve key physics bottlenecks.
 
 I was born and grew up in Xinzheng (新郑), the legendary birthplace of Huangdi, the Yellow Emperor (the mythical ancestor of Chinese civilization). This culturally rich environment fostered my deep appreciation for humanity's quest for understanding—a spirit that drives my scientific pursuits. I pursued my undergraduate and doctoral studies in Engineering Physics at Tsinghua University, where I pioneered femtosecond relativistic electron probing (FREP), producing the first direct images of plasma wakefields and earning the John Dawson Thesis Prize. After completing my Ph.D. in 2016, I joined UCLA as a postdoctoral researcher and have since led multiple landmark experiments at world-class facilities including SLAC's FACET-II and Brookhaven's Accelerator Test Facility.
 
