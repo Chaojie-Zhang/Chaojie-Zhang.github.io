@@ -10,7 +10,6 @@ redirect_from:
 {% include base_path %}
 
 <style>
-/* CV-specific styling */
 h2 {
   color: #52adc8 !important;
   border-bottom: 2px solid #52adc8 !important;
@@ -20,47 +19,21 @@ h2 {
   font-weight: 600 !important;
 }
 
-.position {
-  color: #52adc8 !important;
-  font-weight: 600 !important;
-  margin-bottom: 5px !important;
-  display: block !important;
-}
-
 .author-name {
-  color: #52adc8 !important;
   font-weight: 600 !important;
-}
-
-/* Dark mode overrides */
-@media (prefers-color-scheme: dark) {
-  body h2, html h2, .page h2, article h2, main h2 {
-    color: #52adc8 !important;
-    border-bottom: 2px solid #52adc8 !important;
-  }
-  
-  body .position, .page .position, article .position {
-    color: #52adc8 !important;
-    font-weight: 600 !important;
-  }
-  
-  body .author-name, .page .author-name, span.author-name {
-    color: #52adc8 !important;
-    font-weight: 600 !important;
-  }
 }
 </style>
 
 ## Professional Appointments
 
 **Associate Project Scientist**, UCLA  
-*Department of Electrical and Computer Engineering* | Jul. 2024 – Present
+Department of Electrical and Computer Engineering | Jul. 2024 – Present
 
 **Assistant Project Scientist**, UCLA  
-*Department of Electrical and Computer Engineering* | Feb. 2022 – Jun. 2024
+Department of Electrical and Computer Engineering | Feb. 2022 – Jun. 2024
 
 **Postdoctoral Researcher**, UCLA  
-*Department of Electrical and Computer Engineering* | Feb. 2017 – Feb. 2022
+Department of Electrical and Computer Engineering | Feb. 2017 – Feb. 2022
 
 My research accelerates the realization of plasma-based energy-frontier colliders by resolving key physics bottlenecks through an integration of high-impact experiments, large-scale simulations, and AI/ML-driven modeling. I serve as Principal Investigator on peer-reviewed experiments at SLAC's FACET-II and Brookhaven's Accelerator Test Facility, and Co-Principal Investigator on DOE-funded research programs. My work aims to transform plasma wakefield acceleration from proof-of-principle demonstrations into robust, reliable technology for next-generation particle colliders and compact light sources.
 
@@ -110,24 +83,22 @@ John Dawson Thesis Prize 2017
 
 *Authored 50 peer-reviewed articles, including 10 in Physical Review Letters and publications in PNAS, Nature Photonics, Nature Communications, and Science Advances. Research has garnered over 1400 citations (h-index: 21).*
 
-### Recent Highlights
+**<span class="author-name">C. Zhang</span>**, et al., "Plasma-Wakefield Accelerator Simultaneously Boosts Electron Beam Energy and Brightness," Accepted in principle by *Nature Communications* (2025).
 
-<span class="author-name">C. Zhang</span>, et al., "Plasma-Wakefield Accelerator Simultaneously Boosts Electron Beam Energy and Brightness," Accepted in principle by *Nature Communications* (2025).
+**<span class="author-name">C. Zhang</span>**, et al., "Correlations between X-rays, visible light and drive-beam energy loss observed in plasma wakefield acceleration experiments at FACET-II," *Journal of Plasma Physics* **90**, 965900401 (2024).
 
-<span class="author-name">C. Zhang</span>, et al., "Correlations between X-rays, visible light and drive-beam energy loss observed in plasma wakefield acceleration experiments at FACET-II," *Journal of Plasma Physics* **90**, 965900401 (2024).
+**<span class="author-name">C. Zhang</span>**, et al., "Generation of meter-scale hydrogen plasmas and efficient, pump-depletion-limited wakefield excitation using 10 GeV electron bunches," *Plasma Physics and Controlled Fusion* **66**, 025013 (2024). [Invited]
 
-<span class="author-name">C. Zhang</span>, et al., "Generation of meter-scale hydrogen plasmas and efficient, pump-depletion-limited wakefield excitation using 10 GeV electron bunches," *Plasma Physics and Controlled Fusion* **66**, 025013 (2024). [Invited]
+R. Zgadzaj, et al. (with **<span class="author-name">C. Zhang</span>**), "Plasma electron acceleration driven by a long-wave-infrared laser," *Nature Communications* **15**, 1 (2024).
 
-R. Zgadzaj, et al. (with <span class="author-name">C. Zhang</span>), "Plasma electron acceleration driven by a long-wave-infrared laser," *Nature Communications* **15**, 1 (2024).
+**<span class="author-name">C. Zhang</span>**, C.-K. Huang, C. Joshi, "Self-organization of photoionized plasmas via kinetic instabilities," *Review of Modern Plasma Physics* **7**, 34 (2023). [Invited Review]
 
-<span class="author-name">C. Zhang</span>, C.-K. Huang, C. Joshi, "Self-organization of photoionized plasmas via kinetic instabilities," *Review of Modern Plasma Physics* **7**, 34 (2023). [Invited Review]
+**<span class="author-name">C. Zhang</span>**, et al., "Mapping the self-generated magnetic fields due to thermal Weibel instability," *PNAS* **119**(50), e2211713119 (2022).
 
-<span class="author-name">C. Zhang</span>, et al., "Mapping the self-generated magnetic fields due to thermal Weibel instability," *PNAS* **119**(50), e2211713119 (2022).
+**<span class="author-name">C. Zhang</span>**, et al., "Measurements of the growth and saturation of electron Weibel instability in optical-field ionized plasmas," *Physical Review Letters* **125**(25), 255001 (2020).
 
-<span class="author-name">C. Zhang</span>, et al., "Measurements of the growth and saturation of electron Weibel instability in optical-field ionized plasmas," *Physical Review Letters* **125**(25), 255001 (2020).
+**<span class="author-name">C. Zhang</span>**, et al., "Ultrafast optical field-ionized gases- A laboratory platform for studying kinetic plasma instabilities," *Science Advances* **5**, eaax4545 (2019).
 
-<span class="author-name">C. Zhang</span>, et al., "Ultrafast optical field-ionized gases- A laboratory platform for studying kinetic plasma instabilities," *Science Advances* **5**, eaax4545 (2019).
-
-<span class="author-name">C. Zhang</span>, et al., "Femtosecond probing of plasma wakefields and observation of the plasma wake reversal using a relativistic electron bunch," *Physical Review Letters* **119**, 064801 (2017). [Editors' Suggestion]
+**<span class="author-name">C. Zhang</span>**, et al., "Femtosecond probing of plasma wakefields and observation of the plasma wake reversal using a relativistic electron bunch," *Physical Review Letters* **119**, 064801 (2017). [Editors' Suggestion]
 
 *A complete list of publications is available on my [Google Scholar profile](https://scholar.google.com).*
