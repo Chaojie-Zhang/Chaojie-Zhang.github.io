@@ -27,6 +27,8 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0.5em 1em;
     font-family: $sans-serif-narrow;
 
