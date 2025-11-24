@@ -70,7 +70,8 @@ $susy: (
     math: fluid,
     output: float,
     gutter-position: after,
-    container: $large,
+    // container: $large,
+    container: auto,
     global-box-sizing: border-box,
 );
 
