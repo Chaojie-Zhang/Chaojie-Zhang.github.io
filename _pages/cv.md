@@ -45,10 +45,11 @@ My research accelerates the realization of plasma-based energy-frontier collider
 
 ## Education
 
-**Ph.D., Engineering Physics**, Tsinghua University, China | Oct. 2016  
-*Thesis: Probing wakefield structures in plasma-based accelerators using femtosecond relativistic electron bunches* John Dawson Thesis Prize 2017
+**Ph.D., Engineering Physics**, Tsinghua University, China, Oct. 2016  
+*Thesis: Probing wakefield structures in plasma-based accelerators using femtosecond relativistic electron bunches*  
+John Dawson Thesis Prize 2017
 
-**B.S., Engineering Physics**, Tsinghua University, China | Jun. 2010
+**B.S., Engineering Physics**, Tsinghua University, China, Jun. 2010
 
 ## Awards and Honors
 
