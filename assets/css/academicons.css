@@ -569,3 +569,22 @@ border-radius: .1em;
 .ai-inverse {
   color: #fff;
 }
+
+/* CENTERING FIX */
+.masthead__inner-wrap {
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#main {
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.page__footer footer {
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
