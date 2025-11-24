@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I'm Chaojie Zhang (张超杰), an accelerator physicist at UCLA whose research program accelerates the realization of plasma-based energy-frontier colliders by resolving key physics bottlenecks through an integration of high-impact experiments, large-scale simulations, and AI/ML-driven modeling. My work aims to transform plasma wakefield acceleration from proof-of-principle demonstrations into the robust, reliable technology needed for next-generation particle colliders and compact light sources.
+I'm Chaojie Zhang (张超杰), a plasma accelerator physicist at UCLA. My research aims to transform plasma wakefield acceleration from proof-of-principle demonstrations into robust, reliable technology for next-generation particle colliders and compact light sources. I achieve this by integrating high-impact experiments, large-scale simulations, and AI/ML-driven modeling to resolve key physics bottlenecks.
 
-I was born and grew up in Xinzheng (新郑), the legendary birthplace of Huangdi, the Yellow Emperor and mythical ancestor of Chinese civilization. Growing up in a place steeped in such profound historical and cultural significance instilled in me a deep appreciation for humanity's endless quest for understanding—a spirit that led me to pursue science and technology. I pursued my undergraduate and doctoral studies in Engineering Physics at Tsinghua University, where I pioneered femtosecond relativistic electron probing (FREP), producing the first direct images of plasma wakefields and earning the John Dawson Thesis Prize. After completing my Ph.D. in 2016, I joined UCLA as a postdoctoral researcher and have since led multiple landmark experiments at world-class facilities including SLAC's FACET-II and Brookhaven's Accelerator Test Facility.
+I was born and grew up in Xinzheng (新郑), the legendary birthplace of Huangdi, the Yellow Emperor (the mythical ancestor of Chinese civilization). This culturally rich environment fostered my deep appreciation for humanity's quest for understanding—a spirit that drives my scientific pursuits. I pursued my undergraduate and doctoral studies in Engineering Physics at Tsinghua University, where I pioneered femtosecond relativistic electron probing (FREP), producing the first direct images of plasma wakefields and earning the John Dawson Thesis Prize. After completing my Ph.D. in 2016, I joined UCLA as a postdoctoral researcher and have since led multiple landmark experiments at world-class facilities including SLAC's FACET-II and Brookhaven's Accelerator Test Facility.
 
-Check out my research CV and a list of my publications!
+Check out my CV and publications to learn more about my work!
 
 ## Research Highlights
 
@@ -63,32 +63,6 @@ Check out my research CV and a list of my publications!
 <div class="research-box">
 <div class="research-content">
 <div class="research-image">
-<img src="/images/FREP_concept_visualization.png" alt="FREP">
-</div>
-<div class="research-text">
-<h3>Femtosecond Relativistic Electron Probing (FREP)</h3>
-<p class="research-teaser">First direct visualization of plasma wakefields at femtosecond resolution</p>
-<p>I invented FREP during my Ph.D., using ultrashort relativistic electron bunches to probe plasma wakefields—capturing the first-ever snapshots of these transient, near-light-speed structures. The technique works by passing a probe beam perpendicular through the wakefield; deflections encode the field structure, creating direct 2D images. This breakthrough enabled the discovery of plasma wake reversal and earned the John Dawson Thesis Prize. FREP has since become an essential diagnostic for understanding beam-plasma dynamics at the frontier of plasma acceleration.</p>
-</div>
-</div>
-</div>
-
-<div class="research-box">
-<div class="research-content">
-<div class="research-image">
-<img src="/images/AAPS-CO2-weibel-cover.png" alt="Weibel Instability">
-</div>
-<div class="research-text">
-<h3>Probing the Hierarchy of Kinetic Instabilities</h3>
-<p class="research-teaser">First direct laboratory measurement of astrophysical plasma instabilities</p>
-<p>As PI of the AE98 experiment at BNL, I led the first direct measurement of the thermal Weibel instability—a fundamental kinetic instability predicted decades ago but only observed in astrophysical contexts. Using FREP with ultrafast electron probes, we mapped the self-generated magnetic fields in laser-ionized plasmas, revealing the growth and saturation of this instability. This work bridges laboratory and astrophysical plasma physics, validating theoretical predictions about processes occurring in gamma-ray bursts and cosmic magnetic field generation. Published in <em>PNAS</em> (2022, highlighted by DOE) and <em>PRL</em> (2020).</p>
-</div>
-</div>
-</div>
-
-<div class="research-box">
-<div class="research-content">
-<div class="research-image">
 <img src="/images/e304_plasma_dual_transformer.png" alt="E304">
 </div>
 <div class="research-text">
@@ -108,6 +82,32 @@ Check out my research CV and a list of my publications!
 <h3>AI/ML-Driven Virtual Diagnostics</h3>
 <p class="research-teaser">Physics-informed machine learning to access the inaccessible</p>
 <p>I developed physics-informed "virtual diagnostics" that use machine learning to reconstruct the longitudinal phase space of femtosecond electron bunches—information impossible to measure directly. By combining neural networks with physical constraints from beam dynamics, this approach extracts complete phase space information from limited diagnostic data. This AI/ML-driven technique was critical to analyzing E304 results and is now being adopted by collaborators across multiple experiments. Beyond diagnostics, this approach opens the door to ML-enabled optimization and autonomous control of plasma accelerators, enabling the generation of beams with designed phase space properties.</p>
+</div>
+</div>
+</div>
+
+<div class="research-box">
+<div class="research-content">
+<div class="research-image">
+<img src="/images/FREP_concept_visualization.png" alt="FREP">
+</div>
+<div class="research-text">
+<h3>Femtosecond Relativistic Electron Probing (FREP)</h3>
+<p class="research-teaser">First direct visualization of plasma wakefields at femtosecond resolution</p>
+<p>I invented FREP during my Ph.D., using ultrashort relativistic electron bunches to probe plasma wakefields—capturing the first-ever snapshots of these transient, near-light-speed structures. The technique works by passing a probe beam perpendicular through the wakefield; deflections encode the field structure, creating direct 2D images. This breakthrough enabled the discovery of plasma wake reversal and earned the John Dawson Thesis Prize. FREP has since become an essential diagnostic for understanding beam-plasma dynamics at the frontier of plasma acceleration.</p>
+</div>
+</div>
+</div>
+
+<div class="research-box">
+<div class="research-content">
+<div class="research-image">
+<img src="/images/AAPS-CO2-weibel-cover.png" alt="Weibel Instability">
+</div>
+<div class="research-text">
+<h3>Probing the Hierarchy of Kinetic Instabilities</h3>
+<p class="research-teaser">First direct laboratory measurement of astrophysical plasma instabilities</p>
+<p>As PI of the AE98 experiment at BNL, I led the first direct measurement of the thermal Weibel instability—a fundamental kinetic instability predicted decades ago but only observed in astrophysical contexts. Using FREP with ultrafast electron probes, we mapped the self-generated magnetic fields in laser-ionized plasmas, revealing the growth and saturation of this instability. This work bridges laboratory and astrophysical plasma physics, validating theoretical predictions about processes occurring in gamma-ray bursts and cosmic magnetic field generation. Published in <em>PNAS</em> (2022, highlighted by DOE) and <em>PRL</em> (2020).</p>
 </div>
 </div>
 </div>
