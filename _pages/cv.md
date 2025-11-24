@@ -111,6 +111,10 @@ main h2,
 }
 </style>
 
+## Summary
+
+Plasma accelerator physicist whose research program accelerates the realization of plasma-based energy-frontier colliders by resolving key physics bottlenecks through an integration of high-impact experiments, large-scale simulations, and AI/ML-driven modeling. Proven leadership in securing funding and competitive awards, serving as Co-Principal Investigator on DOE grants, Principal Investigator on peer-reviewed facility experiments, and Key Personnel on NERSC computational awards. Authored 50 peer-reviewed articles, including 10 in Physical Review Letters and publications in PNAS, Nature Photonics, Nature Communications, and Science Advances. Research has garnered over 1400 citations (h-index: 21).
+
 ## Education
 
 <div class="position">Ph.D., Engineering Physics</div>
@@ -121,28 +125,59 @@ Tsinghua University, China | Oct. 2016
 <div class="position">B.S., Engineering Physics</div>
 Tsinghua University, China | Jun. 2010
 
-## Research Experience
+## Professional Appointments
 
 <div class="position">Associate Project Scientist</div>
-UCLA | Feb. 2022 – Present  
-*Dept. of Electrical and Computer Engineering*
-* Leading (PI) the ongoing E304 experiment at FACET-II, SLAC, which aims to generate ultralow emittance, high-brightness electron beams in PWFA, paving the way for compact x-ray FEL development
-* Contributing to the ongoing E300 experiment at FACET-II, SLAC, focused on demonstrating a 10 GeV stage for future multi-stage plasma-based colliders
-* Guiding (Co-PI) the ongoing AE134 experiment at ATF, BNL, aimed at quantifying the relative contributions of Weibel instability and Biermann battery effects to the seeding of galactic magnetic fields
+UCLA, Dept. of Electrical and Computer Engineering | Jul. 2024 – Present
+
+<div class="position">Assistant Project Scientist</div>
+UCLA, Dept. of Electrical and Computer Engineering | Feb. 2022 – Jun. 2024
 
 <div class="position">Postdoctoral Researcher</div>
-UCLA | Feb. 2017 – Feb. 2022  
-*Dept. of Electrical and Computer Engineering*
-* Led (PI) the AE98 experiment at ATF, BNL, investigating thermal electron Weibel instabilities in laser-ionized plasmas using electron beams from linear accelerators as probes
-* Guided (Co-PI) the AE99 experiment at ATF, BNL, aiming to demonstrate magnetostatic modes in plasmas for potential use as ultra-compact undulators
-* Developed a plasma grating technique using ultra-short laser pulses, enabling precise strong-field ionization measurements and low-density plasma characterization
-* Established a laboratory framework with ultrafast optical field-ionized gases and femtosecond optical Thomson scattering, exploring kinetic plasma instabilities
+UCLA, Dept. of Electrical and Computer Engineering | Feb. 2017 – Feb. 2022
 
 <div class="position">Graduate Research Assistant</div>
-Tsinghua University, China | Sep. 2010 – Oct. 2016  
-*Department of Engineering Physics*
-* Led the conceptualization and demonstration of femtosecond relativistic electron microscopy using wakefield-accelerated electron bunches
-* Developed an optical deflecting cavity for measuring ultrashort electron bunches from laser wakefield accelerators with sub-femtosecond resolution
+Tsinghua University, Dept. of Engineering Physics | Sep. 2010 – Oct. 2016
+
+## Research Leadership and Experience
+
+* **Principal Investigator** of the E304 experiment at FACET-II, SLAC, demonstrating the generation of >20 GeV electron bunches with <0.5% energy spread and ultrahigh brightness. This work establishes a viable pathway for plasma wakefield accelerator (PWFA) driven colliders and XFELs.
+
+* **Key Collaborator** on the E300 experiment at FACET-II, SLAC, to demonstrate a 10 GeV PWFA stage for future energy-frontier colliders. Achieved up to 6 GeV energy gain for a trailing bunch while preserving its sub-percent energy spread.
+
+* Pioneered a physics-informed **'virtual diagnostic'** leveraging machine learning (ML) to reconstruct inaccessible longitudinal phase space of femtosecond beams. This AI/ML-driven technique was a critical component of a recent Nature Communications publication and is now being adopted by collaborators (e.g., E300) for advanced data analysis.
+
+* Led large-scale **Particle-in-Cell (PIC) simulations** on NERSC platforms to design and optimize experiments (including E304 and AE98), interpret complex beam-plasma interactions, and validate theoretical models.
+
+* **Co-directing** the AE134 experiment at ATF-BNL, building upon the success of AE98 to investigate the interplay between Biermann battery and Weibel instability magnetic fields in overcritical density plasmas.
+
+* **Principal Investigator** for the AE98 experiment at ATF-BNL, utilizing ultrashort electron bunches to probe thermal Weibel instability in laser-produced plasmas. This work provided the first direct experimental validation of a fundamental astrophysical plasma process in a laboratory setting.
+
+* Pioneered the technique of **femtosecond relativistic electron probing (FREP)** for transient, intense electric/magnetic fields. Captured the first-ever snapshots of plasma wakefields, demonstrating a new diagnostic capability for visualizing ultrafast plasma phenomena.
+
+* **Mentoring** graduate students and postdoctoral researchers in experimental plasma physics, advanced diagnostics, and computational methods. Organized and led seminars on specialized topics in plasma physics, providing both theoretical insights and hands-on training.
+
+## Funded Research and Program Leadership
+
+<div class="position">Co-Principal Investigator</div>
+**"Experimental, theoretical and simulations studies of plasma-based accelerators"**  
+Department of Energy (DE-SC0010064) | PI: Chan Joshi | 2024 – Present
+
+<div class="position">Principal Investigator</div>
+**"E304: Downramp Trapping in PWFA for generating low emittance beams"**  
+SLAC National Accelerator Laboratory | Peer-Reviewed DOE User Facility Experiment | 2019 – Present
+
+<div class="position">Principal Investigator</div>
+**"AE98: Probing electron Weibel instability in optical field-ionized plasmas using ultrashort electron bunches"**  
+Brookhaven National Laboratory | Peer-Reviewed DOE User Facility Experiment | 2019 – 2022
+
+<div class="position">Key Personnel</div>
+**"Particle-in-Cell Simulations of Laser Plasma Interactions Relevant to Inertial Fusion Energy"**  
+NERSC ERCAP Award (DOE-FES) | PI: Frank Tsung | 2025
+
+<div class="position">Key Collaborator</div>
+**"E300: Energy Doubling of Narrow Energy Spread Witness Bunch while Preserving Emittance with a High Pump-to-Witness Energy Transfer Efficiency in a Plasma Wakefield Accelerator"**  
+SLAC National Accelerator Laboratory | PI: Chan Joshi, Mark Hogan | 2018 – Present
 
 ## Research Interests
 
@@ -153,14 +188,14 @@ Tsinghua University, China | Sep. 2010 – Oct. 2016
 
 **Novel applications enabled by advanced accelerators**
 * Laser- and electron beam-driven advanced light sources (THz to x-rays)
-* Plasma physics relevant to fusion, laboratory astrophysics, HEDP
+* Plasma physics relevant to fusion, laboratory astrophysics, high energy density physics
 
 ## Awards and Honors
 
-* **Outstanding Dissertation Award**, International Organization of Chinese Physicists and Astronomers (2019)
-* **Outstanding Reviewer Award**, Institute of Physics (2018, 2019)
-* **CAI Shidong Award for Plasma Physics** (2018)
-* **John Dawson Thesis Prize** (2017)
+* <span class="award-name">Outstanding Dissertation Award</span>, International Organization of Chinese Physicists and Astronomers (2019)
+* <span class="award-name">Outstanding Reviewer Award</span>, Institute of Physics (2018, 2019)
+* <span class="award-name">CAI Shidong Award for Plasma Physics</span> (2018)
+* <span class="award-name">John Dawson Thesis Prize</span> (2017)
 
 ## Professional Service
 
@@ -170,26 +205,48 @@ Tsinghua University, China | Sep. 2010 – Oct. 2016
 
 ### Editorial Duties
 * Youth Editorial Board Member, Ultrafast Science (a Science Partner Journal) (2022 – 2025)
-* Review Editor, Fusion Plasma Physics of Frontiers in Physics (2023 – 2025)
+* Review Editor, Fusion Plasma Physics of Frontiers in Physics (2023 – Present)
 
 ### Peer Review Activities
-* Active reviewer for Physical Review Letters, Physical Review Research, Physical Review Accelerators and Beams, Plasma Physics and Controlled Fusion, and Physics of Plasmas
+* Active reviewer for Physical Review Letters, Physical Review Research, Physical Review Accelerators and Beams, Plasma Physics and Controlled Fusion, Physics of Plasmas, Ultrafast Sciences, High Power Laser Science and Engineering, Advanced Photonics Nexus, and Scientific Reports
+
+## Selected Invited Presentations
+
+### Conference Presentations
+* **Plenary Talk**, "Latest Results on PWFA Experiments from FACET-II," 21st Advanced Accelerator Concepts Workshop (2024)
+* **Invited Talk**, "High-efficiency wake excitation in meter-scale beam-ionized hydrogen plasmas at FACET-II," 51st IEEE International Conference on Plasma Science (ICOPS) (2024)
+* **Invited Talk**, "Probing Weibel Instability in Laboratory Plasmas," 63rd APS Division of Plasma Physics Meeting (2021)
+* **Plenary Talk**, "Femtosecond Probing of Plasma Wakefields," 17th Advanced Accelerator Concepts Workshop (2016)
+
+### Seminars and Colloquia
+* "Advancing Plasma-based Accelerators: From High-Brightness Beams to New Frontiers," Department of Physics and Astronomy, Stony Brook University (2025)
+* "Latest Results on PWFA experiments at FACET-II," Department of Physics and Astronomy, Shanghai Jiao Tong University (2024)
+* "Advancing accelerator and plasma physics: from wakefield acceleration to kinetic instabilities," Department of Physics, University of Maryland (2024)
+* "Frontier Research in Advanced Accelerator-Driven Plasma Physics," Department of Plasma Physics and Fusion Engineering, USTC (2023)
+* "Optical-field ionized gases: a new route for studying kinetic plasma instabilities," Department of Physics and Astronomy, UCLA (2022)
 
 ## Selected Publications
-1. **C. Zhang**, D. Storey, P. S. M. Claveria, "Generation of meter-scale hydrogen plasmas and efficient, pump-depletion-limited wakefield excitation using 10 GeV electron bunches," *Plasma Phys. Control. Fusion* **66**, 025013 (2024). [Invited]
 
-2. **C. Zhang**, C.-K. Huang, C. Joshi, "Self-organization of photoionized plasmas via kinetic instabilities," *Review of Modern Plasma Physics*, in press (2023). [Invited Review]
+### Accepted
+1. <span class="author-name">C. Zhang</span>, et al., "Plasma-Wakefield Accelerator Simultaneously Boosts Electron Beam Energy and Brightness," Accepted in principle by *Nature Communications* (2025).
 
-3. **C. Zhang**, Y. Wu, M. Sinclair, A. Farrell et al, "Mapping the self-generated magnetic fields due to thermal Weibel instability," *PNAS* **119**(50), e2211713119 (2022).
+### Peer-Reviewed
+2. <span class="author-name">C. Zhang</span>, et al., "Correlations between X-rays, visible light and drive-beam energy loss observed in plasma wakefield acceleration experiments at FACET-II," *Journal of Plasma Physics* **90**, 965900401 (2024).
 
-4. **C. Zhang**, J. Hua, Y. Wu, Y. Fang, Y. Ma et al, "Measurements of the growth and saturation of electron Weibel instability in optical-field ionized plasmas," *Phys. Rev. Lett.* **125**(25), 255001 (2020).
+3. <span class="author-name">C. Zhang</span>, et al., "Generation of meter-scale hydrogen plasmas and efficient, pump-depletion-limited wakefield excitation using 10 GeV electron bunches," *Plasma Physics and Controlled Fusion* **66**, 025013 (2024). [Invited]
 
-5. **C. Zhang**, C.-K. Huang, K. A. Marsh, C. E. Clayton, W. B. Mori et al., "Ultrafast optical field-ionized gases- A laboratory platform for studying kinetic plasma instabilities," *Sci. Advances* eaax4545 (2019).
+4. R. Zgadzaj, et al. (with <span class="author-name">C. Zhang</span>), "Plasma electron acceleration driven by a long-wave-infrared laser," *Nature Communications* **15**, 1 (2024).
 
-6. **C. Zhang**, J. Hua, Y. Wan, C.-H. Pai, B. Guo et al., "Femtosecond probing of plasma wakefields and observation of the plasma wake reversal using a relativistic electron bunch" *Phys. Rev. Lett.* **119**, 064801 (2017).
+5. Z. Nie, et al. (with <span class="author-name">C. Zhang</span>), "Bidirectional cascaded superfluorescent lasing in air enabled by resonant third harmonic photon exchange from nitrogen to argon," *Physical Review Letters* **133**, 063201 (2024).
 
-## Teaching Experience
+6. <span class="author-name">C. Zhang</span>, C.-K. Huang, C. Joshi, "Self-organization of photoionized plasmas via kinetic instabilities," *Review of Modern Plasma Physics* **7**, 34 (2023). [Invited Review]
 
-* **Graduate Mentorship and Training:** Organized and led seminars on specialized topics in plasma physics, providing both theoretical insights and hands-on training
-* **Co-lecturer:** Annually presented research as part of Prof. Joshi's E279S seminar series
-* **Teaching Skills:** Expertise in defining clear educational objectives, strong ability to communicate intricate topics with clarity and patience
+7. <span class="author-name">C. Zhang</span>, et al., "Mapping the self-generated magnetic fields due to thermal Weibel instability," *PNAS* **119**(50), e2211713119 (2022).
+
+8. <span class="author-name">C. Zhang</span>, et al., "Measurements of the growth and saturation of electron Weibel instability in optical-field ionized plasmas," *Physical Review Letters* **125**(25), 255001 (2020).
+
+9. <span class="author-name">C. Zhang</span>, et al., "Ultrafast optical field-ionized gases- A laboratory platform for studying kinetic plasma instabilities," *Science Advances* **5**, eaax4545 (2019).
+
+10. <span class="author-name">C. Zhang</span>, et al., "Femtosecond probing of plasma wakefields and observation of the plasma wake reversal using a relativistic electron bunch," *Physical Review Letters* **119**, 064801 (2017). [Editors' Suggestion]
+
+*A complete list of about 50 publications is available on my [Google Scholar profile](https://scholar.google.com).*
