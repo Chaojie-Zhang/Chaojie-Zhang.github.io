@@ -35,13 +35,13 @@ Department of Electrical and Computer Engineering | Feb. 2022 – Jun. 2024
 **Postdoctoral Researcher**, UCLA  
 Department of Electrical and Computer Engineering | Feb. 2017 – Feb. 2022
 
-My research accelerates the realization of plasma-based energy-frontier colliders by resolving key physics bottlenecks through an integration of high-impact experiments, large-scale simulations, and AI/ML-driven modeling. I serve as Principal Investigator on peer-reviewed experiments at SLAC's FACET-II and Brookhaven's Accelerator Test Facility, and Co-Principal Investigator on DOE-funded research programs. My work aims to transform plasma wakefield acceleration from proof-of-principle demonstrations into robust, reliable technology for next-generation particle colliders and compact light sources.
+My research accelerates the realization of plasma-based energy-frontier colliders and compact coherent light sources by resolving key physics bottlenecks through an integration of high-impact experiments, large-scale simulations, and AI/ML-driven modeling. I serve as Principal Investigator on peer-reviewed experiments at SLAC’s FACET-II and Brookhaven’s Accelerator Test Facility, and Co-Principal Investigator on DOE-funded research programs.
 
-**Research Focus**: I pioneered femtosecond relativistic electron probing (FREP) for visualizing ultrafast plasma phenomena, capturing the first-ever direct images of plasma wakefields. Currently, I lead experiments demonstrating the generation of >20 GeV electron bunches with ultrahigh brightness, establishing viable pathways for plasma-driven colliders and X-ray free-electron lasers. I also developed physics-informed machine learning techniques—'virtual diagnostics'—to reconstruct inaccessible beam properties, enabling breakthrough measurements published in Nature Communications.
+**Research Focus**: I pioneered femtosecond relativistic electron probing (FREP) for visualizing ultrafast plasma phenomena, capturing the first-ever direct images of plasma wakefields. Currently, I lead experiments demonstrating the generation of >20 GeV electron bunches with ultrahigh brightness, establishing viable pathways for plasma-driven colliders and X-ray free-electron lasers. I also developed physics-informed machine learning techniques—’virtual diagnostics’—to reconstruct inaccessible beam properties.
 
-**Computing**: Leading large-scale Particle-in-Cell simulations on NERSC platforms (Perlmutter, Cori) to design experiments, interpret beam-plasma interactions, and validate theoretical models. Key Personnel on NERSC computational awards.
+**Computing**: Leading large-scale Particle-in-Cell simulations on NERSC platforms (Perlmutter, Cori) to design experiments, interpret beam-plasma interactions, and validate theoretical models.
 
-**Community**: Youth Editorial Board Member of Ultrafast Science (2022–2025); Review Editor for Frontiers in Physics; Program Committee Member for Laser and Plasma Accelerator Workshop (2023, 2025); active reviewer for Physical Review Letters, PNAS, and other major journals. Mentoring graduate students in experimental plasma physics and advanced diagnostics.
+**Community**: Youth Editorial Board Member of Ultrafast Science (2022–2025); Program Committee Member for Laser and Plasma Accelerator Workshop (2023, 2025); Active reviewer for Physical Review Letters, PNAS, and other high-profile journals. Mentoring graduate students in experimental plasma physics and advanced diagnostics.
 
 ## Education
 
