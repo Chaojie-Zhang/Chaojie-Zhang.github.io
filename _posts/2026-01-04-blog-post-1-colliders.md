@@ -36,7 +36,10 @@ A key advantage of circular collider proposals (like FCC-ee) is the "tunnel valu
 In contrast, a linear tunnel is optimized for a single pass. Upgrading a linear collider from a Higgs factory (~250 GeV) to the 10 TeV frontier is technically prohibitive due to the immense length required (potentially >100 km) and the physics of beamstrahlung (radiative energy loss), which becomes manageable only at lower energies or with novel particle species.
 
 **The "Middle Energy" Dilemma**
-This leaves linear electron colliders in a difficult position: they are excellent precision machines at the TeV scale, but extending them to the 10 TeV energy frontier—where the physics community aims to go next—requires a paradigm shift in technology rather than just scaling up.
+This leaves linear electron colliders in a difficult position: they are excellent precision machines at the 100s GeV scale, but extending them to the 10 TeV energy frontier—where the physics community aims to go next—requires a paradigm shift in technology rather than just scaling up.
+
+**The "Narrow Window" for Viability**
+This leaves a very narrow path for linear colliders. To be justifiable, the footprint and cost of a linear Higgs factory must be radically reduced—perhaps to a small fraction (e.g., <20%) of a circular counterpart like FCC-ee or CEPC. Without such a disruptive cost advantage, a linear machine represents a significant strategic risk. As a single-purpose facility, it lacks the "infrastructure insurance" of a circular tunnel; if no new physics is found, the community is left with a dead-end facility rather than a stepping stone to the 10 TeV frontier.
 
 ---
 ### 3. The Global Landscape
@@ -44,7 +47,7 @@ This leaves linear electron colliders in a difficult position: they are excellen
 Different regions are adopting different strategies to address these challenges.
 
 #### **Europe: The Infrastructure Approach (FCC)**
-CERN’s Future Circular Collider (FCC) proposal prioritizes infrastructure longevity. By starting with an $e^+e^-$ machine and planning for a proton machine later, it maximizes the return on the civil engineering investment. This is a robust, albeit expensive, path that relies on proven technology and CERN’s existing institutional strength.
+CERN’s Future Circular Collider (FCC) proposal prioritizes infrastructure longevity. By starting with an e-e+ machine and planning for a proton machine later, it maximizes the return on the civil engineering investment. This is a robust, albeit expensive, path that relies on proven technology and CERN’s existing institutional strength.
 
 #### **China: The Window of Opportunity (CEPC)**
 The Circular Electron Positron Collider (CEPC) shares the same logic as the FCC—a circular Higgs factory followed by a super proton collider (SPPC). The primary challenge here is timing. For CEPC to secure its position as the world's first Higgs factory, it needs to move to construction ahead of the FCC to maximize its strategic value to the global community.
@@ -57,10 +60,12 @@ The US community is exploring a different path. Rather than committing to a mass
 ---
 ### 4. The Evolution of Advanced Accelerator Concepts (AAC)
 
-For years, the AAC community (including Plasma Wakefield Acceleration) focused heavily on designing a compact linear collider. While we have achieved remarkable gradients (energy gain per meter), the stringent luminosity (collision rate) requirements of a particle physics collider remain a significant engineering challenge.
+For years, the AAC community (including Plasma Wakefield Acceleration) focused heavily on designing a compact linear collider. While we have achieved remarkable gradients (energy gain per meter), the stringent luminosity (collision rate) requirements of a particle physics collider remain a significant challenge.
 
 **A Pivot to Brightness**
 However, this challenge has clarified where plasma acceleration truly shines. The unique strength of plasma-based schemes is not necessarily high average power (required for collider luminosity), but rather the ability to produce ultra-short beams with **extreme peak brightness**.
 
 **The Future: Photon Science**
-This realization is driving a strategic evolution in our field. Rather than competing directly with conventional RF technology for collider luminosity, AAC is poised to revolutionize **light sources**. By acting as an "Energy and Brightness Dual Transformer," plasma accelerators can enable compact X-ray and Gamma-ray Free Electron Lasers (FELs). This opens new doors for nuclear photonics and materials science, playing to the inherent strengths of the technology while the high-energy physics community pursues the Muon and Proton paths for the energy frontier.
+This realization is driving a strategic evolution in our field. Rather than competing directly with conventional RF technology for collider luminosity, AAC is poised to revolutionize **future light sources**.
+
+As we demonstrated in our recent paper, *"[Plasma wakefield accelerator simultaneously boosts electron beam energy and brightness](https://www.nature.com/articles/s41467-025-65742-8),"* plasma accelerators can act as an **"Energy and Brightness Dual Transformer."** By simultaneously increasing energy and peak brightness in a single stage, this technology enables a new class of **compact, next-generation Free Electron Lasers (FELs)**. This opens new doors for **frontier photon science** and advanced materials research, playing to the inherent strengths of plasma technology while the high-energy physics community pursues the Muon and Proton paths for the energy frontier.
