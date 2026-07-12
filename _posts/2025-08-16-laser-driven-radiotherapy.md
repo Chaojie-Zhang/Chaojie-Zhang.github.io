@@ -1,7 +1,10 @@
 ---
 title: 'A Scalpel of Electrons: The Promise and Clinical Reality of Laser-Driven Radiotherapy'
 date: 2025-08-16
-permalink: /posts/2025/08/blog-post-2/
+permalink: /posts/2025/08/laser-driven-radiotherapy/
+redirect_from:
+  - /posts/2025/08/blog-post-2/
+comments_id: /posts/2025/08/blog-post-2/
 excerpt: 'An analysis of laser-wakefield accelerators for cancer therapy, exploring how this remarkable technology has overcome physics barriers but now faces the challenge of clinical necessity.'
 tags:
   - Radiotherapy

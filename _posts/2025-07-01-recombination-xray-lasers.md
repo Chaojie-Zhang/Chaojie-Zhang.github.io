@@ -1,7 +1,9 @@
 ---
 title: 'The quiet decline of recombination X-ray lasers'
 date: 2025-07-01
-permalink: /posts/2025/07/blog-post-1/
+permalink: /posts/2025/07/recombination-xray-lasers/
+redirect_from:
+  - /posts/2025/07/blog-post-1/
 excerpt: 'While X-ray laser research thrives globally, plasma-based recombination schemes that showed promise in the 1990s have quietly faded from mainstream science.'
 tags:
   - X-ray Laser

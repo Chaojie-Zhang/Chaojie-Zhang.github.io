@@ -1,7 +1,9 @@
 ---
 title: 'Laser frequency combs: a precision revolution'
 date: 2025-07-07
-permalink: /posts/2025/07/blog-post-4/
+permalink: /posts/2025/07/laser-frequency-combs/
+redirect_from:
+  - /posts/2025/07/blog-post-4/
 excerpt: 'How laser frequency combs evolved from precision metrology tools to ubiquitous sensing devices powering quantum technologies and autonomous systems.'
 tags:
   - Laser Frequency Combs

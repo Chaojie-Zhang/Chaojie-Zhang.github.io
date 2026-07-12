@@ -1,7 +1,9 @@
 ---
 title: 'WIMP detection reaches critical threshold'
 date: 2025-07-07
-permalink: /posts/2025/07/blog-post-3/
+permalink: /posts/2025/07/wimp-detection-threshold/
+redirect_from:
+  - /posts/2025/07/blog-post-3/
 excerpt: 'Four decades of WIMP searches reach 2.2×10^-48 cm² sensitivity—just one order of magnitude from the neutrino floor that will either reveal dark matter or redirect physics toward axions.'
 tags:
   - Dark Matter

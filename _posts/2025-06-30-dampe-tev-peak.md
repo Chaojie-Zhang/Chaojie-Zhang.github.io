@@ -1,7 +1,9 @@
 ---
 title: 'Is the DAMPE 1.4 TeV peak real?'
 date: 2025-06-30
-permalink: /posts/2025/06/blog-post-1/
+permalink: /posts/2025/06/dampe-tev-peak/
+redirect_from:
+  - /posts/2025/06/blog-post-1/
 excerpt: 'CALET contradicts DAMPE''s 2017 claim of a 1.4 TeV peak in cosmic-ray electrons at greater than 4-sigma significance—an intriguing discrepancy that warrants further investigation with additional data.'
 tags:
   - HEP

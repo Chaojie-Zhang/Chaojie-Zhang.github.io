@@ -48,7 +48,7 @@
 <div id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="10153397-1339-4949-9eac-35d47b2504ff"
-  data-page-id="{{ page.url }}"
+  data-page-id="{{ page.comments_id | default: page.url }}"
   data-page-url="{{ site.url }}{{ page.url }}"
   data-page-title="{{ page.title | escape }}"
 ></div>
