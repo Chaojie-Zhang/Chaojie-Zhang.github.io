@@ -1,16 +1,18 @@
 ---
+layout: post
 title: 'The Next Light: Can Particle Accelerators Power the Future of Moore’s Law?'
 date: 2025-08-14
 permalink: /posts/2025/08/accelerators-moores-law/
 redirect_from:
   - /posts/2025/08/blog-post-1/
-excerpt: 'An overview of the push for next-generation EUV light sources, comparing the incumbent laser-produced plasma technology against emerging accelerator-based Free-Electron Laser concepts.'
+description: 'An overview of the push for next-generation EUV light sources, comparing the incumbent laser-produced plasma technology against emerging accelerator-based Free-Electron Laser concepts.'
 tags:
   - EUV Lithography
   - Particle Accelerators
   - Free-Electron Laser
   - Energy Recovery Linac
   - ASML
+related_posts: true
 ---
 
 ### The Need for a Brighter Future in Chipmaking

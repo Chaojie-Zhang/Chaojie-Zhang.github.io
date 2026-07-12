@@ -1,14 +1,16 @@
 ---
+layout: post
 title: 'Is the DAMPE 1.4 TeV peak real?'
 date: 2025-06-30
 permalink: /posts/2025/06/dampe-tev-peak/
 redirect_from:
   - /posts/2025/06/blog-post-1/
-excerpt: 'CALET contradicts DAMPE''s 2017 claim of a 1.4 TeV peak in cosmic-ray electrons at greater than 4-sigma significance—an intriguing discrepancy that warrants further investigation with additional data.'
+description: 'CALET contradicts DAMPE''s 2017 claim of a 1.4 TeV peak in cosmic-ray electrons at greater than 4-sigma significance—an intriguing discrepancy that warrants further investigation with additional data.'
 tags:
   - HEP
   - Cosmic rays
   - DAMPE
+related_posts: true
 ---
 
 In 2017, China's Dark Matter Particle Explorer (DAMPE) reported a possible peak in the cosmic-ray electron and positron spectrum at 1.4 TeV. The finding, published in *Nature*, suggested a sharp spectral feature that could indicate exotic physics or nearby astrophysical sources.

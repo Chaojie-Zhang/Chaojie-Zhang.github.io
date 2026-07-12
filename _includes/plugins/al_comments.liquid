@@ -1,0 +1,34 @@
+{% comment %}
+  Local override of al_folio_core's al_comments wrapper.
+
+  Renders Cusdis (https://cusdis.com) — accountless comments with
+  moderation-first approval — instead of the al_comments gem (giscus/disqus).
+  Gated on page front matter `comments: true` (set site-wide for posts in
+  _config.yml defaults). `comments_id` front matter pins a thread to a
+  different id than the page URL (used to preserve threads across renames).
+{% endcomment %}
+{% if page.comments %}
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="10153397-1339-4949-9eac-35d47b2504ff"
+  data-page-id="{{ page.comments_id | default: page.url }}"
+  data-page-url="{{ page.url | absolute_url }}"
+  data-page-title="{{ page.title | escape }}"
+></div>
+<script>
+  (function () {
+    /* Match Cusdis to al-folio's current dark/light theme and follow the toggle */
+    var getSiteTheme = function () {
+      return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+    };
+    document.getElementById("cusdis_thread").setAttribute("data-theme", getSiteTheme());
+    new MutationObserver(function () {
+      if (window.CUSDIS && window.CUSDIS.setTheme) { window.CUSDIS.setTheme(getSiteTheme()); }
+    }).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"]
+    });
+  })();
+</script>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+{% endif %}

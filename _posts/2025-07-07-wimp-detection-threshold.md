@@ -1,14 +1,16 @@
 ---
+layout: post
 title: 'WIMP detection reaches critical threshold'
 date: 2025-07-07
 permalink: /posts/2025/07/wimp-detection-threshold/
 redirect_from:
   - /posts/2025/07/blog-post-3/
-excerpt: 'Four decades of WIMP searches reach 2.2×10^-48 cm² sensitivity—just one order of magnitude from the neutrino floor that will either reveal dark matter or redirect physics toward axions.'
+description: 'Four decades of WIMP searches reach 2.2×10^-48 cm² sensitivity—just one order of magnitude from the neutrino floor that will either reveal dark matter or redirect physics toward axions.'
 tags:
   - Dark Matter
   - WIMP
   - Xenon Detectors
+related_posts: true
 ---
 
 Dark matter WIMP search experiments have achieved unprecedented sensitivity levels of **2.2×10^-48 cm²** with current-generation detectors, approaching the theoretical neutrino floor that represents the practical limit for conventional searches. This milestone comes after four decades of technological evolution from kilogram-scale cryogenic detectors to multi-ton liquid noble gas time projection chambers operating in deep underground laboratories. The field now stands at a decisive juncture where next-generation experiments like DARWIN (40 tons) and ARGO (300 tons) will either discover WIMPs or definitively rule out the most natural theoretical parameter space, fundamentally reshaping our understanding of dark matter. The remarkable 8-order-of-magnitude improvement in sensitivity since the 1980s represents one of experimental physics' most ambitious technological achievements, with current detectors capable of detecting individual particle interactions at the level of a few photons of light.
@@ -63,4 +65,4 @@ The **neutrino floor** represents the fundamental challenge facing next-generati
 
 ## Conclusion
 
-The dark matter WIMP search program has achieved a remarkable technological and scientific milestone, with current experiments reaching sensitivities that seemed impossible just two decades ago. The convergence of multiple independent experiments at similar sensitivity levels - LUX-ZEPLIN, XENONnT, and PandaX-4T - provides crucial confirmation that the field has achieved robust, systematic-limited performance. *<span style="color: #20b2aa">The upcoming decade will be decisive, with next-generation experiments poised to either discover WIMPs or definitively exclude the most natural theoretical parameter space, fundamentally reshaping our understanding of dark matter and potentially redirecting the field toward alternative candidates like axions or sterile neutrinos.</span>* The extraordinary technical achievements in background rejection, cryogenic systems, and underground detector operation have created capabilities that extend far beyond dark matter searches, with applications in quantum computing, medical imaging, and national security that will benefit from these innovations for decades to come.
+The dark matter WIMP search program has achieved a remarkable technological and scientific milestone, with current experiments reaching sensitivities that seemed impossible just two decades ago. The convergence of multiple independent experiments at similar sensitivity levels - LUX-ZEPLIN, XENONnT, and PandaX-4T - provides crucial confirmation that the field has achieved robust, systematic-limited performance. *The upcoming decade will be decisive, with next-generation experiments poised to either discover WIMPs or definitively exclude the most natural theoretical parameter space, fundamentally reshaping our understanding of dark matter and potentially redirecting the field toward alternative candidates like axions or sterile neutrinos.* The extraordinary technical achievements in background rejection, cryogenic systems, and underground detector operation have created capabilities that extend far beyond dark matter searches, with applications in quantum computing, medical imaging, and national security that will benefit from these innovations for decades to come.

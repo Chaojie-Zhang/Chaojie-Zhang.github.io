@@ -1,14 +1,16 @@
 ---
+layout: post
 title: 'Laser frequency combs: a precision revolution'
 date: 2025-07-07
 permalink: /posts/2025/07/laser-frequency-combs/
 redirect_from:
   - /posts/2025/07/blog-post-4/
-excerpt: 'How laser frequency combs evolved from precision metrology tools to ubiquitous sensing devices powering quantum technologies and autonomous systems.'
+description: 'How laser frequency combs evolved from precision metrology tools to ubiquitous sensing devices powering quantum technologies and autonomous systems.'
 tags:
   - Laser Frequency Combs
   - Precision Measurement
   - Optical Physics
+related_posts: true
 ---
 
 **The 2005 Nobel Prize-winning technology that transformed optical metrology from laboratory curiosity to commercial reality continues to revolutionize precision measurement, enabling adavnces from ultra-stable atomic clocks to chip-scale sensors for autonomous vehicles.**

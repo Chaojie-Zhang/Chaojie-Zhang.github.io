@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 'Laser-Driven Proton Therapy: Strong Physics, Hard Road to the Clinic'
 date: 2026-07-11
 permalink: /posts/2026/07/laser-proton-therapy/
-excerpt: "A follow-up to my post on VHEE electrons: why laser-driven proton acceleration is great physics but, in my view, unlikely to become a competitive medical product — and where its real strengths are."
+description: "A follow-up to my post on VHEE electrons: why laser-driven proton acceleration is great physics but, in my view, unlikely to become a competitive medical product — and where its real strengths are."
 tags:
   - Laser-Plasma Acceleration
   - Proton Therapy
@@ -10,6 +11,7 @@ tags:
   - Medical Physics
   - TNSA
   - Radiotherapy
+related_posts: true
 ---
 
 ### The Promise of a Small, Cheap Proton Source
@@ -18,7 +20,7 @@ Proton therapy has a real advantage over ordinary X-ray treatment. A proton beam
 
 About twenty years ago, laser-driven ion acceleration seemed to offer a shortcut. When an intense (petawatt) laser pulse strikes a thin foil, it generates an enormous electric field on the rear side — on the order of a trillion volts per meter, tens of thousands of times stronger than the radio-frequency cavities of a conventional accelerator. In principle, such a field could push protons to treatment energy over a few microns rather than many meters. The promise was irresistible: a proton source small enough and cheap enough to bring a scarce treatment to far more patients.
 
-It is a beautiful idea, and strong groups have pursued it for close to two decades. This post is the proton companion to my earlier one on [VHEE electrons](/posts/2025/08/laser-driven-radiotherapy/). The physics, in my opinion, has largely delivered — yet the case for laser-driven protons as a hospital product runs into trouble that has little to do with the physics at all. To be clear from the outset, this is not a criticism of the science, which is great and worth doing for its own sake. My concern is narrower, and it is only about one goal: turning the method into a hospital machine.
+It is a beautiful idea, and strong groups have pursued it for close to two decades. This post is the proton companion to my earlier one on [VHEE electrons]({{ '/posts/2025/08/laser-driven-radiotherapy/' | relative_url }}). The physics, in my opinion, has largely delivered — yet the case for laser-driven protons as a hospital product runs into trouble that has little to do with the physics at all. To be clear from the outset, this is not a criticism of the science, which is great and worth doing for its own sake. My concern is narrower, and it is only about one goal: turning the method into a hospital machine.
 
 ---
 
@@ -70,7 +72,7 @@ That fairness cuts only so far. Shared compromise or not, the pulsed source stil
 
 ### The Cost Problem
 
-The original case rested on size and cost, but while the laser community advanced, so did the competition. Commercial single-room cyclotron systems now install for roughly $30–40M, a far cry from the $150M+ of the old multi-room centers. The decisive detail is that the accelerator itself accounts for only a fraction of that — very roughly half. The rest — the shielded room, the gantry, the imaging, the patient couch, the quality-control systems — does not shrink when a laser replaces the cyclotron. Even a free and perfect laser source would cut the total cost only by around half.
+The original case rested on size and cost, but while the laser community advanced, so did the competition. Commercial single-room cyclotron systems now install for roughly \$30–40M, a far cry from the \$150M+ of the old multi-room centers. The decisive detail is that the accelerator itself accounts for only a fraction of that — very roughly half. The rest — the shielded room, the gantry, the imaging, the patient couch, the quality-control systems — does not shrink when a laser replaces the cyclotron. Even a free and perfect laser source would cut the total cost only by around half.
 
 And the laser is far from free. A single-shot multi-petawatt system runs on the order of $15–20M, and such costs are falling. A version firing at the repetition rate a clinic needs, with the improved pumping and cooling that implies, is a much larger undertaking, tens of millions and rising. It also brings its own shielding burden — the intense interaction sprays secondary electrons, neutrons, hard X-rays and an electromagnetic pulse — that is arguably worse per useful proton than a cyclotron's. Proponents point out that a single laser could in principle feed several treatment rooms, spreading its cost; that helps, but the per-room vault, gantry, imaging and target handling remain, and those are where much of the money goes. Add a target "factory" able to deliver fresh, ultrathin foils many times a second, reliably, for years, and the whole-system arithmetic does not favor the laser today.
 
@@ -78,7 +80,7 @@ And the laser is far from free. A single-shot multi-petawatt system runs on the 
 
 ### Outlook
 
-Laser-driven ion acceleration will remain one of the most exciting tools in physics — and it will not, on any timeline I can foresee, become a competitive proton-therapy product. Someone will very likely treat a patient with a laser-driven proton beam, and that will be a genuine milestone worth celebrating. But demonstrating that something can work and persuading a hospital to buy the next one are entirely different achievements. The machine that treats the first patient will still, I suspect, struggle to win the following purchase against a cyclotron judged on reliability, dose shaping, and cost.
+Laser-driven ion acceleration will remain one of the most exciting tools in physics — and it will probably not become a competitive proton-therapy product in five to ten years. Someone will very likely treat a patient with a laser-driven proton beam, and that will be a genuine milestone worth celebrating. But demonstrating that something can work and persuading a hospital to buy the next one are entirely different achievements. The machine that treats the first patient will still, I suspect, struggle to win the following purchase against a cyclotron judged on reliability, dose shaping, and cost.
 
 I would be glad to be proven wrong, and the routes are clear enough. A demonstrated way to produce a single-energy, high-charge beam — through radiation-pressure acceleration, sometimes called "light sail," or related schemes — that tames both the energy spread and the charge at a high repetition rate. A sharp fall in the cost of high-power lasers, carried along by the fusion-energy supply chain. Firm evidence that the FLASH benefit truly requires the ultrafast pulse only a laser can provide, and that this matters at the bedside. Or a treatment paradigm built around the pulsed beam's own strengths, rather than forced to imitate a cyclotron — volumetric single-shot delivery, or spatially fractionated "minibeam" schemes — that turns the time structure from a liability into a feature. My argument judges the laser against how proton therapy is practiced today; a genuinely new way to deliver dose could rewrite the comparison.
 

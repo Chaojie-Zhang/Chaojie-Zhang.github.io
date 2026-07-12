@@ -1,0 +1,58 @@
+{% capture footer_contents %}
+  &copy; Copyright {{ site.time | date: '%Y' }}
+  {{ site.first_name }}
+  {{ site.middle_name }}
+  {{ site.last_name }}. {{ site.footer_text }}
+  {% if site.impressum_path %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+  {% endif %}
+  {% if site.last_updated %}
+    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+  {% endif %}
+{% endcapture %}
+
+{% if site.footer_fixed %}
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      {{ footer_contents }}
+    </div>
+  </footer>
+{% else %}
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    {% if site.newsletter.enabled %}
+      {% if site.plugins contains 'al_newsletter' %}
+        {% include plugins/al_newsletter_form_center.liquid %}
+      {% else %}
+        {% include newsletter.liquid %}
+      {% endif %}
+    {% endif %}
+
+    <div class="container">
+      {{ footer_contents }}
+    </div>
+  </footer>
+{% endif %}
+
+{% comment %} Local override: disable single-dollar MathJax delimiters so
+currency amounts in prose ("$30-40M ... $150M+") are never parsed as math.
+The theme emits mathjax-setup.js BELOW the footer, so this script cannot
+patch the config directly; instead it traps the window.MathJax assignment
+and removes the single-dollar delimiter from whatever config object arrives,
+before the deferred MathJax engine reads it. Real math uses \( \) or $$. {% endcomment %}
+<script>
+  (function () {
+    var val = window.MathJax;
+    Object.defineProperty(window, "MathJax", {
+      configurable: true,
+      get: function () {
+        return val;
+      },
+      set: function (v) {
+        if (v && v.tex && v.tex.inlineMath) {
+          v.tex.inlineMath = [["\\(", "\\)"]];
+        }
+        val = v;
+      },
+    });
+  })();
+</script>
