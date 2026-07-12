@@ -1,0 +1,46 @@
+name: Add publication (from DOI)
+
+# Actions tab -> "Add publication (from DOI)" -> Run workflow.
+# Paste the DOI (and optionally a one-sentence summary); the entry is
+# generated from Crossref, committed, and the site redeploys.
+on:
+  workflow_dispatch:
+    inputs:
+      doi:
+        description: "DOI (e.g. 10.1103/PhysRevLett.119.064801)"
+        required: true
+      summary:
+        description: "One-sentence summary shown under the entry (optional)"
+        required: false
+        default: ""
+      selected:
+        description: "Feature on the home page (selected papers)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate entry from Crossref
+        run: |
+          python3 bin/add_publication.py "${{ inputs.doi }}" \
+            ${{ inputs.selected && '--selected' || '' }} \
+            --summary "${{ inputs.summary }}"
+
+      - name: Sanity-check the bibliography
+        run: python3 bin/check_bib.py || true
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && echo "No changes." && exit 0
+          git commit -m "Add publication ${{ inputs.doi }} [auto]"
+          git push

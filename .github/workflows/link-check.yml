@@ -1,0 +1,49 @@
+name: Broken link check
+
+# Monthly sweep of the built site (and on demand). Opens/updates a GitHub
+# issue listing dead links; scholar/linkedin-style bot walls are tolerated.
+on:
+  schedule:
+    - cron: "0 8 3 * *" # 3rd of each month, 08:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the built site
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --root-dir ${{ github.workspace }}
+            --accept 200..=204,403,429
+            --exclude 'weixin://.*'
+            --exclude 'cusdis.com/js'
+            --max-concurrency 8
+            '**/*.html'
+          output: lychee-report.md
+          fail: false
+
+      - name: Open an issue if links are broken
+        if: steps.lychee.outputs.exit_code != 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Broken links found on chaojiezhang.me"
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body-file lychee-report.md
+          else
+            gh issue create --title "$TITLE" --body-file lychee-report.md
+          fi

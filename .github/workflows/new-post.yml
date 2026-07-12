@@ -1,0 +1,42 @@
+name: New blog post (draft)
+
+# Actions tab -> "New blog post (draft)" -> Run workflow with a title.
+# Creates a correctly scaffolded draft with published: false; edit it in
+# the web editor and delete that line when ready to publish.
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "Post title"
+        required: true
+      tags:
+        description: "Comma-separated tags (optional)"
+        required: false
+        default: ""
+      description:
+        description: "One-sentence description (optional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create draft
+        run: |
+          python3 bin/new_post.py "${{ inputs.title }}" \
+            --tags "${{ inputs.tags }}" \
+            --description "${{ inputs.description }}"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Draft post: ${{ inputs.title }} [auto]"
+          git push

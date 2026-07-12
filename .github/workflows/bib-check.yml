@@ -1,0 +1,21 @@
+name: Bibliography health check
+
+# Runs automatically whenever the bibliography changes (and on demand).
+# Validates syntax and required fields, and cross-verifies every DOI'd
+# entry's title/volume/pages against Crossref.
+on:
+  push:
+    branches: [master, main]
+    paths: ["_bibliography/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check papers.bib
+        run: python3 bin/check_bib.py

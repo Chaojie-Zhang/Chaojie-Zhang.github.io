@@ -1,0 +1,52 @@
+name: Update citation stats
+
+# Semi-manual by design: no API reproduces the true Google Scholar numbers
+# (Semantic Scholar splits this author across profiles, OpenAlex merges in a
+# namesake, and Scholar itself blocks automated fetching from CI). Glance at
+# your Scholar profile, press the button with the two numbers, and the CV
+# line updates.
+on:
+  workflow_dispatch:
+    inputs:
+      citations:
+        description: "Total citations (from your Google Scholar profile)"
+        required: true
+      h_index:
+        description: "h-index"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update the CV stats line
+        run: |
+          python3 - <<'EOF'
+          import os, re
+          cites = "${{ inputs.citations }}".strip()
+          h = "${{ inputs.h_index }}".strip()
+          assert cites.isdigit() and h.isdigit(), "citations and h-index must be numbers"
+          path = "_pages/cv.md"
+          text = open(path).read()
+          new, n = re.subn(
+              r"over \d[\d,]* citations \(h-index: \d+\)",
+              f"over {int(cites):,} citations (h-index: {h})",
+              text)
+          assert n == 1, f"expected exactly 1 stats line, found {n}"
+          open(path, "w").write(new)
+          print(f"CV now states: over {int(cites):,} citations (h-index: {h})")
+          EOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && echo "No change (same numbers)." && exit 0
+          git commit -m "Update citation stats: ${{ inputs.citations }} citations, h-index ${{ inputs.h_index }} [auto]"
+          git push
