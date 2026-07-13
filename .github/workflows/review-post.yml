@@ -1,0 +1,38 @@
+name: Review blog post
+
+# Pre-publication review: scientific accuracy, neutral tone, Scientific
+# American style, reputation-risk scan. Actions tab -> "Review blog post" ->
+# enter part of the post's filename. The review arrives as a GitHub issue.
+#
+# Requires the ANTHROPIC_API_KEY repository secret (Settings -> Secrets and
+# variables -> Actions). Without it, the run explains what to do and points
+# at docs/POST_REVIEW_PROMPT.md for manual review in claude.ai.
+on:
+  workflow_dispatch:
+    inputs:
+      post:
+        description: "Post filename or unique part of it (e.g. laser-proton)"
+        required: true
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run the review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 bin/review_post.py "${{ inputs.post }}"
+
+      - name: Post the review as an issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Post review: ${{ inputs.post }}"
+          gh issue create --title "$TITLE" --body-file review-output.md
+          echo "Review posted as a GitHub issue."

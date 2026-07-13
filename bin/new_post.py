@@ -52,6 +52,9 @@ Conventions:
 - Images: put files in assets/img/posts/ and embed with
   <img src="{{{{ '/assets/img/posts/FILE.png' | relative_url }}}}" alt="...">
 - Comments are enabled automatically.
+- BEFORE PUBLISHING: run the review — Actions -> "Review blog post" with this
+  file's name (or paste docs/POST_REVIEW_PROMPT.md + the post into claude.ai).
+  It checks scientific accuracy, tone, style, and reputation risks.
 -->
 """
     open(path, "w").write(body)
