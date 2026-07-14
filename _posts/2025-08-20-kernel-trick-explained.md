@@ -80,7 +80,7 @@ The practical application of kernel methods involves selecting an appropriate ke
     * **Use Case**: This kernel is effective for problems with a known polynomial structure in their decision boundary.
 
 3.  **Gaussian (RBF) Kernel**
-    * **Formula**: \\(K(x, z) = \exp\left(-\gamma \ \mid x-z\ \mid ^2\right)\\)
+    * **Formula**: \\(K(x, z) = \exp\left(-\gamma \mid x-z\ \mid ^2\right)\\)
     * **Hyperparameter**: The bandwidth \\(\gamma\\) (gamma), where \\(\gamma = 1/(2\sigma²)\\).
     * **Use Case**: The Radial Basis Function (RBF) kernel is a common default choice due to its flexibility. It corresponds to an infinite-dimensional feature space and can learn complex, non-linear decision boundaries. The \\(\gamma\\) parameter controls the smoothness of the boundary; smaller values result in smoother boundaries, while larger values can lead to more complex boundaries that fit the data more tightly.
 
