@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'The Fourth Generation: Where the World’s X-Ray Light Sources Stand in 2026'
+title: 'The Fourth Generation: Where the X-Ray Light Sources Stand in 2026'
 date: 2026-07-16
 permalink: /posts/2026/07/fourth-generation-light-sources/
 description: 'A survey of the synchrotrons and free-electron lasers that produce the world’s brightest X-rays — what is running, what is being rebuilt, what is only proposed — and an assessment of where plasma acceleration fits.'
