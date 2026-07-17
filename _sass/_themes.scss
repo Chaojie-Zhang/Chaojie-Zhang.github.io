@@ -392,6 +392,11 @@ html article.post-content thead th {
   border-bottom: 2px solid var(--global-divider-color);
 }
 
+html article.post-content th:first-child,
+html article.post-content td:first-child {
+  white-space: nowrap;
+}
+
 @media (max-width: 767.98px) {
   html article.post-content table {
     display: block;
