@@ -369,6 +369,36 @@ html article.post-content hr {
   display: none;
 }
 
+/* Markdown tables inside blog posts: the gem only styles .table-classed
+   tables (with a hardcoded light-mode text color), so bare kramdown tables
+   get browser defaults. Style them here with theme variables; on narrow
+   screens they scroll sideways instead of squeezing. */
+html article.post-content table {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  border-collapse: collapse;
+  color: var(--global-text-color);
+}
+
+html article.post-content th,
+html article.post-content td {
+  vertical-align: top;
+  padding: 0.45rem 0.75rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+html article.post-content thead th {
+  border-top: 0;
+  border-bottom: 2px solid var(--global-divider-color);
+}
+
+@media (max-width: 767.98px) {
+  html article.post-content table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
 /* Blog list: ~20px around each entry's divider (the entry's last child
    brings its own bottom margin, so no extra padding above the line) */
 html .post-list > li {
