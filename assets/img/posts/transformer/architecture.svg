@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1030" role="img" aria-labelledby="title desc">
+<title id="title">Attention Is All You Need 原始架构教学重绘</title>
+<desc id="desc">Encoder 和 decoder 各六层。每个 encoder block 有自注意力和前馈网络；每个 decoder block 有因果自注意力、读取完整 encoder 输出的交叉注意力和前馈网络。所有子层均先残差相加再归一化。底部为词表投影和概率输出。</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#496579"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#15769a"/></marker></defs>
+<style>text{font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;fill:#182f42;font-size:19px}.small{font-size:16px;fill:#486074}.box{fill:#edf6fa;stroke:#2381a1;stroke-width:1.3}.norm{fill:#eef5ed;stroke:#548064;stroke-width:1.3}.line{fill:none;stroke:#496579;stroke-width:1.8;marker-end:url(#a)}.skip{fill:none;stroke:#73808c;stroke-width:1.5;stroke-dasharray:5 4;marker-end:url(#a)}</style>
+<rect width="760" height="1030" rx="12" fill="#fff"/>
+<text x="30" y="38" font-size="23" font-weight="bold">原始 Transformer · Base 配置</text>
+<text x="30" y="68" class="small">512 维 · 8 个头 · 每头 64 维 · 数据从上向下流动</text>
+<text x="182" y="108" text-anchor="middle" font-weight="bold">Encoder / 原文</text><text x="578" y="108" text-anchor="middle" font-weight="bold">Decoder / 译文前缀</text>
+<rect class="box" x="65" y="125" width="235" height="62" rx="7"/><text x="182" y="151" text-anchor="middle">原文 token embedding</text><text x="182" y="176" text-anchor="middle" class="small">× √512 ＋ 位置编码</text>
+<rect class="box" x="460" y="125" width="235" height="62" rx="7"/><text x="578" y="151" text-anchor="middle">右移后的译文 embedding</text><text x="578" y="176" text-anchor="middle" class="small">× √512 ＋ 位置编码</text>
+<rect x="30" y="230" width="305" height="365" rx="10" fill="#fafcfd" stroke="#c2d0da"/><text x="48" y="258" class="small">串联 6 个 block（参数各自独立）</text>
+<rect x="425" y="230" width="305" height="555" rx="10" fill="#fafcfd" stroke="#c2d0da"/><text x="443" y="258" class="small">串联 6 个 block（参数各自独立）</text>
+<path class="line" d="M182 187V287"/><path class="line" d="M578 187V287"/>
+<rect class="box" x="65" y="295" width="235" height="50" rx="7"/><text x="182" y="326" text-anchor="middle">多头自注意力</text>
+<path class="line" d="M182 345V372"/><path class="skip" d="M182 278H48V405H63"/>
+<rect class="norm" x="65" y="380" width="235" height="50" rx="7"/><text x="182" y="411" text-anchor="middle">Add &amp; Norm</text>
+<path class="line" d="M182 430V457"/>
+<rect class="box" x="65" y="465" width="235" height="50" rx="7"/><text x="182" y="496" text-anchor="middle">MLP：512 → 2048 → 512</text>
+<path class="line" d="M182 515V542"/><path class="skip" d="M182 445H48V575H63"/>
+<rect class="norm" x="65" y="550" width="235" height="40" rx="7"/><text x="182" y="576" text-anchor="middle">Add &amp; Norm</text>
+<path class="line" d="M182 590V627"/>
+<rect class="box" x="65" y="635" width="235" height="70" rx="7"/><text x="182" y="664" text-anchor="middle">最终原文表示 C</text><text x="182" y="691" text-anchor="middle" class="small">S 源 × 512</text>
+<rect class="box" x="460" y="295" width="235" height="50" rx="7"/><text x="578" y="326" text-anchor="middle">因果多头自注意力</text>
+<path class="line" d="M578 345V372"/><path class="skip" d="M578 278H442V405H458"/>
+<rect class="norm" x="460" y="380" width="235" height="50" rx="7"/><text x="578" y="411" text-anchor="middle">Add &amp; Norm</text>
+<path class="line" d="M578 430V482"/><text x="594" y="461" class="small">Q 的来源</text>
+<rect class="box" x="460" y="490" width="235" height="60" rx="7"/><text x="578" y="526" text-anchor="middle">多头交叉注意力</text>
+<path d="M300 670H375V520H455" fill="none" stroke="#15769a" stroke-width="3" marker-end="url(#b)"/>
+<text x="358" y="727" text-anchor="middle" class="small">C 提供每层交叉注意力的 K、V 输入</text>
+<path class="line" d="M578 550V577"/><path class="skip" d="M578 444H714V608H697"/>
+<rect class="norm" x="460" y="585" width="235" height="45" rx="7"/><text x="578" y="614" text-anchor="middle">Add &amp; Norm</text>
+<path class="line" d="M578 630V657"/>
+<rect class="box" x="460" y="665" width="235" height="45" rx="7"/><text x="578" y="694" text-anchor="middle">MLP：512 → 2048 → 512</text>
+<path class="line" d="M578 710V737"/><path class="skip" d="M578 644H714V764H697"/>
+<rect class="norm" x="460" y="745" width="235" height="35" rx="7"/><text x="578" y="769" text-anchor="middle">Add &amp; Norm</text>
+<path class="line" d="M578 780V817"/>
+<rect class="box" x="460" y="825" width="235" height="45" rx="7"/><text x="578" y="854" text-anchor="middle">线性投影到词表</text>
+<path class="line" d="M578 870V897"/>
+<rect class="norm" x="460" y="905" width="235" height="60" rx="7"/><text x="578" y="932" text-anchor="middle">Softmax</text><text x="578" y="954" text-anchor="middle" class="small">下一个 token 的概率</text>
+<text x="45" y="840" class="small">实线：状态流动</text><text x="45" y="870" class="small">虚线：残差旁路</text><text x="45" y="900" class="small">Add &amp; Norm：先相加，后归一化</text><text x="45" y="930" class="small">多头模块包含 QKV 投影与 W_O</text>
+<text x="30" y="1005" class="small">据 Vaswani et al. (2017), Figure 1 重绘；省略 dropout 等训练细节。</text>
+</svg>
