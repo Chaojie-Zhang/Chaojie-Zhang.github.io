@@ -12,5 +12,5 @@
 <path class="line" d="M130 350V370H350V390"/><path class="line" d="M360 350V390"/><path class="line" d="M590 350V370H370V390"/>
 <rect class="box" x="130" y="400" width="460" height="48" rx="8"/><text x="360" y="431" text-anchor="middle">8 个输出拼接：S × 512</text>
 <path class="line" d="M360 448V476"/>
-<rect x="130" y="485" width="460" height="48" rx="8" fill="#e6f3ed" stroke="#348167" stroke-width="1.5"/><text x="360" y="516" text-anchor="middle">乘 W_O（512 × 512）：混合各头通道</text>
+<rect x="130" y="485" width="460" height="48" rx="8" fill="#e6f3ed" stroke="#348167" stroke-width="1.5"/><text x="360" y="516" text-anchor="middle">乘 W<tspan baseline-shift="sub" font-size="13">O</tspan>（512 × 512）：混合各头通道</text>
 </svg>

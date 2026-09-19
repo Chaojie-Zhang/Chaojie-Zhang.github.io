@@ -20,7 +20,7 @@
 <path class="line" d="M182 515V542"/><path class="skip" d="M182 445H48V575H63"/>
 <rect class="norm" x="65" y="550" width="235" height="40" rx="7"/><text x="182" y="576" text-anchor="middle">Add &amp; Norm</text>
 <path class="line" d="M182 590V627"/>
-<rect class="box" x="65" y="635" width="235" height="70" rx="7"/><text x="182" y="664" text-anchor="middle">最终原文表示 C</text><text x="182" y="691" text-anchor="middle" class="small">S 源 × 512</text>
+<rect class="box" x="65" y="635" width="235" height="70" rx="7"/><text x="182" y="664" text-anchor="middle">最终原文表示 C</text><text x="182" y="691" text-anchor="middle" class="small">S<tspan baseline-shift="sub" font-size="12">src</tspan> × 512</text>
 <rect class="box" x="460" y="295" width="235" height="50" rx="7"/><text x="578" y="326" text-anchor="middle">因果多头自注意力</text>
 <path class="line" d="M578 345V372"/><path class="skip" d="M578 278H442V405H458"/>
 <rect class="norm" x="460" y="380" width="235" height="50" rx="7"/><text x="578" y="411" text-anchor="middle">Add &amp; Norm</text>
@@ -38,6 +38,6 @@
 <rect class="box" x="460" y="825" width="235" height="45" rx="7"/><text x="578" y="854" text-anchor="middle">线性投影到词表</text>
 <path class="line" d="M578 870V897"/>
 <rect class="norm" x="460" y="905" width="235" height="60" rx="7"/><text x="578" y="932" text-anchor="middle">Softmax</text><text x="578" y="954" text-anchor="middle" class="small">下一个 token 的概率</text>
-<text x="45" y="840" class="small">实线：状态流动</text><text x="45" y="870" class="small">虚线：残差旁路</text><text x="45" y="900" class="small">Add &amp; Norm：先相加，后归一化</text><text x="45" y="930" class="small">多头模块包含 QKV 投影与 W_O</text>
+<text x="45" y="840" class="small">实线：状态流动</text><text x="45" y="870" class="small">虚线：残差旁路</text><text x="45" y="900" class="small">Add &amp; Norm：先相加，后归一化</text><text x="45" y="930" class="small">多头模块包含 QKV 投影与 W<tspan baseline-shift="sub" font-size="13">O</tspan></text>
 <text x="30" y="1005" class="small">据 Vaswani et al. (2017), Figure 1 重绘；省略 dropout 等训练细节。</text>
 </svg>
