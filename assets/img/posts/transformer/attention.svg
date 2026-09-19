@@ -1,22 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 570" role="img" aria-labelledby="title desc">
-<title id="title">一个接收位置怎样读取其他位置</title>
-<desc id="desc">bank 的查询与三个 key 比较得到注意力权重，随后加权混合三个 value。权重和数值为教学示例。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 630" role="img" aria-labelledby="title desc">
+<title id="title">单个注意力头的计算过程</title>
+<desc id="desc">输入投影为查询、键和值。查询与键计算匹配分数，经缩放、遮挡和逐行 softmax 得到权重，再对值加权求和。</desc>
 <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#496579"/></marker></defs>
-<style>text{font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;fill:#182f42;font-size:20px} .small{font-size:17px;fill:#486074}.box{fill:#edf6fa;stroke:#2381a1;stroke-width:1.5}.line{fill:none;stroke:#496579;stroke-width:2;marker-end:url(#a)}</style>
-<rect width="720" height="570" rx="12" fill="#fff"/>
-<text x="30" y="40" font-size="24" font-weight="bold">注意力：先匹配，再传递内容</text>
-<rect class="box" x="210" y="65" width="300" height="48" rx="8"/><text x="360" y="96" text-anchor="middle">接收位置 bank 的 query</text>
-<path class="line" d="M360 113V138H120V162"/><path class="line" d="M360 113V162"/><path class="line" d="M360 138H600V162"/>
-<rect class="box" x="30" y="170" width="180" height="50" rx="8"/><text x="120" y="202" text-anchor="middle">river 的 key</text>
-<rect class="box" x="270" y="170" width="180" height="50" rx="8"/><text x="360" y="202" text-anchor="middle">near 的 key</text>
-<rect class="box" x="510" y="170" width="180" height="50" rx="8"/><text x="600" y="202" text-anchor="middle">bank 的 key</text>
-<text x="360" y="251" text-anchor="middle" class="small">分别点积 → 缩放 → 按源位置做 softmax</text>
-<path class="line" d="M120 268V298"/><path class="line" d="M360 268V298"/><path class="line" d="M600 268V298"/>
-<text x="120" y="328" text-anchor="middle" font-weight="bold">0.7 × [10, 0]</text><text x="120" y="356" text-anchor="middle" class="small">权重 × river 的 value</text>
-<text x="360" y="328" text-anchor="middle" font-weight="bold">0.1 × [0, 5]</text><text x="360" y="356" text-anchor="middle" class="small">权重 × near 的 value</text>
-<text x="600" y="328" text-anchor="middle" font-weight="bold">0.2 × [2, 3]</text><text x="600" y="356" text-anchor="middle" class="small">权重 × bank 的 value</text>
-<path class="line" d="M120 375V405H350V434"/><path class="line" d="M360 375V434"/><path class="line" d="M600 375V405H370V434"/>
-<rect x="150" y="445" width="420" height="64" rx="8" fill="#e6f3ed" stroke="#348167" stroke-width="1.5"/>
-<text x="360" y="484" text-anchor="middle" font-weight="bold">bank 的输出 = [7.4, 1.1]</text>
-<text x="360" y="544" text-anchor="middle" class="small">位置数量没有减少：这里仅画出 bank 这一行的计算。</text>
+<style>text{font-family:Arial,'PingFang SC',sans-serif;fill:#182f42;font-size:20px}.math{font-family:Georgia,serif;font-style:italic}.small{font-size:17px}.box{fill:#edf6fa;stroke:#2381a1;stroke-width:1.5}.line{fill:none;stroke:#496579;stroke-width:2;marker-end:url(#a)}</style>
+<rect width="720" height="630" rx="12" fill="#fff"/>
+<text x="30" y="40" font-weight="bold">单头注意力：匹配、归一化、加权求和</text>
+<rect class="box" x="210" y="65" width="300" height="50" rx="8"/><text x="360" y="97" text-anchor="middle">输入 <tspan class="math">X</tspan>：<tspan class="math">S</tspan> × 512</text>
+<path class="line" d="M360 115V140H130V168"/><path class="line" d="M360 115V168"/><path class="line" d="M360 140H590V168"/>
+<rect class="box" x="40" y="175" width="180" height="75" rx="8"/><text x="130" y="205" text-anchor="middle" class="math">Q = XW<tspan baseline-shift="sub" font-size="14">Q</tspan></text><text x="130" y="234" text-anchor="middle" class="small">查询：<tspan class="math">S</tspan> × 64</text>
+<rect class="box" x="270" y="175" width="180" height="75" rx="8"/><text x="360" y="205" text-anchor="middle" class="math">K = XW<tspan baseline-shift="sub" font-size="14">K</tspan></text><text x="360" y="234" text-anchor="middle" class="small">键：<tspan class="math">S</tspan> × 64</text>
+<rect class="box" x="500" y="175" width="180" height="75" rx="8"/><text x="590" y="205" text-anchor="middle" class="math">V = XW<tspan baseline-shift="sub" font-size="14">V</tspan></text><text x="590" y="234" text-anchor="middle" class="small">值：<tspan class="math">S</tspan> × 64</text>
+<path class="line" d="M130 250V280H235V303"/><path class="line" d="M360 250V280H255V303"/>
+<rect class="box" x="85" y="310" width="320" height="60" rx="8"/><text x="245" y="347" text-anchor="middle">匹配分数 <tspan class="math">QK</tspan><tspan baseline-shift="super" font-size="14">T</tspan>：<tspan class="math">S</tspan> × <tspan class="math">S</tspan></text>
+<path class="line" d="M245 370V404"/>
+<rect class="box" x="45" y="411" width="400" height="80" rx="8"/><text x="245" y="443" text-anchor="middle">除以 √64 → 加遮挡 → 逐行 softmax</text><text x="245" y="473" text-anchor="middle">权重 <tspan class="math">A</tspan>：<tspan class="math">S</tspan> × <tspan class="math">S</tspan></text>
+<path class="line" d="M245 491V520H350V542"/><path class="line" d="M590 250V520H370V542"/>
+<rect x="170" y="550" width="380" height="55" rx="8" fill="#e6f3ed" stroke="#348167" stroke-width="1.5"/><text x="360" y="585" text-anchor="middle">输出 <tspan class="math">H = AV</tspan>：<tspan class="math">S</tspan> × 64</text>
 </svg>
