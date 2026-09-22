@@ -13,6 +13,7 @@ import os
 import re
 import sys
 import time
+import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -60,7 +61,7 @@ def main():
         doi = f.get("doi")
         if not doi:
             continue
-        url = f"https://api.crossref.org/works/{urllib.request.quote(doi)}?mailto={MAILTO}"
+        url = f"https://api.crossref.org/works/{urllib.parse.quote(doi)}?mailto={MAILTO}"
         try:
             with urllib.request.urlopen(url, timeout=15) as r:
                 msg = json.load(r)["message"]

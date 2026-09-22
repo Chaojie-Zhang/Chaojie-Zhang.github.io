@@ -13,6 +13,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -77,7 +78,7 @@ def main():
         print(f"Already present: an entry with DOI {doi} exists. Nothing to do.")
         return 0
 
-    url = f"https://api.crossref.org/works/{urllib.request.quote(doi)}?mailto={MAILTO}"
+    url = f"https://api.crossref.org/works/{urllib.parse.quote(doi)}?mailto={MAILTO}"
     with urllib.request.urlopen(url, timeout=20) as r:
         msg = json.load(r)["message"]
 
